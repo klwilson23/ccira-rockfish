@@ -47,9 +47,27 @@ plot(ln_Fmsy_over_M~tmax,data=rockfish_norm)
 plot(r~tmax,data=rockfish_norm)
 plot(h~tmax,data=rockfish_norm)
 
-vignette("tutorial","FishLife")
+plot(ln_Fmsy_over_M~tmax,data=rockfish)
+plot(r~tmax,data=rockfish,xlab="Longevity",ylab="Maximum population growth rate",xlim=c(0,120),ylim=c(0,1))
+summary(glm(r~log(tmax),data=rockfish))
+curve(0.9393+-0.2094*log(x),add=TRUE)
+plot(h~tmax,data=rockfish,xlab="Longevity",ylab="Proportion of recruits remaining at 20% carrying capacity")
+plot(G~tmax,data=rockfish)
 
+vignette("tutorial","FishLife")
+library(rfishbase)
+head(rfishbase::fishbase)
+fishbase[fishbase$Genus=="Sebastes" & fishbase$Species=="ruberrimus",]
+rockfish_fb <- common_to_sci("rockfish")
+rockfish_fb_traits <- species(rockfish_fb$Species)
+rockfish_pop_dyn <- popgrowth(rockfish_fb$Species)
+plot(Vulnerability~LongevityWild,data=rockfish_fb_traits[rockfish_fb_traits$Genus=="Sebastes",])
+rockfish_fb_traits[rockfish_fb_traits$Genus=="Sebastes",1:10]
+rockfish_fb_traits[rockfish_fb_traits$Genus=="Sebastes",1:10]
+plot(M~Loo,data=rockfish_pop_dyn[grep("Sebastes",rockfish_pop_dyn$Species),])
+
+rockfish_ecol <- rfishbase::ecology(rockfish_fb$Species)
 # Re-run results with a different model configuration
 Ynew_ij = matrix( c("Loo"=NA,"K"=NA,"Winfinity"=NA,"tmax"=119,"tm"=NA,"M"=NA,"Lm"=NA,"Temperature"=NA), nrow=1)
-Update = Update_prediction( Taxon=Search_species(Genus="Sebastes",Species="ruberrimus",add_ancestors=FALSE)$match_taxonomy, Ynew_ij=Ynew_ij)
-Update$updateMean_j
+#Update = Update_prediction( Taxon=Search_species(Genus="Sebastes",Species="ruberrimus",add_ancestors=FALSE)$match_taxonomy, Ynew_ij=Ynew_ij)
+#Update$updateMean_j

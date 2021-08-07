@@ -1,0 +1,23 @@
+species,min_depth,max_depth,hook_line,dive,mid_video,deep_video
+bocaccio,95,225,0,1,1,1
+canary,80,200,1,1,1,1
+china,10,128,1,1,1,1
+dusky-dark,100,300,0,1,1,1
+greenstripe,100,300,1,1,1,1
+puget sound,10,470,0,1,1,1
+pygmy,60,150,1,1,1,1
+quillback,10,130,1,1,1,1
+redbanded,150,350,0,0,0,1
+redstripe,55,300,1,1,1,1
+rosethorn,80,350,0,0,1,1
+REBS,150,450,0,0,1,1
+sharpchin,200,300,0,0,1,1
+shortbelly,150,270,0,1,1,1
+shortraker,300,600,0,0,1,1
+silvergrey,100,300,1,1,1,1
+tiger,30,298,1,1,1,1
+vermillion,50,150,1,1,1,1
+widow,0,200,1,1,1,1
+yelloweye,91,180,1,1,1,1
+sebastolobus,200,800,0,0,0,1
+yellowtail,90,180,1,1,1,1
