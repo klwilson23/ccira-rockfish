@@ -1,6 +1,10 @@
 normalize <- function(x, na.rm = TRUE) {
   return((x- min(x, na.rm = TRUE)) /(max(x, na.rm = TRUE)-min(x, na.rm = TRUE)))
 }
+
+rockfish_spp <- c("black","blackspotted","bocaccio","brown","canary","china","copper","deacon","dusky-dark","greenstripe","puget sound","pygmy","quillback","redbanded","redstripe","rosethorn","sebastolobus","sharpchin","shortbelly","shortraker","silvergray","splitnose","stripetail","tiger","vermillion","widow","yelloweye","yellowtail")
+
+
 library(dplyr)
 library(glmmTMB)
 new_df <- read.csv("Data/Rockfish counts PU4km v2.csv")
@@ -21,10 +25,10 @@ m3cTMB <- glmmTMB(counts~depth+depth:species+I(depth^2)+species+gear+offset(log(
 m3dTMB <- glmmTMB(counts~depth+depth:species+species+gear+offset(log(effort)),dispformula = ~gear,data=new_df,family=nbinom2)
 m3eTMB <- glmmTMB(counts~depth+depth:species+I(depth^2)+I(depth^2):species+species+offset(log(effort)),dispformula = ~gear,data=new_df,family=nbinom2)
 m3fTMB <- glmmTMB(counts~depth+depth:species+I(depth^2)+species+gear+as.factor(PU_4Km_ID)+offset(log(effort)),dispformula = ~gear,data=new_df,family=nbinom2)
-m3gTMB <- glmmTMB(counts~depth+depth:species+species+gear+as.factor(PU_4Km_ID)+offset(log(effort)),dispformula = ~gear,data=new_df,family=nbinom2)
-m3hTMB <- glmmTMB(counts~depth+depth:species+I(depth^2)+species+gear+as.factor(PU_4Km_ID)+offset(log(effort)),dispformula = ~gear,data=new_df,family=nbinom2)
+m3gTMB <- glmmTMB(counts~depth+depth:species+species+gear+as.factor(PU_4Km_ID)+offset(log(effort)),dispformula = ~gear,data=new_df,family=nbinom2,control=glmmTMBControl(optCtrl=list(iter.max=1e4,eval.max=1e4)))
+m3hTMB <- glmmTMB(counts~depth+depth:species+species+gear+as.factor(PU_4Km_ID)+offset(log(effort)),dispformula = ~gear,ziformula = ~1,data=new_df,family=nbinom2,control=glmmTMBControl(optCtrl=list(iter.max=1e3,eval.max=1e3)))
 m3iTMB <- glmmTMB(counts~species+gear+as.factor(PU_4Km_ID)+offset(log(effort)),dispformula = ~gear,data=new_df,family=nbinom2)
-m3jTMB <- glmmTMB(counts~species+gear+offset(log(effort))+1|PU_4Km_ID,dispformula = ~gear,data=new_df,family=nbinom2)
+#m3jTMB <- glmmTMB(counts~species+gear+offset(log(effort))+1|PU_4Km_ID,dispformula = ~gear,data=new_df,family=nbinom2)
 
 AIC(m3aTMB,m3bTMB,m3cTMB,m3dTMB,m3eTMB,m3fTMB,m3gTMB,m3hTMB,m3iTMB)
 AIC(m1TMB,m2TMB,m2aTMB,m2bTMB,m2cTMB,m3aTMB,m3bTMB,m3cTMB,m3dTMB,m3eTMB,m3fTMB,m3gTMB,m3hTMB,m3iTMB)
@@ -80,7 +84,11 @@ hotspots_df <- hotspots_df %>%
 hotspots_df <- hotspots_df[complete.cases(hotspots_df),]
 hotspots_agg <- aggregate(cbind(normalized_lambda,normalized_cpue)~PU_4Km_ID+species,data=hotspots_df,FUN=mean)
 hotspots_agg$sample_sizes <- aggregate(sample_sizes~PU_4Km_ID+species,data=hotspots_df,FUN=sum)$sample_sizes
-plot(normalized_lambda~depth,hotspots_df[hotspots_df$species=="quillback" & hotspots_df$gear=="deep_video",])
+plot(normalized_lambda~depth,hotspots_df[hotspots_df$species=="quillback",])
+plot(normalized_cpue~depth,hotspots_df[hotspots_df$species=="quillback",])
+
+write.csv(hotspots_agg,"Data/rockfish normalized cpue by site and species.csv")
+
 plot(normalized_lambda~normalized_cpue,data=hotspots_df)
 summary(lm(normalized_lambda~normalized_cpue,data=hotspots_df))
 plot(normalized_lambda~normalized_cpue,data=hotspots_agg)
@@ -102,7 +110,7 @@ sum((hotspots_coast$hotspot-hotspots_coast$hotspot_old)==-1)
 sum((hotspots_coast$hotspot-hotspots_coast$hotspot_old)==0)
 sum((hotspots_coast$hotspot+hotspots_coast$hotspot_old)==2)
 
-simulationOutput <- DHARMa::simulateResiduals(fittedModel = m3gTMB, plot = F)
+simulationOutput <- DHARMa::simulateResiduals(fittedModel = m3gTMB,plot = F)
 plot(simulationOutput)
 DHARMa::testZeroInflation(simulationOutput)
 DHARMa::testDispersion(simulationOutput)

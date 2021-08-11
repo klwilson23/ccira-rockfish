@@ -7,9 +7,9 @@ rockfish_spp <- c("black","blackspotted","bocaccio","brown","canary","china","co
 
 hook_line <- read.csv("Data/All_HLData v2.csv")
 deep_vid <- read.csv("Data/DeepVideo v2.csv")
-dive <- read.csv("Data/DiveData v2.csv")
+dive <- read.csv("Data/DiveData v4.csv")
 mid_vid <- read.csv("Data/MidDepthVideo v2.csv")
-selectivity <- read.csv("Data/rockfish gear selectivity.csv")
+selectivity <- read.csv("Data/rockfish gear selectivity v2.csv")
 
 hook_line <- hook_line[hook_line$Survey.Type=="hl-syst",]
 hook_line <- hook_line[complete.cases(hook_line[,-which(colnames(hook_line)=="TL")]),]
@@ -123,21 +123,23 @@ merged_data$species[merged_data$species=="greenstriped"]="greenstripe"
 merged_data$species[merged_data$species=="redstriped"]="redstripe"
 merged_data$species[merged_data$species=="dusky"]="dusky-dark"
 sponge_names <- c("aphrocallistidae","mycale","chrysopathes","paragorgia","primnoa","stylaster","swiftia","boot","farrea")
-merged_data <- merged_data[!merged_data$species%in%sponge_names,]
-merged_data$PU_4Km_ID <- factor(merged_data$PU_4Km_ID,levels=sort(unique(merged_data$PU_4Km_ID)))
-merged_data$survey_id <- factor(merged_data$survey_id,levels=sort(unique(merged_data$survey_id)))
-merged_data <- merged_data[merged_data$species!="none",]
-merged_data <- merged_data[merged_data$species%in%rockfish_spp,]
-new_data <- expand.grid("survey_id"=unique(merged_data$survey_id),"species"=unique(merged_data$species)) # create a combination of all 4x4 sites, all species, and all gear types
+site_ids <- sort(unique(merged_data$PU_4Km_ID))
+surv_ids <- sort(unique(merged_data$survey_id))
+#merged_data <- merged_data[!merged_data$species%in%sponge_names,]
+merged_data$PU_4Km_ID <- factor(merged_data$PU_4Km_ID,levels=site_ids)
+merged_data$survey_id <- factor(merged_data$survey_id,levels=surv_ids)
+#merged_data <- merged_data[merged_data$species!="none",]
+#merged_data <- merged_data[merged_data$species%in%rockfish_spp,]
+new_data <- expand.grid("survey_id"=surv_ids,"species"=unique(merged_data$species)) # create a combination of all 4x4 sites, all species, and all gear types
 new_data$gear <- merged_data$gear[match(new_data$survey_id,merged_data$survey_id)]
 new_data$effort <- merged_data$effort[match(paste(new_data$survey_id,new_data$gear),paste(merged_data$survey_id,merged_data$gear),nomatch=NA)]
 new_data$sample_size <- merged_data$sample_size[match(paste(new_data$survey_id,new_data$gear),paste(merged_data$survey_id,merged_data$gear),nomatch=NA)]
 new_data$depth <- merged_data$depth[match(paste(new_data$survey_id,new_data$gear),paste(merged_data$survey_id,merged_data$gear),nomatch=NA)]
 new_data$counts <- 0
 new_data$counts[match(paste(merged_data$survey_id,merged_data$gear,merged_data$species),paste(new_data$survey_id,new_data$gear,new_data$species))] <- merged_data$counts
-new_df <- new_data[which(match(paste(new_data$survey_id,new_data$gear),paste(merged_data$survey_id,merged_data$gear),nomatch=0)>0),]
-
-new_df$depth[match(paste(merged_data$survey_id,merged_data$gear,merged_data$species),paste(new_df$survey_id,new_df$gear,new_df$species))] <- merged_data$depth
+#new_df <- new_data[which(match(paste(new_data$survey_id,new_data$gear),paste(merged_data$survey_id,merged_data$gear),nomatch=0)>0),]
+new_df <- new_data
+#new_df$depth[match(paste(merged_data$survey_id,merged_data$gear,merged_data$species),paste(new_df$survey_id,new_df$gear,new_df$species))] <- merged_data$depth
 
 new_df$PU_4Km_ID <- merged_data$PU_4Km_ID[match(new_df$survey_id,merged_data$survey_id)]
 
@@ -149,9 +151,9 @@ for(i in 1:length(unique(new_df$survey_id)))
   {
     sub_dat2 <- sub_dat[sub_dat$species==rockfish_spp[k],]
     
-    if(any(selectivity$species==rockfish_spp[k]))
+    if(any(selectivity$Common.name==rockfish_spp[k]))
     {
-      sub_sel <- selectivity[selectivity$species==rockfish_spp[k],]
+      sub_sel <- selectivity[selectivity$Common.name==rockfish_spp[k],]
       zeros <- sub_sel[,c(1:3,which(colnames(sub_sel)==sub_dat2$gear))]
       omit <- ifelse(zeros[,4]==0 & sub_dat2$counts==0,1,0)
       if(omit==1)
@@ -162,7 +164,7 @@ for(i in 1:length(unique(new_df$survey_id)))
         tru_dat <- sub_dat2
       }
     }else{
-      sub_sel <- selectivity[selectivity$species=="REBS",]
+      sub_sel <- selectivity[selectivity$Common.name=="REBS",]
       zeros <- sub_sel[,c(1:3,which(colnames(sub_sel)==sub_dat2$gear))]
       omit <- ifelse(zeros[,4]==0 & sub_dat2$counts==0,1,0)
       if(omit==1)
