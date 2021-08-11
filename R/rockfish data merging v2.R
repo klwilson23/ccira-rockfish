@@ -16,6 +16,8 @@ hook_line <- hook_line[complete.cases(hook_line[,-which(colnames(hook_line)=="TL
 hook_line$count <- 1
 hook_line$effort <- hook_line$Bottom.Time..min.
 hook_line$sample_size <- 1
+#hook_line$species[which(hook_line$species%in%c("REBS"))]="blackspotted"
+
 hook_agg <- aggregate(cbind(count,depth)~survey_id+species,data=hook_line,function(x){c(sum(x,na.rm=TRUE),mean(x,na.rm=TRUE))})
 effort <- aggregate(cbind(effort,sample_size)~survey_id,data=hook_line,function(x){sum(x,na.rm=TRUE)})
 
@@ -94,6 +96,8 @@ effort <- rep(0,length(dive$transects))
 effort[match(unique(dive$transects),dive$transects)] <- 1
 dive$effort <- effort
 dive$Species[which(dive$Species%in%c("dusky","dark"))]="dusky-dark"
+dive$Species[which(dive$Species%in%c("rougheye"))]="blackspotted"
+
 dive <- dive[!dive$Species=="black & yellowtail",]
 dive$species <- dive$Species
 dive <- dive[dive$TL>=10,]
