@@ -19,13 +19,15 @@ hook_line$sample_size <- 1
 #hook_line$species[which(hook_line$species%in%c("REBS"))]="blackspotted"
 
 hook_agg <- aggregate(cbind(count,depth)~survey_id+species,data=hook_line,function(x){c(sum(x,na.rm=TRUE),mean(x,na.rm=TRUE))})
-effort <- aggregate(cbind(effort,sample_size)~survey_id,data=hook_line,function(x){sum(x,na.rm=TRUE)})
+effort <- aggregate(cbind(effort,sample_size)~survey_id,data=hook_line,function(x){mean(x,na.rm=TRUE)})
 
 hook_agg$PU_4Km_ID <- hook_line$PU_4Km_ID[match(hook_agg$survey_id,hook_line$survey_id)]
+hook_agg$PU_1Km_ID <- hook_line$PU_1Km_ID[match(hook_agg$survey_id,hook_line$survey_id)]
+
 hook_agg$effort <- effort$effort[match(hook_agg$survey_id,effort$survey_id)]
 hook_agg$sample_size <- effort$sample_size[match(hook_agg$survey_id,effort$survey_id)]
 hook_agg <- hook_agg[complete.cases(hook_agg),]
-hook_counts <- hook_agg[,c("PU_4Km_ID","survey_id","species")]
+hook_counts <- hook_agg[,c("PU_4Km_ID","PU_1Km_ID","survey_id","species")]
 hook_counts$counts <- hook_agg$count[,1]
 hook_counts$depth <- hook_agg$depth[,2]
 hook_counts$effort <- hook_agg$effort
@@ -37,6 +39,7 @@ zero_count_df$sample_size <- zero_counts$sample_size[match(zero_count_df$survey_
 zero_count_df$depth <- zero_counts$depth[match(zero_count_df$survey_id,zero_counts$survey_id)]
 zero_count_df$counts <- 0
 zero_count_df$PU_4Km_ID <- hook_agg$PU_4Km_ID[match(zero_count_df$survey_id,hook_agg$survey_id)]
+zero_count_df$PU_1Km_ID <- hook_agg$PU_1Km_ID[match(zero_count_df$survey_id,hook_agg$survey_id)]
 hook_counts <- rbind(hook_counts[hook_counts$species%in%rockfish_spp,],zero_count_df)
 #hook_counts <- hook_counts[hook_counts$species!="none",]
 
@@ -53,16 +56,15 @@ effort <- aggregate(effort~Dive_Bin,data=deep_vid[deep_vid$effort>=75 & deep_vid
 sample_size <- aggregate(sample_size~Dive_Bin,data=deep_vid[deep_vid$effort>=75 & deep_vid$effort<=130,],FUN=sum)
 
 deep_vid_agg$X4km2grid <- deep_vid_wide$X4km2grid[match(deep_vid_agg$Dive_Bin,deep_vid_wide$Dive_Bin)]
-effort$X4km2grid <- deep_vid_wide$X4km2grid[match(effort$Dive_Bin,deep_vid_wide$Dive_Bin)]
-sample_size$X4km2grid <- deep_vid_wide$X4km2grid[match(sample_size$Dive_Bin,deep_vid_wide$Dive_Bin)]
+deep_vid_agg$X1km2grid <- deep_vid_wide$X1km2grid[match(deep_vid_agg$Dive_Bin,deep_vid_wide$Dive_Bin)]
 deep_vid_agg$effort <- effort$effort[match(deep_vid_agg$Dive_Bin,effort$Dive_Bin)]
 deep_vid_agg$sample_size <- sample_size$sample_size[match(deep_vid_agg$Dive_Bin,sample_size$Dive_Bin)]
 deep_vid_agg$counts <- deep_vid_agg$value[,1]
 deep_vid_agg$depth <- deep_vid_agg$AvgDepth[,2]
 deep_vid_agg$species <- unlist(lapply(strsplit(deep_vid_agg$name,'\\.'),function(x){x[1]}))
 deep_vid_agg$species <- tolower(deep_vid_agg$species)
-deep_vid_agg <- deep_vid_agg[,c("X4km2grid","Dive_Bin","name","counts","effort","sample_size","species","depth")]
-colnames(deep_vid_agg) <- c("PU_4Km_ID","survey_id","name","counts","effort","sample_size","species","depth")
+deep_vid_agg <- deep_vid_agg[,c("X4km2grid","X1km2grid","Dive_Bin","name","counts","effort","sample_size","species","depth")]
+colnames(deep_vid_agg) <- c("PU_4Km_ID","PU_1Km_ID","survey_id","name","counts","effort","sample_size","species","depth")
 
 col_names <- colnames(mid_vid)[-c(1,2,29,30,33,34)]
 mid_vid <- mid_vid[mid_vid$area.m2>=75 & mid_vid$area.m2<=130,]
@@ -77,16 +79,15 @@ effort <- aggregate(effort~binGrp,data=mid_vid[mid_vid$effort>=75 & mid_vid$effo
 sample_size <- aggregate(sample_size~binGrp,data=mid_vid_wide,FUN=function(x){length(unique(x))})
 
 mid_vid_agg$PU_4Km_ID <- mid_vid_wide$PU_4Km_ID[match(mid_vid_agg$binGrp,mid_vid_wide$binGrp)]
-effort$PU_4Km_ID <- mid_vid_wide$PU_4Km_ID[match(effort$binGrp,mid_vid_wide$binGrp)]
-sample_size$PU_4Km_ID <- mid_vid_wide$PU_4Km_ID[match(sample_size$binGrp,mid_vid_wide$binGrp)]
+mid_vid_agg$PU_1Km_ID <- mid_vid_wide$PU_1Km_ID[match(mid_vid_agg$binGrp,mid_vid_wide$binGrp)]
 mid_vid_agg$effort <- effort$effort[match(mid_vid_agg$binGrp,effort$binGrp)]
 mid_vid_agg$sample_size <- sample_size$sample_size[match(mid_vid_agg$binGrp,sample_size$binGrp)]
 mid_vid_agg$counts <- mid_vid_agg$value[,1]
 mid_vid_agg$depth <- mid_vid_agg$depth[,2]
 mid_vid_agg$species <- unlist(lapply(strsplit(mid_vid_agg$name,'\\_'),function(x){x[1]}))
 mid_vid_agg$species <- tolower(mid_vid_agg$species)
-mid_vid_agg <- mid_vid_agg[,c("PU_4Km_ID","binGrp","name","counts","effort","sample_size","species","depth")]
-colnames(mid_vid_agg) <- c("PU_4Km_ID","survey_id","name","counts","effort","sample_size","species","depth")
+mid_vid_agg <- mid_vid_agg[,c("PU_4Km_ID","PU_1Km_ID","binGrp","name","counts","effort","sample_size","species","depth")]
+colnames(mid_vid_agg) <- c("PU_4Km_ID","PU_1Km_ID","survey_id","name","counts","effort","sample_size","species","depth")
 
 dive <- dive[!is.na(dive$PU_4Km_ID),]
 dive <- dive[!is.na(dive$Transect.Transect.Number),]
@@ -107,8 +108,10 @@ effort <- aggregate(sample_size~transects,data=dive,function(x){length(unique(x)
 dive_agg$effort <- effort$sample_size[match(dive_agg$transects,effort$transects)]
 
 dive_agg$PU_4Km_ID <- dive$PU_4Km_ID[match(dive_agg$transects,dive$transects)]
-dive_counts <- dive_agg[,c("PU_4Km_ID","transects","species")]
-colnames(dive_counts) <- c("PU_4Km_ID","survey_id","species")
+dive_agg$PU_1Km_ID <- dive$PU_1Km_ID[match(dive_agg$transects,dive$transects)]
+
+dive_counts <- dive_agg[,c("PU_4Km_ID","PU_1Km_ID","transects","species")]
+colnames(dive_counts) <- c("PU_4Km_ID","PU_1Km_ID","survey_id","species")
 dive_counts$counts <- dive_agg$count[,1]
 dive_counts$effort <- dive_agg$effort
 dive_counts$sample_size <- dive_agg$effort
@@ -118,7 +121,7 @@ dive_counts$gear <- "dive"
 deep_vid_agg$gear <- "deep_video"
 hook_counts$gear <- "hook_line"
 mid_vid_agg$gear <- "mid_video"
-merged_data <- merge(merge(merge(deep_vid_agg[,-3],hook_counts,all=TRUE),mid_vid_agg[,-3],all=TRUE),dive_counts,all=TRUE)
+merged_data <- merge(merge(merge(deep_vid_agg[,-4],hook_counts,all=TRUE),mid_vid_agg[,-4],all=TRUE),dive_counts,all=TRUE)
 merged_data$species[merged_data$species=="puget.sound"]="puget sound"
 merged_data$species[merged_data$species=="puget"]="puget sound"
 merged_data$species[merged_data$species=="red stripe"]="redstriped"
@@ -146,6 +149,7 @@ new_df <- new_data
 #new_df$depth[match(paste(merged_data$survey_id,merged_data$gear,merged_data$species),paste(new_df$survey_id,new_df$gear,new_df$species))] <- merged_data$depth
 
 new_df$PU_4Km_ID <- merged_data$PU_4Km_ID[match(new_df$survey_id,merged_data$survey_id)]
+new_df$PU_1Km_ID <- merged_data$PU_1Km_ID[match(new_df$survey_id,merged_data$survey_id)]
 
 new_dat <- NULL
 for(i in 1:length(unique(new_df$survey_id)))
@@ -184,7 +188,9 @@ for(i in 1:length(unique(new_df$survey_id)))
 }
 
 full_dat <- new_dat[!is.na(new_dat$counts),]
+
 write.csv(full_dat,"Data/Rockfish counts PU4km v2.csv")
+write.csv(new_df,"Data/Rockfish counts PU4km no gear validity.csv")
 
 merged_data[merged_data$PU_4Km_ID=="6265",]
 full_dat[full_dat$PU_4Km_ID=="6265",]
