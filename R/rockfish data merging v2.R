@@ -11,6 +11,11 @@ dive <- read.csv("Data/DiveData v4.csv")
 mid_vid <- read.csv("Data/MidDepthVideo v2.csv")
 selectivity <- read.csv("Data/rockfish gear selectivity v2.csv")
 
+Npuid <- length(unique(c(hook_line$PU_1Km_ID,
+                         deep_vid$X1km2grid,
+                         mid_vid$PU_1Km_ID,
+                         dive$PU_1Km_ID)))
+
 hook_line <- hook_line[hook_line$Survey.Type=="hl-syst",]
 hook_line <- hook_line[complete.cases(hook_line[,-which(colnames(hook_line)=="TL")]),]
 hook_line$count <- 1
@@ -43,6 +48,12 @@ zero_count_df$PU_1Km_ID <- hook_agg$PU_1Km_ID[match(zero_count_df$survey_id,hook
 hook_counts <- rbind(hook_counts[hook_counts$species%in%rockfish_spp,],zero_count_df)
 #hook_counts <- hook_counts[hook_counts$species!="none",]
 
+
+Npuid2 <- length(unique(c(hook_counts$PU_1Km_ID,
+                         deep_vid$X1km2grid,
+                         mid_vid$PU_1Km_ID,
+                         dive$PU_1Km_ID)))
+
 col_names <- colnames(deep_vid)[-c(1:4,24)]
 deep_vid <- deep_vid[deep_vid$binArea>=75 & deep_vid$binArea<=130,]
 deep_vid_wide <- tidyr::pivot_longer(deep_vid,cols=col_names)
@@ -65,6 +76,11 @@ deep_vid_agg$species <- unlist(lapply(strsplit(deep_vid_agg$name,'\\.'),function
 deep_vid_agg$species <- tolower(deep_vid_agg$species)
 deep_vid_agg <- deep_vid_agg[,c("X4km2grid","X1km2grid","Dive_Bin","name","counts","effort","sample_size","species","depth")]
 colnames(deep_vid_agg) <- c("PU_4Km_ID","PU_1Km_ID","survey_id","name","counts","effort","sample_size","species","depth")
+
+Npuid3 <- length(unique(c(hook_counts$PU_1Km_ID,
+                          deep_vid_agg$PU_1Km_ID,
+                          mid_vid$PU_1Km_ID,
+                          dive$PU_1Km_ID)))
 
 col_names <- colnames(mid_vid)[-c(1,2,29,30,33,34)]
 mid_vid <- mid_vid[mid_vid$area.m2>=75 & mid_vid$area.m2<=130,]
@@ -89,6 +105,12 @@ mid_vid_agg$species <- tolower(mid_vid_agg$species)
 mid_vid_agg <- mid_vid_agg[,c("PU_4Km_ID","PU_1Km_ID","binGrp","name","counts","effort","sample_size","species","depth")]
 colnames(mid_vid_agg) <- c("PU_4Km_ID","PU_1Km_ID","survey_id","name","counts","effort","sample_size","species","depth")
 
+Npuid4 <- length(unique(c(hook_counts$PU_1Km_ID,
+                          deep_vid_agg$PU_1Km_ID,
+                          mid_vid_agg$PU_1Km_ID,
+                          dive$PU_1Km_ID)))
+
+dive_old <- dive
 dive <- dive[!is.na(dive$PU_4Km_ID),]
 dive <- dive[!is.na(dive$Transect.Transect.Number),]
 dive$counts <- dive$Multiplier
@@ -101,7 +123,7 @@ dive$Species[which(dive$Species%in%c("rougheye"))]="blackspotted"
 
 dive <- dive[!dive$Species=="black & yellowtail",]
 dive$species <- dive$Species
-dive <- dive[dive$TL>=10,]
+dive$counts[dive$TL>=10] <- 0 # set the small fish counts to 0 for the purposes of summing at the transect level
 dive$sample_size <- 1
 dive_agg <- aggregate(cbind(counts,Depth)~transects+species,data=dive,function(x){c(sum(x,na.rm=TRUE),mean(x,na.rm=TRUE))})
 effort <- aggregate(sample_size~transects,data=dive,function(x){length(unique(x))})
@@ -118,6 +140,13 @@ dive_counts$sample_size <- dive_agg$effort
 dive_counts$depth <- dive_agg$Depth[,2]
 dive_counts$effort <- dive_counts$effort*120
 dive_counts$gear <- "dive"
+
+
+Npuid5 <- length(unique(c(hook_counts$PU_1Km_ID,
+                          deep_vid_agg$PU_1Km_ID,
+                          mid_vid_agg$PU_1Km_ID,
+                          dive_counts$PU_1Km_ID)))
+
 deep_vid_agg$gear <- "deep_video"
 hook_counts$gear <- "hook_line"
 mid_vid_agg$gear <- "mid_video"
@@ -150,6 +179,7 @@ new_df <- new_data
 
 new_df$PU_4Km_ID <- merged_data$PU_4Km_ID[match(new_df$survey_id,merged_data$survey_id)]
 new_df$PU_1Km_ID <- merged_data$PU_1Km_ID[match(new_df$survey_id,merged_data$survey_id)]
+Npuid6 <- length(unique(new_df$PU_1Km_ID))
 
 new_dat <- NULL
 for(i in 1:length(unique(new_df$survey_id)))
