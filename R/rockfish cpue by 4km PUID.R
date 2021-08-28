@@ -1,13 +1,17 @@
+library(dplyr)
+normalize <- function(x, na.rm = TRUE) {
+  return((x- min(x, na.rm = TRUE)) /(max(x, na.rm = TRUE)-min(x, na.rm = TRUE)))
+}
+rockfish_spp <- c("black","blackspotted","bocaccio","brown","canary","china","copper","deacon","dusky-dark","greenstripe","puget sound","pygmy","quillback","redbanded","redstripe","rosethorn","sebastolobus","sharpchin","shortbelly","shortraker","silvergray","splitnose","stripetail","tiger","vermillion","widow","yelloweye","yellowtail")
 
 new_df <- read.csv("Data/Rockfish counts by sample id.csv")
 hotspots_df <- aggregate(depth~PU_4Km_ID+gear+species,data=new_df,FUN=mean)
 hotspots_df$effort <- aggregate(effort~PU_4Km_ID+gear+species,data=new_df,FUN=sum)$effort
 hotspots_df$counts <- aggregate(counts~PU_4Km_ID+gear+species,data=new_df,FUN=sum)$counts
 hotspots_df$sample_sizes <- aggregate(sample_size~PU_4Km_ID+gear+species,data=new_df,FUN=sum)$sample_size
-hotspots_df$p_counts_2 <- aggregate(predicted_counts_TMB2~PU_4Km_ID+gear+species,data=new_df,FUN=sum)$predicted_counts_TMB2
-
-hotspots_df$p_counts <- predict(m3fTMB,newdata = hotspots_df,type="r")
-hotspots_df$lambda <- hotspots_df$p_counts_2/hotspots_df$effort
+#hotspots_df$p_counts <- predict(m3fTMB,newdata = hotspots_df,type="r")
+hotspots_df$p_counts <- aggregate(predicted_counts_TMB2~PU_4Km_ID+gear+species,data=new_df,FUN=sum)$predicted_counts_TMB2
+hotspots_df$lambda <- hotspots_df$p_counts/hotspots_df$effort
 hotspots_df$cpue <- hotspots_df$counts/hotspots_df$effort
 
 hotspots_df <- hotspots_df %>%
@@ -17,8 +21,6 @@ hotspots_df <- hotspots_df %>%
 hotspots_df <- hotspots_df[complete.cases(hotspots_df),]
 hotspots_agg <- aggregate(cbind(normalized_lambda,normalized_cpue)~PU_4Km_ID+species,data=hotspots_df,FUN=mean)
 hotspots_agg$depth <- aggregate(depth~PU_4Km_ID+species,data=hotspots_df,FUN=mean)$depth
-hotspots_agg$sample_sizes <- aggregate(sample_sizes~PU_4Km_ID+species,data=hotspots_df,FUN=sum)$sample_sizes
-hotspots_agg$sample_sizes <- aggregate(sample_sizes~PU_4Km_ID+species,data=hotspots_df,FUN=sum)$sample_sizes
 hotspots_agg$sample_sizes <- aggregate(sample_sizes~PU_4Km_ID+species,data=hotspots_df,FUN=sum)$sample_sizes
 dive_samps <- aggregate(sample_sizes~PU_4Km_ID+species,data=hotspots_df[hotspots_df$gear=="dive",],FUN=sum)
 hotspots_agg$dive_samps <- pmax(0,dive_samps$sample_sizes[match(hotspots_agg$PU_4Km_ID,dive_samps$PU_4Km_ID)],na.rm=TRUE)

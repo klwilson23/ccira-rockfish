@@ -11,6 +11,9 @@ library(lme4)
 library(brms)
 
 new_df <- read.csv("Data/Rockfish counts PU4km v2.csv")
+km1_puid <- read.csv("Data/1kmPUID.csv")
+km1_puid$X1km.puid[!km1_puid$X1km.puid%in%new_df$PU_1Km_ID]
+
 #new_df <- new_df[!complete.cases(new_df),]
 m1TMB <- glmmTMB(counts~depth+species+offset(log(effort)),data=new_df,family=poisson)
 m2TMB <- glmmTMB(counts~depth+species+offset(log(effort)),data=new_df,family=nbinom2)

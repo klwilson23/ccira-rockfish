@@ -42,14 +42,15 @@ m3cTMBzi5 <- glmmTMB(counts~depth+depth:species+species+gear+offset(log(effort))
 m3cTMBzi6 <- glmmTMB(counts~depth+depth:species+I(depth^2)+I(depth^2):species+species+gear+offset(log(effort)),dispformula = ~gear,ziformula=~species,data=new_df,family=nbinom2,control=glmmTMBControl(optCtrl=list(iter.max=5e4,eval.max=5e4)))
 m3cTMBzi7 <- glmmTMB(counts~depth+depth:species+species+gear+offset(log(effort)),dispformula = ~gear,ziformula=~as.factor(PU_4Km_ID),data=new_df,family=nbinom2,control=glmmTMBControl(optCtrl=list(iter.max=5e4,eval.max=5e4)))
 m3cTMBzi8 <- glmmTMB(counts~as.factor(PU_4Km_ID)+offset(log(effort))+species+gear,dispformula = ~gear,ziformula=~species,data=new_df,family=nbinom2,control=glmmTMBControl(optCtrl=list(iter.max=5e4,eval.max=5e4)))
-m3cTMBzi9 <- glmmTMB(counts~as.factor(PU_4Km_ID)+offset(log(effort)),dispformula = ~gear,ziformula=~species,data=new_df,family=nbinom2,control=glmmTMBControl(optCtrl=list(iter.max=5e4,eval.max=5e4)))
+m3cTMBzi9 <- glmmTMB(counts~depth+depth:species+I(depth^2)+species+gear+offset(log(effort))+as.factor(PU_4Km_ID),dispformula = ~gear,ziformula=~species,data=new_df,family=nbinom2,control=glmmTMBControl(optCtrl=list(iter.max=5e5,eval.max=5e5)))
+m3cTMBzi10 <- glmmTMB(counts~poly(depth,2)*species+gear+offset(log(effort)),dispformula=~gear*species,ziformula=~as.factor(PU_4Km_ID),data=new_df,family=truncated_nbinom2(),control=glmmTMBControl(optCtrl=list(iter.max=5e5,eval.max=5e5)))
+m3cTMBzi11 <- glmmTMB(counts~depth+depth:species+species+gear+offset(log(effort)),dispformula = ~gear,ziformula=~gear*effort+species*poly(depth,2),data=new_df,family=truncated_nbinom2(),control=glmmTMBControl(optCtrl=list(iter.max=5e4,eval.max=5e4)))
 
+#m3f_rand_brms <- brm(bf(counts~depth+depth:species+I(depth^2)+species+gear+offset(log(effort))+(1|PU_1Km_ID),shape~gear,zi~species),data=new_df,family=zero_inflated_negbinomial(),iter=2000,chains=4,cores=4)
 
 m1 <- glm(counts~depth+depth:species+I(depth^2)+I(depth^2):species+species*gear+as.factor(PU_4Km_ID)+offset(log(effort)),data=new_df,family=poisson(link="log"),weights=sqrt(new_df$sample_size))
 
 #m3fbrms <- brm(bf(counts~depth+depth:species+I(depth^2)+species+gear+as.factor(PU_4Km_ID)+offset(log(effort)),shape~gear),data=new_df,family=negbinomial())
-
-#m3f_rand_brms <- brm(bf(counts~depth+depth:species+I(depth^2)+species+gear+offset(log(effort))+(1|as.factor(PU_4Km_ID)),shape~gear),data=new_df,family=negbinomial())
 
 #m3fTMB_rand <- glmmTMB(counts~depth+depth:species+I(depth^2)+species+offset(log(effort))+1|PU_4Km_ID/gear,dispformula = ~gear,data=new_df,family=nbinom2,control=glmmTMBControl(optCtrl=list(iter.max=5e4,eval.max=5e4)))
 
@@ -64,18 +65,18 @@ AIC(m1,m1a,m1b,m2,m1TMB,m2TMB,m2aTMB,m2bTMB,m2cTMB,m3aTMB,m3bTMB,m3cTMB,m3dTMB,m
 
 new_df$predicted_counts <- predict(m1,type='r')
 new_df$predicted_counts_TMB_space <- predict(m3cTMBzi7,type='r')
-new_df$predicted_counts_TMB2 <- predict(m3cTMBzi6,type='r')
+new_df$predicted_counts_TMB2 <- predict(m3cTMBzi10,type='r')
 new_df$predicted_counts_TMB <- predict(m3cTMBzi ,type='r')
 
 write.csv(new_df,"Data/coral counts by sample id.csv")
 
-plot(predicted_counts_mm~predicted_counts,data=new_df)
+plot(predicted_counts_TMB_space~predicted_counts,data=new_df)
 abline(b=1,a=0)
-plot(predicted_counts_TMB~predicted_counts_mm,data=new_df)
+plot(predicted_counts_TMB~predicted_counts_TMB_space,data=new_df)
 abline(b=1,a=0)
 plot(predicted_counts_TMB~predicted_counts_TMB2,data=new_df)
 abline(b=1,a=0)
-new_df$lambda <- new_df$predicted_counts_TMB/new_df$effort
+new_df$lambda <- new_df$predicted_counts_TMB2/new_df$effort
 new_df$cpue <- new_df$counts/new_df$effort
 plot(predicted_counts_TMB2~counts,data=new_df)
 abline(b=1,a=0)
