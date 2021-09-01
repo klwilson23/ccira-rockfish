@@ -9,13 +9,13 @@ sponge_names <- c("aphrocallistidae","mycale","boot","farrea")
 
 rockfish_spp <- c("black","blackspotted","bocaccio","brown","canary","china","copper","deacon","dusky-dark","greenstripe","puget sound","pygmy","quillback","redbanded","redstripe","rosethorn","sebastolobus","sharpchin","shortbelly","shortraker","silvergray","splitnose","stripetail","tiger","vermillion","widow","yelloweye","yellowtail")
 
-deep_vid <- read.csv("Data/DeepVideo v2.csv")
-dive <- read.csv("Data/DiveData v4.csv")
-mid_vid <- read.csv("Data/MidDepthVideo v2.csv")
+deep_vid <- read.csv("Data/DeepVideo v3.csv")
+dive <- read.csv("Data/DiveData v5.csv")
+mid_vid <- read.csv("Data/MidDepthVideo v3.csv")
 dive_coral <- read.csv("Data/StructuralInverts.csv")
 selectivity <- read.csv("Data/coral gear selectivity.csv")
 
-col_names <- colnames(deep_vid)[-c(1:4,24)]
+col_names <- colnames(deep_vid)[-c(1:4,24,25)]
 deep_vid <- deep_vid[deep_vid$binArea>=75 & deep_vid$binArea<=130,]
 deep_vid_wide <- tidyr::pivot_longer(deep_vid,cols=col_names)
 deep_vid_wide$effort <- deep_vid_wide$binArea
@@ -26,19 +26,22 @@ deep_vid$effort <- deep_vid$binArea
 deep_vid$sample_size <- 1
 effort <- aggregate(effort~Dive_Bin,data=deep_vid[deep_vid$effort>=75 & deep_vid$effort<=130,],FUN=sum,na.rm=TRUE)
 sample_size <- aggregate(sample_size~Dive_Bin,data=deep_vid[deep_vid$effort>=75 & deep_vid$effort<=130,],FUN=sum)
+depth <- aggregate(AvgDepth~Dive_Bin,data=deep_vid[deep_vid$effort>=75 & deep_vid$effort<=130,],FUN=max,na.rm=TRUE)
 
 deep_vid_agg$X4km2grid <- deep_vid_wide$X4km2grid[match(deep_vid_agg$Dive_Bin,deep_vid_wide$Dive_Bin)]
 deep_vid_agg$X1km2grid <- deep_vid_wide$X1km2grid[match(deep_vid_agg$Dive_Bin,deep_vid_wide$Dive_Bin)]
+deep_vid_agg$UpperOceanSR <- deep_vid_wide$UpperOceanSR[match(deep_vid_agg$Dive_Bin,deep_vid_wide$Dive_Bin)]
 deep_vid_agg$effort <- effort$effort[match(deep_vid_agg$Dive_Bin,effort$Dive_Bin)]
 deep_vid_agg$sample_size <- sample_size$sample_size[match(deep_vid_agg$Dive_Bin,sample_size$Dive_Bin)]
 deep_vid_agg$counts <- deep_vid_agg$value[,1]
 deep_vid_agg$depth <- deep_vid_agg$AvgDepth[,2]
+deep_vid_agg$max_depth <- depth$AvgDepth[match(deep_vid_agg$Dive_Bin,depth$Dive_Bin)]
 deep_vid_agg$species <- unlist(lapply(strsplit(deep_vid_agg$name,'\\.'),function(x){x[1]}))
 deep_vid_agg$species <- tolower(deep_vid_agg$species)
-deep_vid_agg <- deep_vid_agg[,c("X4km2grid","X1km2grid","Dive_Bin","name","counts","effort","sample_size","species","depth")]
-colnames(deep_vid_agg) <- c("PU_4Km_ID","PU_1Km_ID","survey_id","name","counts","effort","sample_size","species","depth")
+deep_vid_agg <- deep_vid_agg[,c("X4km2grid","X1km2grid","UpperOceanSR","Dive_Bin","name","counts","effort","sample_size","species","depth","max_depth")]
+colnames(deep_vid_agg) <- c("PU_4Km_ID","PU_1Km_ID","UpperOceanSR","survey_id","name","counts","effort","sample_size","species","depth","max_depth")
 
-col_names <- colnames(mid_vid)[-c(1,2,29,30,33,34)]
+col_names <- colnames(mid_vid)[-c(1,2,29,30,33,34,35)]
 mid_vid <- mid_vid[mid_vid$area.m2>=75 & mid_vid$area.m2<=130,]
 mid_vid_wide <- tidyr::pivot_longer(mid_vid,cols=col_names)
 mid_vid_wide$effort <- mid_vid_wide$area.m2
@@ -49,17 +52,21 @@ mid_vid$effort <- mid_vid$area.m2
 mid_vid$sample_size <- 1
 effort <- aggregate(effort~binGrp,data=mid_vid[mid_vid$effort>=75 & mid_vid$effort<=130,],function(x){sum(x,na.rm=TRUE)})
 sample_size <- aggregate(sample_size~binGrp,data=mid_vid_wide,FUN=function(x){length(unique(x))})
+depth <- aggregate(depth~binGrp,data=mid_vid[mid_vid$effort>=75 & mid_vid$effort<=130,],FUN=max,na.rm=TRUE)
 
 mid_vid_agg$PU_4Km_ID <- mid_vid_wide$PU_4Km_ID[match(mid_vid_agg$binGrp,mid_vid_wide$binGrp)]
 mid_vid_agg$PU_1Km_ID <- mid_vid_wide$PU_1Km_ID[match(mid_vid_agg$binGrp,mid_vid_wide$binGrp)]
+mid_vid_agg$UpperOceanSR <- mid_vid_wide$UpperOceanSR[match(mid_vid_agg$binGrp,mid_vid_wide$binGrp)]
 mid_vid_agg$effort <- effort$effort[match(mid_vid_agg$binGrp,effort$binGrp)]
 mid_vid_agg$sample_size <- sample_size$sample_size[match(mid_vid_agg$binGrp,sample_size$binGrp)]
 mid_vid_agg$counts <- mid_vid_agg$value[,1]
 mid_vid_agg$depth <- mid_vid_agg$depth[,2]
+mid_vid_agg$max_depth <- depth$depth[match(mid_vid_agg$binGrp,depth$binGrp)]
+
 mid_vid_agg$species <- unlist(lapply(strsplit(mid_vid_agg$name,'\\_'),function(x){x[1]}))
 mid_vid_agg$species <- tolower(mid_vid_agg$species)
-mid_vid_agg <- mid_vid_agg[,c("PU_4Km_ID","PU_1Km_ID","binGrp","name","counts","effort","sample_size","species","depth")]
-colnames(mid_vid_agg) <- c("PU_4Km_ID","PU_1Km_ID","survey_id","name","counts","effort","sample_size","species","depth")
+mid_vid_agg <- mid_vid_agg[,c("PU_4Km_ID","PU_1Km_ID","UpperOceanSR","binGrp","name","counts","effort","sample_size","species","depth","max_depth")]
+colnames(mid_vid_agg) <- c("PU_4Km_ID","PU_1Km_ID","UpperOceanSR","survey_id","name","counts","effort","sample_size","species","depth","max_depth")
 
 dive_old <- dive
 dive_coral$survey_id <- paste(dive_coral$DescriptiveSurveyID,dive_coral$TransectNumber,sep="_")
@@ -82,22 +89,27 @@ dive$counts[dive$TL>=10] <- 0 # set the small fish counts to 0 for the purposes 
 dive$sample_size <- 1
 dive_agg <- aggregate(cbind(counts,Depth)~transects+species,data=dive,function(x){c(sum(x,na.rm=TRUE),mean(x,na.rm=TRUE))})
 effort <- aggregate(sample_size~transects,data=dive,function(x){length(unique(x))})
+depth <- aggregate(Depth~transects,data=dive,FUN=max,na.rm=TRUE)
 dive_agg$effort <- effort$sample_size[match(dive_agg$transects,effort$transects)]
 
 dive_agg$PU_4Km_ID <- dive$PU_4Km_ID[match(dive_agg$transects,dive$transects)]
 dive_agg$PU_1Km_ID <- dive$PU_1Km_ID[match(dive_agg$transects,dive$transects)]
+dive_agg$UpperOceanSR <- dive$UpperOceanSR[match(dive_agg$transects,dive$transects)]
+dive_agg$max_depth <- depth$Depth[match(dive_agg$transects,depth$transects)]
 
-dive_counts <- dive_agg[,c("PU_4Km_ID","PU_1Km_ID","transects","species")]
-colnames(dive_counts) <- c("PU_4Km_ID","PU_1Km_ID","survey_id","species")
+dive_counts <- dive_agg[,c("PU_4Km_ID","PU_1Km_ID","UpperOceanSR","transects","species")]
+colnames(dive_counts) <- c("PU_4Km_ID","PU_1Km_ID","UpperOceanSR","survey_id","species")
 dive_counts$counts <- dive_agg$count[,1]
 dive_counts$effort <- dive_agg$effort
 dive_counts$sample_size <- dive_agg$effort
 dive_counts$depth <- dive_agg$Depth[,2]
+dive_counts$max_depth <- dive_agg$max_depth
+
 dive_counts$effort <- dive_counts$effort*120
 dive_counts$gear <- "dive"
 deep_vid_agg$gear <- "deep_video"
 mid_vid_agg$gear <- "mid_video"
-merged_data <- merge(merge(deep_vid_agg[,-4],mid_vid_agg[,-4],all=TRUE),dive_counts,all=TRUE)
+merged_data <- merge(merge(deep_vid_agg[,-5],mid_vid_agg[,-5],all=TRUE),dive_counts,all=TRUE)
 merged_data$species[merged_data$species=="puget.sound"]="puget sound"
 merged_data$species[merged_data$species=="puget"]="puget sound"
 merged_data$species[merged_data$species=="red stripe"]="redstriped"
@@ -116,11 +128,14 @@ new_data$gear <- merged_data$gear[match(new_data$survey_id,merged_data$survey_id
 new_data$effort <- merged_data$effort[match(paste(new_data$survey_id,new_data$gear),paste(merged_data$survey_id,merged_data$gear),nomatch=NA)]
 new_data$sample_size <- merged_data$sample_size[match(paste(new_data$survey_id,new_data$gear),paste(merged_data$survey_id,merged_data$gear),nomatch=NA)]
 new_data$depth <- merged_data$depth[match(paste(new_data$survey_id,new_data$gear),paste(merged_data$survey_id,merged_data$gear),nomatch=NA)]
+new_data$max_depth <- merged_data$max_depth[match(paste(new_data$survey_id,new_data$gear),paste(merged_data$survey_id,merged_data$gear),nomatch=NA)]
+
 new_data$counts <- 0
 new_data$counts[match(paste(merged_data$survey_id,merged_data$gear,merged_data$species),paste(new_data$survey_id,new_data$gear,new_data$species))] <- merged_data$counts
 new_df <- new_data
 new_df$PU_4Km_ID <- merged_data$PU_4Km_ID[match(new_df$survey_id,merged_data$survey_id)]
 new_df$PU_1Km_ID <- merged_data$PU_1Km_ID[match(new_df$survey_id,merged_data$survey_id)]
+new_df$UpperOceanSR <- merged_data$UpperOceanSR[match(new_df$survey_id,merged_data$survey_id)]
 
 new_dat <- NULL
 for(i in 1:length(unique(new_df$survey_id)))

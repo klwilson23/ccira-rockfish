@@ -6,6 +6,9 @@ rockfish_spp <- c("black","blackspotted","bocaccio","brown","canary","china","co
 
 new_df <- read.csv("Data/Rockfish counts by sample id.csv")
 hotspots_df <- aggregate(depth~PU_1Km_ID+gear+species,data=new_df,FUN=mean)
+hotspots_df$max_depth <- aggregate(max_depth~PU_1Km_ID+gear+species,data=new_df,FUN=max)$max_depth
+hotspots_df$UpperOceanSR <- new_df$UpperOceanSR[match(hotspots_df$PU_1Km_ID,new_df$PU_1Km_ID)]
+
 hotspots_df$effort <- aggregate(effort~PU_1Km_ID+gear+species,data=new_df,FUN=sum)$effort
 hotspots_df$counts <- aggregate(counts~PU_1Km_ID+gear+species,data=new_df,FUN=sum)$counts
 hotspots_df$sample_sizes <- aggregate(sample_size~PU_1Km_ID+gear+species,data=new_df,FUN=sum)$sample_size
@@ -22,6 +25,8 @@ hotspots_df <- hotspots_df %>%
 hotspots_df <- hotspots_df[complete.cases(hotspots_df),]
 hotspots_agg <- aggregate(cbind(normalized_lambda,normalized_cpue)~PU_1Km_ID+species,data=hotspots_df,FUN=mean)
 hotspots_agg$depth <- aggregate(depth~PU_1Km_ID+species,data=hotspots_df,FUN=mean)$depth
+hotspots_agg$max_depth <- aggregate(max_depth~PU_1Km_ID+species,data=hotspots_df,FUN=max)$max_depth
+hotspots_agg$UpperOceanSR <- hotspots_df$UpperOceanSR[match(hotspots_agg$PU_1Km_ID,hotspots_df$PU_1Km_ID)]
 hotspots_agg$sample_sizes <- aggregate(sample_sizes~PU_1Km_ID+species,data=hotspots_df,FUN=sum)$sample_sizes
 hotspots_agg$sample_sizes <- aggregate(sample_sizes~PU_1Km_ID+species,data=hotspots_df,FUN=sum)$sample_sizes
 hotspots_agg$sample_sizes <- aggregate(sample_sizes~PU_1Km_ID+species,data=hotspots_df,FUN=sum)$sample_sizes
