@@ -156,7 +156,7 @@ for(i in 1:length(unique(new_df$survey_id)))
     {
       sub_sel <- selectivity[selectivity$Species==coral_spp[k],]
       zeros <- sub_sel[,c(1:3,which(colnames(sub_sel)==tru_dat$gear))]
-      omit <- ifelse(zeros[,4]==0 & tru_dat$counts==0,1,0)
+      omit <- ifelse((zeros[,4]==0 | !(zeros$min_depth<=tru_dat$depth & zeros$max_depth>=tru_dat$depth) |(tru_dat$gear=="dive" & tru_dat$depth<=15))  & tru_dat$counts==0,1,0)
       if(omit==1)
       {
         tru_dat$counts <- NA

@@ -1,0 +1,1130 @@
+"","PU_1Km_ID","species","normalized_lambda","normalized_cpue","PU_4Km_ID","depth","max_depth","UpperOceanSR","sample_sizes","dive_samps","hook_samps","mid_samps","deep_samps"
+"1",21076,"calcigorgia",3.54400889454325e-05,0,6265,28,28,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"2",21082,"calcigorgia",4.26918066196439e-05,0,6267,24.5,30,"(11) Mainland Fjords",2,2,0,0,0
+"3",21284,"calcigorgia",8.18841962232343e-05,0,6265,19,19,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"4",21500,"calcigorgia",1.69413041343145e-05,0,6267,26.25,30,"(11) Mainland Fjords",4,4,0,0,0
+"5",21711,"calcigorgia",4.78200686057203e-05,0,6424,23,28,"(11) Mainland Fjords",2,2,0,0,0
+"6",21933,"calcigorgia",2.03747273355187e-05,0,6423,24.75,30,"(13) Eastern Queen Charlotte Sound",4,4,0,0,0
+"7",21938,"calcigorgia",8.79379103179384e-05,0,6424,18,18,"(11) Mainland Fjords",1,1,0,0,0
+"8",21939,"calcigorgia",2.82277256947808e-05,0,6425,25.3333333333333,30,"(11) Mainland Fjords",3,3,0,0,0
+"9",21940,"calcigorgia",2.63802417845366e-05,0,6425,31,31,"(11) Mainland Fjords",1,1,0,0,0
+"10",21941,"calcigorgia",4.51390694825795e-05,0,6425,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"11",22157,"calcigorgia",4.26918066196439e-05,0,6423,24.5,30,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"12",22158,"calcigorgia",4.39111549843381e-05,0,6423,24.5,31,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"13",22163,"calcigorgia",2.42357018138372e-05,0,6425,27.3333333333333,32,"(11) Mainland Fjords",3,3,0,0,0
+"14",22167,"calcigorgia",4.1661385753055e-05,0,6426,25.5,33,"(11) Mainland Fjords",2,2,0,0,0
+"15",22374,"calcigorgia",2.61332959176005e-05,0,6423,26.3333333333333,31,"(13) Eastern Queen Charlotte Sound",3,3,0,0,0
+"16",23031,"calcigorgia",3.56428633314673e-05,0,6581,25,30,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"17",23432,"calcigorgia",4.2390307776028e-05,0,6739,26,26,"(11) Mainland Fjords",1,1,0,0,0
+"18",23434,"calcigorgia",4.61695780281674e-05,0,6740,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"19",23435,"calcigorgia",2.92310561410787e-05,0,6740,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"20",23845,"calcigorgia",4.26918066196439e-05,0,6741,24.5,30,"(11) Mainland Fjords",2,2,0,0,0
+"21",24056,"calcigorgia",3.17121664348488e-05,0,6742,26,30,"(11) Mainland Fjords",2,2,0,0,0
+"22",24058,"calcigorgia",4.61695780281674e-05,0,6742,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"23",24256,"calcigorgia",0.0552449577402747,0,6895,24,30,"(13) Eastern Queen Charlotte Sound",2,2,0,2,0
+"24",24275,"calcigorgia",2.92310561410787e-05,0,6900,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"25",24276,"calcigorgia",4.61695780281674e-05,0,6900,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"26",24468,"calcigorgia",8.18841962232343e-05,0,6896,19,19,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"27",24481,"calcigorgia",4.1661385753055e-05,0,6899,25.5,33,"(11) Mainland Fjords",2,2,0,0,0
+"28",24482,"calcigorgia",6.35896193173854e-05,0,6899,21,21,"(11) Mainland Fjords",1,1,0,0,0
+"29",24484,"calcigorgia",5.01667323053114e-05,0,6900,24,24,"(11) Mainland Fjords",1,1,0,0,0
+"30",24486,"calcigorgia",3.56428633314673e-05,0,6900,25,30,"(11) Mainland Fjords",2,2,0,0,0
+"31",24678,"calcigorgia",2.66999407194758e-05,0,6896,22,30,"(11) Mainland Fjords",4,4,0,0,0
+"32",24691,"calcigorgia",3.88174437336681e-05,0,6899,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"33",24694,"calcigorgia",4.51390694825795e-05,0,6900,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"34",24887,"calcigorgia",4.39111549843381e-05,0,6895,24.5,31,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"35",24891,"calcigorgia",4.51390694825795e-05,0,6896,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"36",25100,"calcigorgia",4.75044947623263e-05,0,7051,21,22,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"37",25122,"calcigorgia",4.40266339843656e-05,0,7057,23.5,29,"(11) Mainland Fjords",2,2,0,6,0
+"38",25319,"calcigorgia",3.56428633314673e-05,0,7052,25,30,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"39",25336,"calcigorgia",4.51390694825795e-05,0,7057,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"40",25341,"calcigorgia",3.88174437336681e-05,0,7058,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"41",25347,"calcigorgia",4.51390694825795e-05,0,7060,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"42",25536,"calcigorgia",3.34386746146909e-05,0,7054,26,32,"(11) Mainland Fjords",2,2,0,0,0
+"43",25549,"calcigorgia",4.37639536739811e-05,0,7057,24,30,"(11) Mainland Fjords",2,2,0,4,0
+"44",25558,"calcigorgia",4.61695780281674e-05,0,7060,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"45",25743,"calcigorgia",2.92310561410787e-05,0,7054,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"46",25765,"calcigorgia",5.42035463290364e-05,0,7060,21,24,"(11) Mainland Fjords",2,2,0,0,0
+"47",25956,"calcigorgia",4.5137562967292e-05,0,7214,23.5,29,"(11) Mainland Fjords",2,2,0,3,0
+"48",25962,"calcigorgia",2.8847039823643e-05,0,7215,22.75,30,"(11) Mainland Fjords",4,4,0,0,0
+"49",25967,"calcigorgia",4.51390694825795e-05,0,7217,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"50",26359,"calcigorgia",3.88174437336681e-05,0,7214,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"51",26374,"calcigorgia",3.88174437336681e-05,0,7218,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"52",26549,"calcigorgia",5.08292750259101e-05,0,7208,22,26,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"53",26563,"calcigorgia",3.56428633314673e-05,0,7214,25,30,"(11) Mainland Fjords",2,2,0,0,0
+"54",26774,"calcigorgia",3.04055705542275e-05,0,7374,27,33,"(11) Mainland Fjords",2,2,0,0,0
+"55",26776,"calcigorgia",4.51390694825795e-05,0,7374,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"56",26981,"calcigorgia",5.01667323053114e-05,0,7373,24,24,"(11) Mainland Fjords",1,1,0,0,0
+"57",27174,"calcigorgia",4.51390694825795e-05,0,7370,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"58",27192,"calcigorgia",3.53055989323759e-05,0,7376,28,28,"(11) Mainland Fjords",1,1,0,2,0
+"59",27594,"calcigorgia",4.51390694825795e-05,0,7534,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"60",27778,"calcigorgia",4.78200686057203e-05,0,7528,23,28,"(11) Mainland Fjords",2,2,0,0,0
+"61",27980,"calcigorgia",4.51390694825795e-05,0,7528,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"62",28186,"calcigorgia",2.86720388095425e-05,0,7529,30,30,"(11) Mainland Fjords",1,1,0,2,0
+"63",28190,"calcigorgia",4.97629697636242e-05,0,7534,22,26,"(11) Mainland Fjords",2,2,0,2,0
+"64",28377,"calcigorgia",2.11417832621736e-05,0,7686,33,33,"(11) Mainland Fjords",1,1,0,0,0
+"65",28384,"calcigorgia",0.000141077075732841,0.166666666666667,7688,24,24,"(11) Mainland Fjords",1,1,0,0,29
+"66",28577,"calcigorgia",4.68381884236255e-05,0,7687,23,27,"(11) Mainland Fjords",2,2,0,0,0
+"67",28579,"calcigorgia",4.54601613878888e-05,0,7687,25,25,"(11) Mainland Fjords",1,1,0,2,0
+"68",28581,"calcigorgia",1.84940568268641e-05,0,7688,25.5,32,"(11) Mainland Fjords",4,4,0,4,0
+"69",28778,"calcigorgia",3.4508543334774e-05,0,7686,25.5,31,"(11) Mainland Fjords",2,2,0,0,0
+"70",28784,"calcigorgia",3.22478991887498e-05,0,7688,29,29,"(11) Mainland Fjords",1,1,0,0,0
+"71",28785,"calcigorgia",3.88174437336681e-05,0,7688,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"72",28786,"calcigorgia",5.01667323053114e-05,0,7688,24,24,"(11) Mainland Fjords",1,1,0,0,0
+"73",28787,"calcigorgia",4.51390694825795e-05,0,7689,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"74",28790,"calcigorgia",4.78200686057203e-05,0,7689,23,28,"(11) Mainland Fjords",2,2,0,0,0
+"75",28984,"calcigorgia",2.70304996589317e-05,0,7687,30,30,"(11) Mainland Fjords",1,1,0,5,0
+"76",28987,"calcigorgia",4.34758325943928e-05,0,7687,22,30,"(11) Mainland Fjords",3,3,0,0,0
+"77",28990,"calcigorgia",3.20075784333744e-05,0,7688,29,29,"(11) Mainland Fjords",1,1,0,1,0
+"78",29183,"calcigorgia",4.61695780281674e-05,0,7843,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"79",29189,"calcigorgia",2.98025731306108e-05,0,7845,26,27,"(11) Mainland Fjords",2,2,0,2,0
+"80",29193,"calcigorgia",4.39272444646981e-05,0,7846,24,30,"(11) Mainland Fjords",2,2,0,2,0
+"81",29194,"calcigorgia",4.11242248119277e-05,0,7846,24,30,"(11) Mainland Fjords",2,2,0,8,0
+"82",29196,"calcigorgia",4.72450434067393e-05,0,7847,22.5,27,"(11) Mainland Fjords",2,2,0,5,0
+"83",29205,"calcigorgia",3.22478991887498e-05,0,7851,29,29,"(11) Mainland Fjords",1,1,0,0,0
+"84",29391,"calcigorgia",2.92310561410787e-05,0,7843,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"85",29398,"calcigorgia",5.21853422004111e-05,0,7845,23,23,"(11) Mainland Fjords",1,1,0,2,0
+"86",29401,"calcigorgia",2.84912372958689e-05,0,7846,27.5,33,"(11) Mainland Fjords",2,2,0,0,0
+"87",29417,"calcigorgia",4.51390694825795e-05,0,7852,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"88",29606,"calcigorgia",4.2753133864274e-05,0,7843,25,32,"(11) Mainland Fjords",2,2,0,0,0
+"89",29613,"calcigorgia",8.75478261060216e-05,0,7845,18,18,"(11) Mainland Fjords",1,1,0,2,0
+"90",29614,"calcigorgia",4.51390694825795e-05,0,7845,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"91",29625,"calcigorgia",5.88636867733263e-05,0,7851,22,22,"(11) Mainland Fjords",1,1,0,0,0
+"92",29830,"calcigorgia",2.74877935106715e-05,0,7843,25.6666666666667,30,"(11) Mainland Fjords",3,3,0,0,0
+"93",29831,"calcigorgia",4.51390694825795e-05,0,7843,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"94",29853,"calcigorgia",2.92310561410787e-05,0,7852,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"95",29854,"calcigorgia",4.51390694825795e-05,0,7852,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"96",29859,"calcigorgia",0.000381646072939758,0.0833333333333333,7853,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"97",30049,"calcigorgia",2.27101623577751e-05,0,7999,23.5,30,"(11) Mainland Fjords",4,4,0,0,0
+"98",30053,"calcigorgia",2.77410738956445e-05,0,8000,25.6666666666667,32,"(11) Mainland Fjords",3,3,0,0,0
+"99",30058,"calcigorgia",3.14263597962907e-05,0,8001,26,32,"(11) Mainland Fjords",2,2,0,5,0
+"100",30065,"calcigorgia",3.22478991887498e-05,0,8003,29,29,"(11) Mainland Fjords",1,1,0,0,0
+"101",30075,"calcigorgia",3.56428633314673e-05,0,8010,25,30,"(11) Mainland Fjords",2,2,0,0,0
+"102",30285,"calcigorgia",5.24683186020637e-05,0,8002,21.5,25,"(11) Mainland Fjords",2,2,0,0,0
+"103",30499,"calcigorgia",4.1661385753055e-05,0,8001,25.5,33,"(11) Mainland Fjords",2,2,0,0,0
+"104",30715,"calcigorgia",3.56428633314673e-05,0,7997,25,30,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"105",30743,"calcigorgia",3.88174437336681e-05,0,8009,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"106",30748,"calcigorgia",4.78200686057203e-05,0,8011,23,28,"(11) Mainland Fjords",2,2,0,0,0
+"107",30749,"calcigorgia",4.51390694825795e-05,0,8012,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"108",30941,"calcigorgia",0.000301486734354781,0.0416666666666667,8156,25.5,34,"(11) Mainland Fjords",4,4,0,0,0
+"109",30943,"calcigorgia",2.92310561410787e-05,0,8156,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"110",30944,"calcigorgia",3.04055705542275e-05,0,8157,27,33,"(11) Mainland Fjords",2,2,0,0,0
+"111",30945,"calcigorgia",2.89070825510103e-05,0,8157,26.5,27,"(11) Mainland Fjords",2,2,0,0,0
+"112",30947,"calcigorgia",1.75291529455731e-05,0,8159,31,32,"(11) Mainland Fjords",2,2,0,0,0
+"113",30970,"calcigorgia",5.24683186020637e-05,0,8168,21.5,25,"(11) Mainland Fjords",2,2,0,0,0
+"114",31165,"calcigorgia",0.000506441750711733,0.166666666666667,8156,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"115",31166,"calcigorgia",0,0,8156,25.1428571428571,32,"(11) Mainland Fjords",7,7,0,0,0
+"116",31167,"calcigorgia",4.6440697382878e-05,0,8157,23.5,29,"(11) Mainland Fjords",2,2,0,0,0
+"117",31169,"calcigorgia",5.88636867733263e-05,0,8157,22,22,"(11) Mainland Fjords",1,1,0,0,0
+"118",31178,"calcigorgia",2.67903727542582e-05,0,8160,26,30,"(11) Mainland Fjords",3,3,0,0,0
+"119",31185,"calcigorgia",3.54400889454325e-05,0,8165,28,28,"(11) Mainland Fjords",1,1,0,0,0
+"120",31391,"calcigorgia",2.04197163110683e-05,0,8157,25,32,"(11) Mainland Fjords",4,4,0,0,0
+"121",31603,"calcigorgia",4.6440697382878e-05,0,8157,23.5,29,"(11) Mainland Fjords",2,2,0,0,0
+"122",31613,"calcigorgia",1.37134531630146e-05,0,8160,23.5,30,"(11) Mainland Fjords",6,6,0,0,0
+"123",31807,"calcigorgia",0.000260773186526232,0.166666666666667,8313,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"124",31808,"calcigorgia",4.0898216915748e-05,0,8314,23,26,"(11) Mainland Fjords",2,2,0,0,0
+"125",31809,"calcigorgia",4.5998911595831e-05,0,8314,23.5,29,"(11) Mainland Fjords",2,2,0,1,0
+"126",31812,"calcigorgia",0.0105696862456577,0,8315,31,31,"(11) Mainland Fjords",1,1,0,3,0
+"127",31817,"calcigorgia",3.88174437336681e-05,0,8316,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"128",31828,"calcigorgia",4.1661385753055e-05,0,8326,25.5,33,"(11) Mainland Fjords",2,2,0,0,0
+"129",32031,"calcigorgia",3.88174437336681e-05,0,8316,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"130",32040,"calcigorgia",2.36170872155905e-05,0,8318,32,32,"(11) Mainland Fjords",1,1,0,1,0
+"131",32234,"calcigorgia",3.36225689500871e-05,0,8314,25.5,30,"(11) Mainland Fjords",2,2,0,0,0
+"132",32237,"calcigorgia",3.4508543334774e-05,0,8314,25.5,31,"(11) Mainland Fjords",2,2,0,0,0
+"133",32240,"calcigorgia",4.51390694825795e-05,0,8315,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"134",32241,"calcigorgia",4.37467619441902e-05,0,8315,24,30,"(11) Mainland Fjords",2,2,0,3,0
+"135",32460,"calcigorgia",3.88174437336681e-05,0,8316,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"136",32469,"calcigorgia",4.51390694825795e-05,0,8318,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"137",32472,"calcigorgia",4.56185370025591e-05,0,8326,25,25,"(11) Mainland Fjords",1,1,0,2,0
+"138",32675,"calcigorgia",8.79379103179384e-05,0,8473,18,18,"(11) Mainland Fjords",1,1,0,0,0
+"139",32676,"calcigorgia",2.63802417845366e-05,0,8473,31,31,"(11) Mainland Fjords",1,1,0,0,0
+"140",32688,"calcigorgia",3.88174437336681e-05,0,8476,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"141",32691,"calcigorgia",2.88298824040893e-05,0,8484,30,30,"(11) Mainland Fjords",1,1,0,1,0
+"142",32908,"calcigorgia",3.87347793163726e-06,0,8476,26.6666666666667,33,"(11) Mainland Fjords",6,6,0,7,0
+"143",33114,"calcigorgia",2.92310561410787e-05,0,8473,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"144",33117,"calcigorgia",0.000250420197991251,0.0833333333333333,8473,22.5,29,"(11) Mainland Fjords",2,2,0,0,0
+"145",33128,"calcigorgia",5.01667323053114e-05,0,8476,24,24,"(11) Mainland Fjords",1,1,0,0,0
+"146",33320,"calcigorgia",3.4508543334774e-05,0,8470,25.5,31,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"147",33323,"calcigorgia",1.55585140084894e-05,0,8470,28.6666666666667,33,"(13) Eastern Queen Charlotte Sound",3,3,0,3,0
+"148",33332,"calcigorgia",0.00220237613669144,1,8473,23,28,"(11) Mainland Fjords",2,2,0,0,0
+"149",33335,"calcigorgia",0.000744138299146777,0.694444444444445,8473,29,29,"(11) Mainland Fjords",1,1,0,0,0
+"150",33537,"calcigorgia",2.40137314987509e-05,0,8628,29,34,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"151",33541,"calcigorgia",2.92310561410787e-05,0,8629,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"152",33553,"calcigorgia",4.61695780281674e-05,0,8632,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"153",33562,"calcigorgia",2.92310561410787e-05,0,8634,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"154",33752,"calcigorgia",0.000279981136247967,0.166666666666667,8628,27,27,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"155",33758,"calcigorgia",5.43938587602507e-05,0,8629,23,23,"(11) Mainland Fjords",1,1,0,0,0
+"156",33767,"calcigorgia",4.2753133864274e-05,0,8632,25,32,"(11) Mainland Fjords",2,2,0,0,0
+"157",33991,"calcigorgia",4.39111549843381e-05,0,8634,24.5,31,"(11) Mainland Fjords",2,2,0,0,0
+"158",33994,"calcigorgia",4.78200686057203e-05,0,8643,23,28,"(11) Mainland Fjords",2,2,0,0,0
+"159",34187,"calcigorgia",4.51390694825795e-05,0,8629,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"160",34401,"calcigorgia",3.24299113133142e-05,0,8787,26.5,33,"(11) Mainland Fjords",2,2,0,0,0
+"161",34404,"calcigorgia",4.51390694825795e-05,0,8788,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"162",34411,"calcigorgia",3.54400889454325e-05,0,8790,28,28,"(11) Mainland Fjords",1,1,0,0,0
+"163",34614,"calcigorgia",0.000266962851160808,0.166666666666667,8786,29,29,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"164",34620,"calcigorgia",2.92310561410787e-05,0,8787,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"165",34640,"calcigorgia",4.39111549843381e-05,0,8792,24.5,31,"(11) Mainland Fjords",2,2,0,0,0
+"166",34843,"calcigorgia",4.92814336910392e-05,0,8788,22.5,27,"(11) Mainland Fjords",2,2,0,0,0
+"167",34856,"calcigorgia",4.1661385753055e-05,0,8792,25.5,33,"(11) Mainland Fjords",2,2,0,0,0
+"168",35042,"calcigorgia",2.11765819989306e-05,0,8783,24.5,30,"(13) Eastern Queen Charlotte Sound",4,4,0,0,0
+"169",35260,"calcigorgia",4.6440697382878e-05,0,8941,23.5,29,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"170",35293,"calcigorgia",3.04055705542275e-05,0,8950,27,33,"(11) Mainland Fjords",2,2,0,0,0
+"171",35477,"calcigorgia",0.00026598616779479,0.0833333333333333,8941,21.5,26,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"172",35508,"calcigorgia",4.61695780281674e-05,0,8950,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"173",35692,"calcigorgia",4.61695780281674e-05,0,8940,25,25,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"174",35706,"calcigorgia",4.51390694825795e-05,0,8944,24,30,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"175",35724,"calcigorgia",0.000281301548317419,0.166666666666667,8950,32,32,"(11) Mainland Fjords",1,1,0,0,0
+"176",35923,"calcigorgia",3.88174437336681e-05,0,8944,27,27,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"177",35943,"calcigorgia",2.63802417845366e-05,0,8950,31,31,"(11) Mainland Fjords",1,1,0,0,0
+"178",36129,"calcigorgia",5.42035463290364e-05,0,9099,21,24,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"179",36143,"calcigorgia",3.56428633314673e-05,0,9102,25,30,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"180",36162,"calcigorgia",4.1661385753055e-05,0,9109,25.5,33,"(11) Mainland Fjords",2,2,0,0,0
+"181",36345,"calcigorgia",6.8585766863264e-05,0,9098,20,20,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"182",36361,"calcigorgia",2.86585114253436e-06,0,9102,26.3333333333333,33,"(13) Eastern Queen Charlotte Sound",6,6,0,0,0
+"183",36381,"calcigorgia",4.61695780281674e-05,0,9109,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"184",36562,"calcigorgia",4.51390694825795e-05,0,9097,24,30,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"185",36563,"calcigorgia",4.92814336910392e-05,0,9098,22.5,27,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"186",36599,"calcigorgia",2.49700147805963e-05,0,9108,28.5,33,"(11) Mainland Fjords",2,2,0,0,0
+"187",36600,"calcigorgia",5.01667323053114e-05,0,9108,24,24,"(11) Mainland Fjords",1,1,0,0,0
+"188",36601,"calcigorgia",4.22813901256166e-05,0,9108,26,26,"(11) Mainland Fjords",1,1,0,1,0
+"189",36794,"calcigorgia",5.43938587602507e-05,0,9099,23,23,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"190",36804,"calcigorgia",3.24299113133142e-05,0,9102,26.5,33,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"191",36829,"calcigorgia",4.61695780281674e-05,0,9109,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"192",36834,"calcigorgia",3.22478991887498e-05,0,9110,29,29,"(11) Mainland Fjords",1,1,0,0,0
+"193",37031,"calcigorgia",6.8585766863264e-05,0,9257,20,20,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"194",37039,"calcigorgia",1.67080724547197e-05,0,9259,24.75,30,"(13) Eastern Queen Charlotte Sound",4,4,0,0,0
+"195",37069,"calcigorgia",3.68451645124712e-05,0,9267,24.5,29,"(11) Mainland Fjords",2,2,0,0,0
+"196",37075,"calcigorgia",3.88174437336681e-05,0,9269,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"197",37285,"calcigorgia",3.36225689500871e-05,0,9259,25.5,30,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"198",37287,"calcigorgia",3.22478991887498e-05,0,9260,29,29,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"199",37288,"calcigorgia",2.591991862453e-05,0,9260,24.3333333333333,29,"(13) Eastern Queen Charlotte Sound",3,3,0,0,0
+"200",37289,"calcigorgia",2.84912372958689e-05,0,9260,27.5,33,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"201",37313,"calcigorgia",4.2390307776028e-05,0,9269,26,26,"(11) Mainland Fjords",1,1,0,0,0
+"202",37519,"calcigorgia",4.1661385753055e-05,0,9257,25.5,33,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"203",37546,"calcigorgia",3.54400889454325e-05,0,9268,28,28,"(11) Mainland Fjords",1,1,0,0,0
+"204",37550,"calcigorgia",4.03029930043443e-05,0,9269,25.5,32,"(11) Mainland Fjords",2,2,0,0,0
+"205",37763,"calcigorgia",3.54400889454325e-05,0,9260,28,28,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"206",37772,"calcigorgia",1,0,9266,27,32,"(11) Mainland Fjords",2,2,0,1,0
+"207",37773,"calcigorgia",0.331617882898138,0,9266,26,30,"(11) Mainland Fjords",3,3,0,7,0
+"208",37777,"calcigorgia",0.000102829801713452,0,9269,22.5,27,"(11) Mainland Fjords",2,2,0,0,0
+"209",38217,"calcigorgia",2.92310561410787e-05,0,9418,30,30,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"210",38218,"calcigorgia",4.51390694825795e-05,0,9418,24,30,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"211",38434,"calcigorgia",3.22478991887498e-05,0,9415,29,29,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"212",38443,"calcigorgia",3.54400889454325e-05,0,9418,28,28,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"213",38457,"calcigorgia",3.54400889454325e-05,0,9428,28,28,"(11) Mainland Fjords",1,1,0,0,0
+"214",38676,"calcigorgia",4.51390694825795e-05,0,9419,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"215",38689,"calcigorgia",3.54400889454325e-05,0,9445,28,28,"(11) Mainland Fjords",1,1,0,0,0
+"216",38897,"calcigorgia",5.01667323053114e-05,0,9575,24,24,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"217",39125,"calcigorgia",3.66929425137697e-05,0,9574,24,25,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"218",39131,"calcigorgia",4.78200686057203e-05,0,9575,23,28,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"219",39150,"calcigorgia",6.003358071615e-05,0,9586,31,31,"(11) Mainland Fjords",1,1,0,0,0
+"220",39389,"calcigorgia",4.61695780281674e-05,0,9586,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"221",39604,"calcigorgia",2.90124566009879e-05,0,9573,25,30,"(13) Eastern Queen Charlotte Sound",3,3,0,0,0
+"222",39611,"calcigorgia",3.88174437336681e-05,0,9575,27,27,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"223",39843,"calcigorgia",5.24683186020637e-05,0,9730,21.5,25,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"224",39845,"calcigorgia",3.54400889454325e-05,0,9731,28,28,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"225",39850,"calcigorgia",4.78200686057203e-05,0,9732,23,28,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"226",39878,"calcigorgia",0.000455171741140506,0.166666666666667,9741,24.5,29,"(11) Mainland Fjords",2,2,0,3,0
+"227",40105,"calcigorgia",1.40002323374396e-05,0,9733,26,30,"(13) Eastern Queen Charlotte Sound",4,4,0,0,0
+"228",40129,"calcigorgia",3.94688075514691e-05,0,9740,23.5,27,"(11) Mainland Fjords",2,2,0,0,0
+"229",40140,"calcigorgia",4.78200686057203e-05,0,9745,23,28,"(11) Mainland Fjords",2,2,0,0,0
+"230",40352,"calcigorgia",4.78200686057203e-05,0,9730,23,28,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"231",40376,"calcigorgia",4.08641013062133e-05,0,9736,24,29,"(11) Mainland Fjords",2,2,0,7,0
+"232",40617,"calcigorgia",1.89308216369674e-06,0,9732,24.5,34,"(13) Eastern Queen Charlotte Sound",8,8,0,1,0
+"233",40884,"calcigorgia",3.14197766931288e-05,0,9889,24,29,"(13) Eastern Queen Charlotte Sound",3,3,0,0,0
+"234",40893,"calcigorgia",1.39225495566755e-05,0,9891,26.25,32,"(13) Eastern Queen Charlotte Sound",4,4,0,0,0
+"235",40927,"calcigorgia",2.75375960794366e-05,0,9904,28,34,"(11) Mainland Fjords",2,2,0,0,0
+"236",41165,"calcigorgia",4.26918066196439e-05,0,9890,24.5,30,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"237",41180,"calcigorgia",3.41934753777705e-05,0,9895,25,28,"(11) Mainland Fjords",2,2,0,0,0
+"238",41220,"calcigorgia",2.11417832621736e-05,0,9918,33,33,"(11) Mainland Fjords",1,1,0,0,0
+"239",41722,"calcigorgia",4.92814336910392e-05,0,9889,22.5,27,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"240",41759,"calcigorgia",4.2390307776028e-05,0,9917,26,26,"(11) Mainland Fjords",1,1,0,0,0
+"241",41987,"calcigorgia",2.92310561410787e-05,0,10046,30,30,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"242",42028,"calcigorgia",5.42035463290364e-05,0,10075,21,24,"(11) Mainland Fjords",2,2,0,0,0
+"243",42255,"calcigorgia",3.94688075514691e-05,0,10046,23.5,27,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"244",42294,"calcigorgia",5.01667323053114e-05,0,10074,24,24,"(11) Mainland Fjords",1,1,0,0,0
+"245",42295,"calcigorgia",4.51390694825795e-05,0,10075,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"246",42795,"calcigorgia",4.61695780281674e-05,0,10046,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"247",42823,"calcigorgia",3.17121664348488e-05,0,10062,26,30,"(11) Mainland Fjords",2,2,0,0,0
+"248",42826,"calcigorgia",3.56428633314673e-05,0,10063,25,30,"(11) Mainland Fjords",2,2,0,0,0
+"249",43060,"calcigorgia",3.29169957304405e-05,0,10203,25.5,29,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"250",43100,"calcigorgia",3.56428633314673e-05,0,10221,25,30,"(11) Mainland Fjords",2,2,0,0,0
+"251",43600,"calcigorgia",3.17121664348488e-05,0,10203,26,30,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"252",43617,"calcigorgia",4.51390694825795e-05,0,10210,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"253",43620,"calcigorgia",9.74127074793483e-05,0,10211,28,28,"(11) Mainland Fjords",1,1,0,0,0
+"254",43643,"calcigorgia",2.92310561410787e-05,0,10222,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"255",44186,"calcigorgia",5.01667323053114e-05,0,10389,24,24,"(11) Mainland Fjords",1,1,0,0,0
+"256",44704,"calcigorgia",3.24299113133142e-05,0,10368,26.5,33,"(11) Mainland Fjords",2,2,0,0,0
+"257",44974,"calcigorgia",3.11120018022893e-05,0,10368,26,29,"(11) Mainland Fjords",2,2,0,0,0
+"258",44980,"calcigorgia",1.32804899640649e-05,0,10369,30,30,"(11) Mainland Fjords",1,1,0,2,4
+"259",44981,"calcigorgia",0.00052544035885315,0,10369,24.5,29,"(11) Mainland Fjords",2,2,0,1,12
+"260",45001,"calcigorgia",1.97864832977796e-05,0,10382,25,30,"(11) Mainland Fjords",4,4,0,0,0
+"261",45258,"calcigorgia",3.88174437336681e-05,0,10528,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"262",45542,"calcigorgia",4.2390307776028e-05,0,10528,26,26,"(11) Mainland Fjords",1,1,0,0,0
+"263",46642,"calcigorgia",1.87377904977899e-05,0,10674,34,34,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"264",46644,"calcigorgia",3.22478991887498e-05,0,10675,29,29,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"265",46664,"calcigorgia",6.8585766863264e-05,0,10680,20,20,"(11) Mainland Fjords",1,1,0,0,0
+"266",46672,"calcigorgia",3.88828793820007e-05,0,10682,23.5,26,"(11) Mainland Fjords",2,2,0,0,0
+"267",46929,"calcigorgia",4.68381884236255e-05,0,10675,23,27,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"268",46930,"calcigorgia",1.45297196979137e-05,0,10675,26,35,"(13) Eastern Queen Charlotte Sound",4,4,0,0,0
+"269",47215,"calcigorgia",2.38252392024156e-05,0,10676,23,27,"(13) Eastern Queen Charlotte Sound",4,4,0,0,0
+"270",47245,"calcigorgia",4.78200686057203e-05,0,10685,23,28,"(11) Mainland Fjords",2,2,0,0,0
+"271",47566,"calcigorgia",2.11417832621736e-05,0,10863,33,33,"(11) Mainland Fjords",1,1,0,0,0
+"272",47817,"calcigorgia",2.92310561410787e-05,0,10845,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"273",48414,"calcigorgia",4.2390307776028e-05,0,10863,26,26,"(11) Mainland Fjords",1,1,0,0,0
+"274",48626,"calcigorgia",5.43938587602507e-05,0,10990,23,23,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"275",48671,"calcigorgia",3.56428633314673e-05,0,11016,25,30,"(11) Mainland Fjords",2,2,0,0,0
+"276",48677,"calcigorgia",8.79379103179384e-05,0,11021,18,18,"(11) Mainland Fjords",1,1,0,0,0
+"277",48885,"calcigorgia",5.43938587602507e-05,0,10990,23,23,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"278",49148,"calcigorgia",2.94057539972913e-05,0,10990,26.5,29,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"279",49431,"calcigorgia",3.54400889454325e-05,0,10994,28,28,"(11) Mainland Fjords",1,1,0,0,0
+"280",49743,"calcigorgia",3.14790825782638e-05,0,11174,27,34,"(11) Mainland Fjords",2,2,0,0,0
+"281",51022,"calcigorgia",3.24869371289672e-05,0,11304,26,31,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"282",51044,"calcigorgia",3.88174437336681e-05,0,11311,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"283",51072,"calcigorgia",4.57099230881254e-05,0,11330,21.5,23,"(11) Mainland Fjords",2,2,0,0,0
+"284",51336,"calcigorgia",3.54400889454325e-05,0,11330,28,28,"(11) Mainland Fjords",1,1,0,0,0
+"285",51339,"calcigorgia",3.04287018328491e-05,0,11331,26,27,"(11) Mainland Fjords",2,2,0,0,0
+"286",51549,"calcigorgia",5.24683186020637e-05,0,11302,21.5,25,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"287",51573,"calcigorgia",1.46217258998259e-05,0,11310,22.8333333333333,28,"(11) Mainland Fjords",6,6,0,0,0
+"288",51581,"calcigorgia",3.17121664348488e-05,0,11314,26,30,"(11) Mainland Fjords",2,2,0,0,0
+"289",51600,"calcigorgia",3.88174437336681e-05,0,11330,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"290",51810,"calcigorgia",5.79838394459864e-05,0,11460,20,22,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"291",52085,"calcigorgia",5.37184959334293e-05,0,11460,21,24,"(13) Eastern Queen Charlotte Sound",2,2,0,4,0
+"292",52353,"calcigorgia",5.24683186020637e-05,0,11460,21.5,25,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"293",52636,"calcigorgia",4.2390307776028e-05,0,11463,26,26,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"294",52650,"calcigorgia",0.000230996873038943,0.0833333333333333,11470,26,30,"(11) Mainland Fjords",2,2,0,0,0
+"295",52655,"calcigorgia",3.54400889454325e-05,0,11471,28,28,"(11) Mainland Fjords",1,1,0,0,0
+"296",52889,"calcigorgia",4.0898216915748e-05,0,11617,23,26,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"297",53135,"calcigorgia",8.79379103179384e-05,0,11611,18,18,"(10 Aristazabal Banks Upwelling",1,1,0,0,0
+"298",53140,"calcigorgia",6.35896193173854e-05,0,11612,21,21,"(10 Aristazabal Banks Upwelling",1,1,0,0,0
+"299",53195,"calcigorgia",3.56428633314673e-05,0,11630,25,30,"(11) Mainland Fjords",2,2,0,0,0
+"300",53222,"calcigorgia",2.9905950786815e-05,0,11648,26.5,30,"(11) Mainland Fjords",2,2,0,0,0
+"301",53433,"calcigorgia",5.01667323053114e-05,0,11619,24,24,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"302",53954,"calcigorgia",1.83456572292253e-05,0,11774,25.5,30,"(13) Eastern Queen Charlotte Sound",4,4,0,0,0
+"303",54229,"calcigorgia",6.8585766863264e-05,0,11779,20,20,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"304",54264,"calcigorgia",4.61695780281674e-05,0,11806,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"305",54511,"calcigorgia",4.92814336910392e-05,0,11788,22.5,27,"(11) Mainland Fjords",2,2,0,0,0
+"306",54718,"calcigorgia",4.2390307776028e-05,0,11771,26,26,"(10 Aristazabal Banks Upwelling",1,1,0,0,0
+"307",54767,"calcigorgia",1.22170355282443e-06,0,11789,22.5,27,"(11) Mainland Fjords",2,2,0,0,12
+"308",54964,"calcigorgia",2.77931123994985e-05,0,11926,27,29,"(10 Aristazabal Banks Upwelling",2,2,0,0,0
+"309",55000,"calcigorgia",2.9905950786815e-05,0,11937,26.5,30,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"310",55003,"calcigorgia",2.92310561410787e-05,0,11938,30,30,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"311",55005,"calcigorgia",3.4508543334774e-05,0,11938,25.5,31,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"312",55006,"calcigorgia",2.92310561410787e-05,0,11939,30,30,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"313",55241,"calcigorgia",3.4508543334774e-05,0,11932,25.5,31,"(10 Aristazabal Banks Upwelling",2,2,0,0,0
+"314",55261,"calcigorgia",5.24683186020637e-05,0,11939,21.5,25,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"315",55266,"calcigorgia",4.61695780281674e-05,0,11943,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"316",55514,"calcigorgia",6.79935444840732e-05,0,11938,20,20,"(13) Eastern Queen Charlotte Sound",1,1,0,1,0
+"317",55733,"calcigorgia",5.43938587602507e-05,0,11926,23,23,"(10 Aristazabal Banks Upwelling",1,1,0,0,0
+"318",55783,"calcigorgia",4.51390694825795e-05,0,11947,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"319",56001,"calcigorgia",2.57262133673194e-05,0,12088,28.5,34,"(10 Aristazabal Banks Upwelling",2,2,0,0,0
+"320",56251,"calcigorgia",3.69773336794652e-05,0,12088,24,26,"(10 Aristazabal Banks Upwelling",2,2,0,0,0
+"321",56292,"calcigorgia",5.01667323053114e-05,0,12124,24,24,"(11) Mainland Fjords",1,1,0,0,0
+"322",56494,"calcigorgia",2.74877935106715e-05,0,12088,25.6666666666667,30,"(10 Aristazabal Banks Upwelling",3,3,0,0,0
+"323",56503,"calcigorgia",4.83873038103518e-05,0,12093,22.5,26,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"324",56514,"calcigorgia",4.94733439575219e-05,0,12096,19.6666666666667,22,"(13) Eastern Queen Charlotte Sound",3,3,0,0,0
+"325",56757,"calcigorgia",4.92814336910392e-05,0,12093,22.5,27,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"326",56767,"calcigorgia",7.4344952235161e-05,0,12096,18,18,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"327",57023,"calcigorgia",4.61695780281674e-05,0,12251,25,25,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"328",57033,"calcigorgia",3.4508543334774e-05,0,12254,25.5,31,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"329",57290,"calcigorgia",2.9905950786815e-05,0,12253,26.5,30,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"330",57551,"calcigorgia",3.6101405679185e-05,0,12258,24.5,28,"(11) Mainland Fjords",2,2,0,0,0
+"331",57766,"calcigorgia",3.69086804710946e-05,0,12242,23.5,27,"(10 Aristazabal Banks Upwelling",2,2,0,7,0
+"332",57832,"calcigorgia",4.2390307776028e-05,0,12284,26,26,"(11) Mainland Fjords",1,1,0,0,0
+"333",58031,"calcigorgia",5.17640471042968e-05,0,12400,21.5,24,"(10 Aristazabal Banks Upwelling",2,2,0,0,0
+"334",58058,"calcigorgia",3.54400889454325e-05,0,12410,28,28,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"335",58060,"calcigorgia",2.86412032512754e-05,0,12411,25,30,"(13) Eastern Queen Charlotte Sound",3,3,0,2,0
+"336",58061,"calcigorgia",8.79379103179384e-05,0,12411,18,18,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"337",58071,"calcigorgia",5.08292750259101e-05,0,12415,22,26,"(11) Mainland Fjords",2,2,0,0,0
+"338",58320,"calcigorgia",3.88828793820007e-05,0,12411,23.5,26,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"339",58574,"calcigorgia",5.00275948807776e-05,0,12409,22,25,"(11) Mainland Fjords",2,2,0,0,0
+"340",58580,"calcigorgia",1.05420704234241e-05,0,12411,24.2,29,"(13) Eastern Queen Charlotte Sound",5,5,0,1,0
+"341",58833,"calcigorgia",5.88636867733263e-05,0,12409,22,22,"(11) Mainland Fjords",1,1,0,0,0
+"342",58842,"calcigorgia",5.60402089297151e-05,0,12412,20.5,23,"(11) Mainland Fjords",2,2,0,0,0
+"343",58851,"calcigorgia",3.56428633314673e-05,0,12416,25,30,"(11) Mainland Fjords",2,2,0,0,0
+"344",58862,"calcigorgia",8.12136853481598e-05,0,12419,18,18,"(11) Mainland Fjords",1,1,0,8,0
+"345",59102,"calcigorgia",4.6440697382878e-05,0,12566,23.5,29,"(11) Mainland Fjords",2,2,0,0,0
+"346",59121,"calcigorgia",3.4508543334774e-05,0,12574,25.5,31,"(11) Mainland Fjords",2,2,0,0,0
+"347",59619,"calcigorgia",8.18841962232343e-05,0,12566,19,19,"(11) Mainland Fjords",1,1,0,0,0
+"348",59626,"calcigorgia",2.84912372958689e-05,0,12570,27.5,33,"(11) Mainland Fjords",2,2,0,0,0
+"349",59871,"calcigorgia",3.54400889454325e-05,0,12565,28,28,"(11) Mainland Fjords",1,1,0,0,0
+"350",60411,"calcigorgia",3.56428633314673e-05,0,12742,25,30,"(11) Mainland Fjords",2,2,0,0,0
+"351",60415,"calcigorgia",4.78200686057203e-05,0,12743,23,28,"(11) Mainland Fjords",2,2,0,0,0
+"352",60668,"calcigorgia",3.56053987183802e-07,0,12741,23.5,29,"(11) Mainland Fjords",2,2,0,0,14
+"353",60673,"calcigorgia",2.63802417845366e-05,0,12743,31,31,"(11) Mainland Fjords",1,1,0,0,0
+"354",60678,"calcigorgia",2.92310561410787e-05,0,12759,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"355",60923,"calcigorgia",3.17121664348488e-05,0,12741,26,30,"(11) Mainland Fjords",2,2,0,0,0
+"356",61161,"calcigorgia",0.000155184076366089,0,12897,24,28,"(11) Mainland Fjords",2,2,0,8,9
+"357",62120,"calcigorgia",3.22478991887498e-05,0,13034,29,29,"(10 Aristazabal Banks Upwelling",1,1,0,0,0
+"358",62617,"calcigorgia",8.79379103179384e-05,0,13035,18,18,"(10 Aristazabal Banks Upwelling",1,1,0,0,0
+"359",62641,"calcigorgia",4.51390694825795e-05,0,13050,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"360",63151,"calcigorgia",3.72609090511656e-05,0,13213,24,28,"(11) Mainland Fjords",2,2,0,3,0
+"361",63374,"calcigorgia",3.88174437336681e-05,0,13193,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"362",63401,"calcigorgia",2.52272028274299e-05,0,13213,28.5,35,"(11) Mainland Fjords",2,2,0,3,0
+"363",63629,"calcigorgia",4.6440697382878e-05,0,13194,23.5,29,"(11) Mainland Fjords",2,2,0,0,0
+"364",63901,"calcigorgia",4.51390694825795e-05,0,13206,24,30,"(11) Mainland Fjords",2,2,0,0,0
+"365",64416,"calcigorgia",4.92814336910392e-05,0,13361,22.5,27,"(11) Mainland Fjords",2,2,0,0,0
+"366",64935,"calcigorgia",4.92814336910392e-05,0,13361,22.5,27,"(11) Mainland Fjords",2,2,0,0,0
+"367",70113,"calcigorgia",2.50656511075403e-05,0,14312,29.5,36,"(11) Mainland Fjords",2,2,0,0,0
+"368",70363,"calcigorgia",2.75375960794366e-05,0,14314,28,34,"(11) Mainland Fjords",2,2,0,0,0
+"369",34418,"chrysopathes",0.973430654288077,1,8792,299.40235,299.40235,"(11) Mainland Fjords",1,0,0,0,1
+"370",37302,"chrysopathes",0.037304907216642,0,9265,419.57396605,420.6160761,"(11) Mainland Fjords",4,0,0,0,4
+"371",37539,"chrysopathes",0.01336687682179,0,9265,432.869586163636,448.3930164,"(11) Mainland Fjords",11,0,0,0,11
+"372",46099,"chrysopathes",2.43034427673968e-05,0,10524,494.3701014275,515.7025758,"(11) Mainland Fjords",40,0,0,0,40
+"373",54513,"chrysopathes",0.000537864258487724,0,11789,430.74152702,437.8952156,"(11) Mainland Fjords",10,0,0,0,10
+"374",58338,"chrysopathes",0.0104008036983,0,12417,423.125991275,426.604487,"(11) Mainland Fjords",4,0,0,0,4
+"375",58339,"chrysopathes",1,0.756478328598804,12417,330.71319915,338.7734048,"(11) Mainland Fjords",2,0,0,0,2
+"376",58596,"chrysopathes",0.000689007358313498,0,12417,441.62411156,457.5016208,"(11) Mainland Fjords",15,0,0,0,15
+"377",58856,"chrysopathes",0.283854102783329,0.138373046597379,12417,427.412344365753,439.4631494,"(11) Mainland Fjords",73,0,0,0,73
+"378",60914,"chrysopathes",0.00325257346169883,0,12739,424.472510233333,426.1415882,"(11) Mainland Fjords",3,0,0,0,3
+"379",60915,"chrysopathes",0.306039025325971,0.252251511772957,12739,410.3670921,417.1987297,"(11) Mainland Fjords",2,0,0,0,2
+"380",62144,"chrysopathes",0,0,13050,540.69583565,551.5662586,"(11) Mainland Fjords",12,0,0,0,12
+"381",23420,"paragorgia",3.32113337031083e-06,0,6736,84,84,"(13) Eastern Queen Charlotte Sound",2,0,0,2,0
+"382",24038,"paragorgia",0.103493906482666,0.117408794340424,6737,76.425,76.425,"(13) Eastern Queen Charlotte Sound",1,0,0,1,0
+"383",24256,"paragorgia",0.000595982020444019,0,6895,46.855,53.11,"(13) Eastern Queen Charlotte Sound",2,2,0,2,0
+"384",25122,"paragorgia",1.483996744115e-06,0,7057,62.9163069333333,84.32284159,"(11) Mainland Fjords",6,2,0,6,0
+"385",25123,"paragorgia",2.25766017125532e-06,0,7057,67.4695090971429,99.28541667,"(11) Mainland Fjords",7,0,0,7,0
+"386",25335,"paragorgia",2.76948837465657e-06,0,7057,75.29711292,113,"(11) Mainland Fjords",7,0,0,7,0
+"387",25544,"paragorgia",1.29766543927547e-06,0,7056,48.2076177085714,58.71914894,"(11) Mainland Fjords",7,0,0,7,0
+"388",25549,"paragorgia",1.24961554361839e-06,0,7057,57.2971198825,59.5,"(11) Mainland Fjords",4,2,0,4,0
+"389",25751,"paragorgia",1.51826358093199e-06,0,7056,52.1710248233333,63.35862069,"(11) Mainland Fjords",3,0,0,3,0
+"390",25756,"paragorgia",1.99611219175198e-06,0,7057,61.48468645,63.59042553,"(11) Mainland Fjords",2,0,0,2,0
+"391",25956,"paragorgia",1.99626029328502e-06,0,7214,69.1525988166667,94,"(11) Mainland Fjords",3,2,0,3,0
+"392",26164,"paragorgia",1.65040853737598e-06,0,7216,54.7,54.7,"(11) Mainland Fjords",3,0,0,3,0
+"393",26574,"paragorgia",1.13246256099637e-05,0,7217,185.7,185.7,"(11) Mainland Fjords",2,0,0,2,0
+"394",26575,"paragorgia",3.70539710115373e-06,0,7217,97.1889533354545,132.2,"(11) Mainland Fjords",11,0,0,11,0
+"395",26769,"paragorgia",5.16580833716816e-06,0,7372,114.93055555,123.0333333,"(11) Mainland Fjords",6,0,0,6,0
+"396",26780,"paragorgia",1.91876561189993e-06,0,7375,63.4720261572727,117.75,"(11) Mainland Fjords",11,0,0,11,0
+"397",26977,"paragorgia",5.46798331242233e-06,0,7372,113.05,114.375,"(11) Mainland Fjords",2,0,0,2,0
+"398",26978,"paragorgia",4.63696394640265e-06,0,7373,101.2666667,101.2666667,"(11) Mainland Fjords",1,0,0,1,0
+"399",27593,"paragorgia",2.02911927904847e-06,0,7534,61.45071429,61.45071429,"(11) Mainland Fjords",1,0,0,1,0
+"400",27986,"paragorgia",4.15974405533983e-06,0,7529,90.291666675,137.9666667,"(11) Mainland Fjords",4,0,0,4,0
+"401",27987,"paragorgia",1.95160497067279e-06,0,7530,60.675,63.4,"(11) Mainland Fjords",2,0,0,2,0
+"402",27991,"paragorgia",2.50200492283482e-06,0,7533,70,70,"(11) Mainland Fjords",1,0,0,1,0
+"403",27992,"paragorgia",1.1250975476694e-06,0,7534,41.66666667,41.66666667,"(11) Mainland Fjords",1,0,0,1,0
+"404",28184,"paragorgia",6.63282971532255e-06,0,7529,125.0694915,125.0694915,"(11) Mainland Fjords",1,0,0,1,0
+"405",28186,"paragorgia",1.13387961954821e-06,0,7529,49.625,55.25,"(11) Mainland Fjords",2,1,0,2,0
+"406",28187,"paragorgia",1.70198214430394e-06,0,7530,57.62638888875,66,"(11) Mainland Fjords",8,0,0,8,0
+"407",28190,"paragorgia",8.74364467085734e-07,0,7534,46.075,49,"(11) Mainland Fjords",2,2,0,2,0
+"408",28381,"paragorgia",4.62225227791076e-06,0,7687,111.784242475556,154.5222222,"(11) Mainland Fjords",9,0,0,9,0
+"409",28382,"paragorgia",1.96566030920487e-06,0,7687,59.85057019,72.2860241,"(11) Mainland Fjords",2,0,0,2,0
+"410",28384,"paragorgia",0.00052476206871749,0,7688,138.371841017241,167.327653,"(11) Mainland Fjords",29,1,0,0,29
+"411",28578,"paragorgia",2.77875351844297e-06,0,7687,74.5399906633333,100.46,"(11) Mainland Fjords",3,0,0,3,0
+"412",28579,"paragorgia",1.04467154574591e-06,0,7687,47.11216931,54.62433862,"(11) Mainland Fjords",2,1,0,2,0
+"413",28581,"paragorgia",4.87725662247585e-07,0,7688,47.06851876,50,"(11) Mainland Fjords",4,4,0,4,0
+"414",28983,"paragorgia",4.45054091280481e-06,0,7686,100.643314414,154.1585526,"(11) Mainland Fjords",5,0,0,5,0
+"415",28984,"paragorgia",3.00927344163484e-06,0,7687,88.023653846,118.7,"(11) Mainland Fjords",5,1,0,5,0
+"416",28985,"paragorgia",2.5630252120424e-06,0,7687,73.592204422,91.38333333,"(11) Mainland Fjords",5,0,0,5,0
+"417",28986,"paragorgia",7.5882071334852e-06,0,7687,141.814617255,192.8684211,"(11) Mainland Fjords",4,0,0,4,0
+"418",28989,"paragorgia",3.9191080347652e-06,0,7688,101.11833333,102.5,"(11) Mainland Fjords",10,0,0,10,0
+"419",28990,"paragorgia",1.01287050801036e-06,0,7688,45.875,45.875,"(11) Mainland Fjords",1,1,0,1,0
+"420",29189,"paragorgia",9.8594786767776e-07,0,7845,52.58797654,58.70322581,"(11) Mainland Fjords",2,2,0,2,0
+"421",29193,"paragorgia",3.44051236132554e-06,0,7846,100.74166665,100.8333333,"(11) Mainland Fjords",2,2,0,2,0
+"422",29194,"paragorgia",2.71402095807912e-06,0,7846,92.4358333325,100.45,"(11) Mainland Fjords",8,2,0,8,0
+"423",29196,"paragorgia",1.82924961065465e-06,0,7847,72.26,87.6,"(11) Mainland Fjords",5,2,0,5,0
+"424",29197,"paragorgia",1.84938344792697e-06,0,7847,59.3965277775,67.13333333,"(11) Mainland Fjords",4,0,0,4,0
+"425",29398,"paragorgia",6.15718931355957e-06,0,7845,133.55642023,171.3774319,"(11) Mainland Fjords",2,1,0,2,0
+"426",29612,"paragorgia",1.09897469085425e-06,0,7845,41.8,41.8,"(11) Mainland Fjords",3,0,0,3,0
+"427",29623,"paragorgia",2.54973596478586e-06,0,7850,71,71,"(11) Mainland Fjords",1,0,0,1,0
+"428",30058,"paragorgia",2.9706766633086e-06,0,8001,97.987,134.06,"(11) Mainland Fjords",5,2,0,5,0
+"429",31161,"paragorgia",1,0.364686146487096,8155,93.43229166625,119.1,"(11) Mainland Fjords",8,0,0,8,0
+"430",31162,"paragorgia",0.396916817467257,0.151422789631375,8155,91.020555555,117.6,"(11) Mainland Fjords",6,0,0,6,0
+"431",31593,"paragorgia",0.339051239189813,0.103417504862918,8155,94.2490530425,124.5545455,"(13) Eastern Queen Charlotte Sound",4,0,0,4,0
+"432",31597,"paragorgia",0.141742765562295,0.109756331218155,8156,92.3495370266667,124.3333333,"(11) Mainland Fjords",3,0,0,3,0
+"433",31802,"paragorgia",5.02031070492356e-06,0,8312,105.6,105.6,"(13) Eastern Queen Charlotte Sound",1,0,0,1,0
+"434",31809,"paragorgia",9.12525081308243e-07,0,8314,46.81698113,46.81698113,"(11) Mainland Fjords",1,2,0,1,0
+"435",31812,"paragorgia",0.02516794675065,0.0167491038102591,8315,50.5919934633333,63,"(11) Mainland Fjords",3,1,0,3,0
+"436",31813,"paragorgia",0.0337012951930627,0.00639291845647574,8315,91.7009990947059,140.5865177,"(11) Mainland Fjords",17,0,0,17,0
+"437",32018,"paragorgia",0.0100040278408046,0.0105000925550837,8313,44.33333333,44.33333333,"(11) Mainland Fjords",1,0,0,1,0
+"438",32241,"paragorgia",1.9169007967651e-06,0,8315,71.5662257533333,85.7462963,"(11) Mainland Fjords",3,2,0,3,0
+"439",32243,"paragorgia",2.73808247094072e-06,0,8316,75.1247619025,98.0047619,"(11) Mainland Fjords",4,0,0,4,0
+"440",32253,"paragorgia",1.02660045228635e-06,0,8318,39.434285715,40.46857143,"(11) Mainland Fjords",2,0,0,2,0
+"441",32254,"paragorgia",1.64043239935072e-06,0,8326,54.30871111,58.2168,"(11) Mainland Fjords",3,0,0,3,0
+"442",32472,"paragorgia",8.37701739994484e-07,0,8326,41,41,"(11) Mainland Fjords",2,1,0,2,0
+"443",32691,"paragorgia",3.00949202668124e-06,0,8484,87.7,87.7,"(11) Mainland Fjords",1,1,0,1,0
+"444",32908,"paragorgia",4.71290883426943e-07,0,8476,61.15470992,75.7,"(11) Mainland Fjords",7,6,0,7,0
+"445",33323,"paragorgia",4.92186109535634e-07,0,8470,43.58173731,45.58367347,"(13) Eastern Queen Charlotte Sound",3,3,0,3,0
+"446",33760,"paragorgia",3.89809149177184e-06,0,8630,93.7896418775,115.9285714,"(11) Mainland Fjords",4,0,0,4,0
+"447",34169,"paragorgia",6.35257811858466e-06,0,8625,123.9268094,130.4032787,"(13) Eastern Queen Charlotte Sound",2,0,0,2,0
+"448",34181,"paragorgia",1.59757537658389e-06,0,8628,53.8183226733333,59.22,"(13) Eastern Queen Charlotte Sound",3,0,0,3,0
+"449",34382,"paragorgia",5.84892444319531e-06,0,8783,117.8802841,119.7484663,"(13) Eastern Queen Charlotte Sound",2,0,0,2,0
+"450",34418,"paragorgia",0.020630719767539,0.01984621184971,8792,266.741054505,303.7648017,"(11) Mainland Fjords",80,0,0,0,1
+"451",35922,"paragorgia",1.4403890817564e-06,0,8944,50.933377256,62.65454545,"(13) Eastern Queen Charlotte Sound",5,0,0,5,0
+"452",36360,"paragorgia",1.94218291086971e-06,0,9102,60.6713541675,78.14791667,"(13) Eastern Queen Charlotte Sound",4,0,0,4,0
+"453",36375,"paragorgia",0.0148780473650234,0.0131512403589001,9108,164.44451578,185.787099,"(11) Mainland Fjords",15,0,0,0,15
+"454",36598,"paragorgia",0.0348774026139142,0.0342168634068945,9108,192.04422695,206.7811421,"(11) Mainland Fjords",6,0,0,0,6
+"455",37302,"paragorgia",0.0294403731847902,0.0292760827607368,9265,387.495859740426,420.6160761,"(11) Mainland Fjords",47,0,0,0,4
+"456",37539,"paragorgia",0.0160382029977937,0.0159486618936776,9265,410.265008867568,448.3930164,"(11) Mainland Fjords",37,0,0,0,11
+"457",37772,"paragorgia",0.979049243959833,1,9266,34.08,34.08,"(11) Mainland Fjords",1,2,0,1,0
+"458",37773,"paragorgia",0.0911239863177865,0.0277330544314465,9266,72.4920987242857,162.9,"(11) Mainland Fjords",7,3,0,7,0
+"459",38917,"paragorgia",1.82026823290639e-06,0,9586,58.2111772466667,88.4,"(11) Mainland Fjords",6,0,0,6,0
+"460",39878,"paragorgia",8.41932799392894e-06,0,9741,79.3872727266667,85.2,"(11) Mainland Fjords",3,2,0,3,0
+"461",40106,"paragorgia",5.2461462135279e-06,0,9733,113.24722225,116.8555556,"(13) Eastern Queen Charlotte Sound",4,0,0,4,0
+"462",40108,"paragorgia",2.13894724357098e-06,0,9734,65.2196428575,70.4,"(13) Eastern Queen Charlotte Sound",4,0,0,4,0
+"463",40134,"paragorgia",1.75891565100343e-06,0,9741,56.7,58.2,"(11) Mainland Fjords",2,0,0,2,0
+"464",40135,"paragorgia",1.75683444558963e-06,0,9741,56.1,56.1,"(11) Mainland Fjords",1,0,0,1,0
+"465",40364,"paragorgia",4.62028214252925e-06,0,9733,107.948941176,138.4,"(13) Eastern Queen Charlotte Sound",10,0,0,10,0
+"466",40365,"paragorgia",3.20986124237736e-06,0,9734,81.7777777766667,102.3,"(13) Eastern Queen Charlotte Sound",3,0,0,3,0
+"467",40366,"paragorgia",2.90838237919258e-06,0,9734,78.40375,91.7,"(13) Eastern Queen Charlotte Sound",4,0,0,4,0
+"468",40376,"paragorgia",2.56629391904661e-06,0,9736,85.2950448757143,149.1285714,"(11) Mainland Fjords",7,2,0,7,0
+"469",40387,"paragorgia",4.72805727793602e-06,0,9739,105.40268018,169.8521167,"(11) Mainland Fjords",6,0,0,6,0
+"470",40617,"paragorgia",0,0,9732,41.0537037,41.0537037,"(13) Eastern Queen Charlotte Sound",1,8,0,1,0
+"471",40635,"paragorgia",2.90432566595379e-06,0,9737,77.7870553725,91.80689655,"(11) Mainland Fjords",4,0,0,4,0
+"472",40888,"paragorgia",1.25056933700831e-06,0,9890,44.60789474,44.60789474,"(13) Eastern Queen Charlotte Sound",1,0,0,1,0
+"473",40931,"paragorgia",3.25449569856785e-06,0,9905,87.54607143,132.25,"(11) Mainland Fjords",10,0,0,10,0
+"474",41206,"paragorgia",4.33118684009506e-06,0,9905,99.247916675,129.8666667,"(11) Mainland Fjords",4,0,0,4,0
+"475",41209,"paragorgia",5.68447041554302e-06,0,9906,119.785000006,142.775,"(11) Mainland Fjords",5,0,0,5,0
+"476",41463,"paragorgia",1.17307939445141e-06,0,9895,43.05202958,43.05202958,"(11) Mainland Fjords",1,0,0,1,0
+"477",41481,"paragorgia",3.87268721429044e-06,0,9906,92.16,92.52,"(11) Mainland Fjords",2,0,0,2,0
+"478",41482,"paragorgia",2.17633274193177e-06,0,9906,63.6712962966667,85.98888889,"(11) Mainland Fjords",3,0,0,3,0
+"479",41724,"paragorgia",1.60095205164383e-06,0,9890,54.2626396033333,75.89571429,"(13) Eastern Queen Charlotte Sound",6,0,0,6,0
+"480",44428,"paragorgia",1,1,10367,241.776643016667,244.5752333,"(11) Mainland Fjords",12,0,0,0,12
+"481",44699,"paragorgia",0.430889144462771,0.435694677757056,10367,139.814254811842,238.7825291,"(11) Mainland Fjords",25,0,0,6,19
+"482",44703,"paragorgia",1.35243756651759e-06,0,10368,47.75761563,52.23947368,"(11) Mainland Fjords",2,0,0,2,0
+"483",44978,"paragorgia",0.420774802549534,0.393954626715159,10369,137.53991134,182.335316,"(11) Mainland Fjords",35,0,0,0,35
+"484",44980,"paragorgia",0.000172647092436666,0,10369,69.96943517125,127.5608696,"(11) Mainland Fjords",6,1,0,2,4
+"485",44981,"paragorgia",0.0552302843348054,0.0426629443319179,10369,70.57710247125,96.5361609,"(11) Mainland Fjords",13,2,0,1,12
+"486",45244,"paragorgia",0.0849557185850121,0.081985687354465,10525,263.966474077778,319.4306807,"(11) Mainland Fjords",36,0,0,0,36
+"487",45253,"paragorgia",4.39455169279822e-06,0,10527,102.438242698333,131.4230769,"(11) Mainland Fjords",6,0,0,6,0
+"488",45511,"paragorgia",2.09428692424935e-06,0,10520,63,63.2,"(13) Eastern Queen Charlotte Sound",2,0,0,2,0
+"489",45528,"paragorgia",4.78839027185063e-06,0,10524,108.692597406,134.75,"(11) Mainland Fjords",5,0,0,5,0
+"490",45530,"paragorgia",0.0910953264616832,0.0881423389911998,10525,237.554027448148,309.4448509,"(11) Mainland Fjords",27,0,0,0,27
+"491",45539,"paragorgia",2.94512219977234e-06,0,10528,77.325,77.325,"(11) Mainland Fjords",1,0,0,1,0
+"492",45799,"paragorgia",1.77350525276133e-06,0,10520,56.3261904766667,65.7,"(13) Eastern Queen Charlotte Sound",3,0,0,3,0
+"493",45803,"paragorgia",3.20066794426332e-06,0,10521,82.214285715,91.6,"(13) Eastern Queen Charlotte Sound",2,0,0,2,0
+"494",45814,"paragorgia",2.57670176196361e-06,0,10524,72.7,77.4,"(11) Mainland Fjords",2,0,0,2,0
+"495",45815,"paragorgia",4.12280391120412e-06,0,10524,94.3,94.3,"(11) Mainland Fjords",1,0,0,1,0
+"496",45818,"paragorgia",1.67606209159421e-06,0,10525,58.4886065863636,75,"(11) Mainland Fjords",11,0,0,11,0
+"497",46092,"paragorgia",0.000579829373161753,0,10523,399.393788566667,407.6385613,"(11) Mainland Fjords",6,0,0,0,6
+"498",46093,"paragorgia",0.0185944751209137,0.0202376213234026,10523,349.484447338462,388.7904551,"(11) Mainland Fjords",39,0,0,0,39
+"499",46099,"paragorgia",4.7983544663324e-06,0,10524,438.004144138806,515.7025758,"(11) Mainland Fjords",67,0,0,0,40
+"500",46387,"paragorgia",3.4711757564442e-06,0,10683,86.4,101.4,"(11) Mainland Fjords",2,0,0,2,0
+"501",46391,"paragorgia",1.771160507212e-06,0,10684,56.36971961,76.40389805,"(11) Mainland Fjords",3,0,0,3,0
+"502",46673,"paragorgia",4.90795977211436e-06,0,10682,116.90000791,141.9163934,"(11) Mainland Fjords",10,0,0,10,0
+"503",46674,"paragorgia",3.2268321801094e-06,0,10683,89.9182138053846,120.8548387,"(11) Mainland Fjords",13,0,0,13,0
+"504",46679,"paragorgia",3.50124811342498e-06,0,10684,85.6,85.6,"(11) Mainland Fjords",1,0,0,1,0
+"505",46958,"paragorgia",5.20803969842734e-06,0,10682,117.7162655125,152.2994565,"(11) Mainland Fjords",8,0,0,8,0
+"506",47820,"paragorgia",1.75214589547532e-06,0,10846,55.4688862683333,86.4,"(11) Mainland Fjords",6,0,0,6,0
+"507",49701,"paragorgia",1.63149043283337e-06,0,11152,55.164927972,62.70918367,"(11) Mainland Fjords",5,0,0,5,0
+"508",49702,"paragorgia",1.21696770284725e-06,0,11152,44.27775651,49.78820533,"(11) Mainland Fjords",2,0,0,2,0
+"509",50532,"paragorgia",3.92847678513411e-06,0,11171,92.4222222233333,112.5,"(11) Mainland Fjords",3,0,0,3,0
+"510",51077,"paragorgia",7.22888183190799e-06,0,11331,136.379798,151.1727273,"(11) Mainland Fjords",3,0,0,3,0
+"511",51284,"paragorgia",1.98567036531345e-06,0,11302,61.32113881,62.71969697,"(13) Eastern Queen Charlotte Sound",2,0,0,2,0
+"512",51285,"paragorgia",1.46414212270212e-06,0,11302,49.7,49.7,"(13) Eastern Queen Charlotte Sound",1,0,0,1,0
+"513",51343,"paragorgia",4.92113574436236e-06,0,11332,103.9,114.7,"(11) Mainland Fjords",2,0,0,2,0
+"514",51809,"paragorgia",1.2750265304573e-06,0,11460,45.3,45.3,"(13) Eastern Queen Charlotte Sound",1,0,0,1,0
+"515",52086,"paragorgia",1.65060982378102e-06,0,11461,54.6885555433333,63.76385542,"(13) Eastern Queen Charlotte Sound",3,0,0,3,0
+"516",53689,"paragorgia",1.57321706053826e-06,0,11616,55.53793633,62.35284553,"(13) Eastern Queen Charlotte Sound",9,0,0,9,0
+"517",54513,"paragorgia",0.000233953469064786,0,11789,385.70673525,437.8952156,"(11) Mainland Fjords",24,0,0,0,10
+"518",54720,"paragorgia",1.48857404449801e-06,0,11771,52.2470405516667,67.31666667,"(10 Aristazabal Banks Upwelling",6,0,0,6,0
+"519",54767,"paragorgia",0.00066367057130821,0,11789,221.191776616667,280.411712,"(11) Mainland Fjords",12,2,0,0,12
+"520",54975,"paragorgia",1.6627705548304e-06,0,11929,60.8308560347059,71.448,"(10 Aristazabal Banks Upwelling",17,0,0,17,0
+"521",55512,"paragorgia",6.61571180771069e-06,0,11938,126.5410528,147.6271605,"(13) Eastern Queen Charlotte Sound",2,0,0,2,0
+"522",55513,"paragorgia",4.24790594433117e-06,0,11938,106.98758703,124.6409836,"(13) Eastern Queen Charlotte Sound",10,0,0,10,0
+"523",55514,"paragorgia",9.58547617111359e-07,0,11938,44.52325581,44.52325581,"(13) Eastern Queen Charlotte Sound",1,1,0,1,0
+"524",55766,"paragorgia",1.4016798323273e-06,0,11937,48.53655914,48.53655914,"(13) Eastern Queen Charlotte Sound",1,0,0,1,0
+"525",55767,"paragorgia",1.08863377719602e-05,0,11937,173.954386,173.954386,"(13) Eastern Queen Charlotte Sound",1,0,0,1,0
+"526",55768,"paragorgia",7.51427241600127e-06,0,11938,155.0923012,172.6322368,"(13) Eastern Queen Charlotte Sound",8,0,0,8,0
+"527",56017,"paragorgia",1.0357004218877e-05,0,12095,183.790539125,191.115625,"(13) Eastern Queen Charlotte Sound",4,0,0,4,0
+"528",57507,"paragorgia",2.5825337080797e-06,0,12242,72.154941935,75.59298246,"(10 Aristazabal Banks Upwelling",2,0,0,2,0
+"529",57766,"paragorgia",8.21291833868698e-07,0,12242,49.7142122342857,61.32972973,"(10 Aristazabal Banks Upwelling",7,2,0,7,0
+"530",57813,"paragorgia",2.4766749238542e-06,0,12258,69.57073171,69.57073171,"(11) Mainland Fjords",1,0,0,1,0
+"531",58060,"paragorgia",6.03310329225739e-07,0,12411,43.7,45.1,"(13) Eastern Queen Charlotte Sound",2,3,0,2,0
+"532",58319,"paragorgia",1.38437363302719e-06,0,12411,49.2332261275,55.66969697,"(13) Eastern Queen Charlotte Sound",4,0,0,4,0
+"533",58338,"paragorgia",0.00180583493149,0,12417,401.5779182,426.604487,"(11) Mainland Fjords",15,0,0,0,4
+"534",58339,"paragorgia",0.00415121423237251,0,12417,331.174105366667,345.8324091,"(11) Mainland Fjords",6,0,0,0,2
+"535",58580,"paragorgia",1.2676921579268e-07,0,12411,39.75882353,39.75882353,"(13) Eastern Queen Charlotte Sound",1,5,0,1,0
+"536",58596,"paragorgia",0.000105091092355483,0,12417,441.62411156,457.5016208,"(11) Mainland Fjords",15,0,0,0,15
+"537",58601,"paragorgia",2.34433348979257e-06,0,12419,67.8056025275,90.49691964,"(11) Mainland Fjords",4,0,0,4,0
+"538",58602,"paragorgia",3.59871274829691e-06,0,12419,91.317460312,93.24716513,"(11) Mainland Fjords",5,0,0,5,0
+"539",58839,"paragorgia",1.38722905721788e-06,0,12411,49.045056815,51.18579545,"(13) Eastern Queen Charlotte Sound",2,0,0,2,0
+"540",58856,"paragorgia",0.0252804003979974,0.023970986540053,12417,426.629447451351,439.4631494,"(11) Mainland Fjords",74,0,0,0,73
+"541",58861,"paragorgia",1.97865820877273e-06,0,12419,61.8907283525,69.60176934,"(11) Mainland Fjords",4,0,0,4,0
+"542",58862,"paragorgia",2.22011100373732e-06,0,12419,71.9460297925,100.3556757,"(11) Mainland Fjords",8,1,0,8,0
+"543",58863,"paragorgia",2.30019552014371e-06,0,12419,64.74186442,83.49006401,"(11) Mainland Fjords",3,0,0,3,0
+"544",60138,"paragorgia",1.48096930101884e-06,0,12734,50.8206140825,72.62124126,"(11) Mainland Fjords",8,0,0,8,0
+"545",60668,"paragorgia",0.000550986008376004,0,12741,262.019654407143,374.4818179,"(11) Mainland Fjords",14,2,0,0,14
+"546",60914,"paragorgia",0.0226195658237947,0.023902010578349,12739,342.328614512,426.1415882,"(11) Mainland Fjords",25,0,0,0,3
+"547",60915,"paragorgia",0.105784110767205,0.0806511864960439,12739,240.711499654545,417.1987297,"(11) Mainland Fjords",22,0,0,0,2
+"548",61161,"paragorgia",0.00967553235591052,0.011088178803531,12897,113.338495847778,207.8217523,"(11) Mainland Fjords",17,2,0,8,9
+"549",61912,"paragorgia",0.000789271861566293,0,12895,257.2440827,269.7604305,"(11) Mainland Fjords",11,0,0,0,11
+"550",62144,"paragorgia",0,0,13050,527.160056215385,551.5662586,"(11) Mainland Fjords",13,0,0,0,12
+"551",62395,"paragorgia",0.0760323977510886,0.0768151135803232,13050,94.4918865134783,121.7032687,"(11) Mainland Fjords",23,0,0,0,23
+"552",62898,"paragorgia",0.0504685913233521,0.0467528369996336,13054,171.529543183333,207.1087045,"(11) Mainland Fjords",30,0,0,0,30
+"553",62901,"paragorgia",1.07116349408658e-05,0,13055,177.65597825,186.8369565,"(11) Mainland Fjords",2,0,0,2,0
+"554",63146,"paragorgia",0.000467138351423517,0,13212,75.52718806375,82.86022165,"(11) Mainland Fjords",8,0,0,0,8
+"555",63148,"paragorgia",0.105535543253278,0.0986027984989528,13212,155.088595683333,157.8731092,"(11) Mainland Fjords",6,0,0,0,6
+"556",63150,"paragorgia",2.60188440155137e-06,0,13213,83.6211494135,95.5,"(11) Mainland Fjords",20,0,0,20,0
+"557",63151,"paragorgia",1.14982561509877e-06,0,13213,58.16954694,61.06521739,"(11) Mainland Fjords",3,2,0,3,0
+"558",63401,"paragorgia",3.7571358842253e-06,0,13213,112.4412267,120.3085366,"(11) Mainland Fjords",3,2,0,3,0
+"559",63652,"paragorgia",0.0494390674689655,0.0143091798193625,13207,93.2684846071429,114.6,"(11) Mainland Fjords",7,0,0,7,0
+"560",34418,"primnoa",0.000847768072349043,0.000808658710969765,8792,266.741054505,303.7648017,"(11) Mainland Fjords",80,0,0,0,1
+"561",36375,"primnoa",0.00180887619843285,0,9108,185.787099,185.787099,"(11) Mainland Fjords",1,0,0,0,15
+"562",36598,"primnoa",0.000544920021342386,0,9108,199.166219325,206.7811421,"(11) Mainland Fjords",4,0,0,0,6
+"563",37302,"primnoa",0.00457340592361325,0.00408991059167294,9265,387.495859740426,420.6160761,"(11) Mainland Fjords",47,0,0,0,4
+"564",37539,"primnoa",0.000154684174656542,0,9265,410.265008867568,448.3930164,"(11) Mainland Fjords",37,0,0,0,11
+"565",44428,"primnoa",0.0384591799591434,0.0374063935068521,10367,241.776643016667,244.5752333,"(11) Mainland Fjords",12,0,0,0,12
+"566",44699,"primnoa",0.238193900419374,0.239557532642485,10367,218.886183873684,238.7825291,"(11) Mainland Fjords",19,0,0,6,19
+"567",44978,"primnoa",0.618201788254806,0.589624408277581,10369,135.895325291304,155.9841087,"(11) Mainland Fjords",23,0,0,0,35
+"568",45244,"primnoa",0.099887971844866,0.10333618160425,10525,263.966474077778,319.4306807,"(11) Mainland Fjords",36,0,0,0,36
+"569",45530,"primnoa",0.0158552807975854,0.0143658791451478,10525,237.554027448148,309.4448509,"(11) Mainland Fjords",27,0,0,0,27
+"570",46092,"primnoa",8.36457385455936e-06,0,10523,399.393788566667,407.6385613,"(11) Mainland Fjords",6,0,0,0,6
+"571",46093,"primnoa",6.31558511112897e-05,0,10523,349.484447338462,388.7904551,"(11) Mainland Fjords",39,0,0,0,39
+"572",46099,"primnoa",2.71544496387519e-06,0,10524,438.004144138806,515.7025758,"(11) Mainland Fjords",67,0,0,0,40
+"573",54513,"primnoa",9.198978945498e-06,0,11789,385.70673525,437.8952156,"(11) Mainland Fjords",24,0,0,0,10
+"574",54767,"primnoa",6.35609513626007e-05,0,11789,230.54365002,280.411712,"(11) Mainland Fjords",10,2,0,0,12
+"575",58338,"primnoa",9.41259557493787e-05,0,12417,401.5779182,426.604487,"(11) Mainland Fjords",15,0,0,0,4
+"576",58339,"primnoa",0.000260716521073052,0,12417,331.174105366667,345.8324091,"(11) Mainland Fjords",6,0,0,0,2
+"577",58596,"primnoa",2.37580178191022e-07,0,12417,441.62411156,457.5016208,"(11) Mainland Fjords",15,0,0,0,15
+"578",58856,"primnoa",0.00463123923926132,0.00434101249770995,12417,426.629447451351,439.4631494,"(11) Mainland Fjords",74,0,0,0,73
+"579",60668,"primnoa",4.62847276522717e-05,0,12741,268.942075776923,374.4818179,"(11) Mainland Fjords",13,2,0,0,14
+"580",60914,"primnoa",9.29080635333988e-05,0,12739,342.328614512,426.1415882,"(11) Mainland Fjords",25,0,0,0,3
+"581",60915,"primnoa",0.000177942710329175,0,12739,391.952169122222,417.1987297,"(11) Mainland Fjords",9,0,0,0,2
+"582",61912,"primnoa",5.74580243902105e-05,0,12895,257.2440827,269.7604305,"(11) Mainland Fjords",11,0,0,0,11
+"583",62144,"primnoa",0,0,13050,527.160056215385,551.5662586,"(11) Mainland Fjords",13,0,0,0,12
+"584",62395,"primnoa",1,1,13050,103.478628509167,121.7032687,"(11) Mainland Fjords",12,0,0,0,23
+"585",62898,"primnoa",0.000669935976160446,0,13054,199.541487085714,207.1087045,"(11) Mainland Fjords",14,0,0,0,30
+"586",63148,"primnoa",0.0528732074254119,0.0641508289393059,13212,150.92623185,154.210958,"(11) Mainland Fjords",2,0,0,0,6
+"587",21076,"stylaster",4.39186567437227e-05,0,6265,28,28,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"588",21082,"stylaster",4.01622546741657e-05,0,6267,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"589",21500,"stylaster",2.00992831183931e-05,0,6267,29,30,"(11) Mainland Fjords",3,4,0,0,0
+"590",21711,"stylaster",3.92479571969446e-05,0,6424,28,28,"(11) Mainland Fjords",1,2,0,0,0
+"591",21933,"stylaster",1.93450894471667e-05,0,6423,26.6666666666667,30,"(13) Eastern Queen Charlotte Sound",3,4,0,0,0
+"592",21939,"stylaster",2.88043371564791e-05,0,6425,29,30,"(11) Mainland Fjords",2,3,0,0,0
+"593",21940,"stylaster",4.53808621127818e-05,0,6425,31,31,"(11) Mainland Fjords",1,1,0,0,0
+"594",21941,"stylaster",4.01540793037253e-05,0,6425,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"595",22157,"stylaster",4.01622546741657e-05,0,6423,30,30,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"596",22158,"stylaster",4.06040345459264e-05,0,6423,31,31,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"597",22163,"stylaster",2.99494845348562e-05,0,6425,32,32,"(11) Mainland Fjords",2,3,0,0,0
+"598",22167,"stylaster",4.14974071904945e-05,0,6426,33,33,"(11) Mainland Fjords",1,2,0,0,0
+"599",22374,"stylaster",2.93777088643916e-05,0,6423,30.5,31,"(13) Eastern Queen Charlotte Sound",2,3,0,0,0
+"600",23031,"stylaster",3.08858831040911e-05,0,6581,25,30,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"601",23420,"stylaster",1.06440394576337e-06,0,6736,84,84,"(13) Eastern Queen Charlotte Sound",2,0,0,2,0
+"602",23432,"stylaster",4.29326439113191e-05,0,6739,26,26,"(11) Mainland Fjords",1,1,0,0,0
+"603",23434,"stylaster",4.24365184478638e-05,0,6740,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"604",23435,"stylaster",4.48958068518022e-05,0,6740,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"605",23845,"stylaster",4.01622546741657e-05,0,6741,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"606",24038,"stylaster",0.000446508180819507,0,6737,76.425,76.425,"(13) Eastern Queen Charlotte Sound",1,0,0,1,0
+"607",24056,"stylaster",3.13033215021476e-05,0,6742,26,30,"(11) Mainland Fjords",2,2,0,0,0
+"608",24058,"stylaster",4.24365184478638e-05,0,6742,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"609",24256,"stylaster",0.127241530652062,0.106788867618748,6895,36.4516666666667,53.11,"(13) Eastern Queen Charlotte Sound",4,2,0,2,0
+"610",24272,"stylaster",7.57524476783208e-07,0,6899,30,30,"(11) Mainland Fjords",1,0,0,1,0
+"611",24275,"stylaster",4.48958068518022e-05,0,6900,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"612",24276,"stylaster",4.24365184478638e-05,0,6900,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"613",24481,"stylaster",4.14974071904945e-05,0,6899,33,33,"(11) Mainland Fjords",1,2,0,0,0
+"614",24482,"stylaster",4.04332369081089e-05,0,6899,21,21,"(11) Mainland Fjords",1,1,0,0,0
+"615",24484,"stylaster",4.19384268100329e-05,0,6900,24,24,"(11) Mainland Fjords",1,1,0,0,0
+"616",24486,"stylaster",3.08858831040911e-05,0,6900,25,30,"(11) Mainland Fjords",2,2,0,0,0
+"617",24678,"stylaster",1.82534821900344e-05,0,6896,23.3333333333333,30,"(11) Mainland Fjords",3,4,0,0,0
+"618",24691,"stylaster",4.34267178039809e-05,0,6899,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"619",24694,"stylaster",4.01540793037253e-05,0,6900,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"620",24887,"stylaster",4.06040345459264e-05,0,6895,31,31,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"621",24891,"stylaster",4.01540793037253e-05,0,6896,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"622",25100,"stylaster",2.92391629969719e-05,0,7051,21,22,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"623",25122,"stylaster",1.91004510487977e-05,0,7057,39.1390034994444,84.32284159,"(11) Mainland Fjords",10,2,0,6,0
+"624",25123,"stylaster",8.86720144721572e-07,0,7057,63.38477879375,99.28541667,"(11) Mainland Fjords",8,0,0,7,0
+"625",25124,"stylaster",7.65332263126764e-07,0,7058,31.39211733,31.45735294,"(11) Mainland Fjords",2,0,0,2,0
+"626",25319,"stylaster",3.08858831040911e-05,0,7052,25,30,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"627",25335,"stylaster",9.16790404839781e-07,0,7057,75.29711292,113,"(11) Mainland Fjords",7,0,0,7,0
+"628",25336,"stylaster",4.01540793037253e-05,0,7057,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"629",25341,"stylaster",4.34267178039809e-05,0,7058,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"630",25347,"stylaster",4.01540793037253e-05,0,7060,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"631",25536,"stylaster",3.12925091816602e-05,0,7054,26,32,"(11) Mainland Fjords",2,2,0,0,0
+"632",25544,"stylaster",8.01246849056313e-07,0,7056,43.111999063,58.71914894,"(11) Mainland Fjords",10,0,0,7,0
+"633",25549,"stylaster",1.97980661485543e-05,0,7057,43.64855994125,59.5,"(11) Mainland Fjords",5,2,0,4,0
+"634",25558,"stylaster",4.24365184478638e-05,0,7060,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"635",25743,"stylaster",4.48958068518022e-05,0,7054,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"636",25751,"stylaster",8.60461442263456e-07,0,7056,47.7873595275,63.35862069,"(11) Mainland Fjords",4,0,0,3,0
+"637",25756,"stylaster",9.76447504828574e-07,0,7057,61.48468645,63.59042553,"(11) Mainland Fjords",2,0,0,2,0
+"638",25765,"stylaster",3.74128230950357e-05,0,7060,24,24,"(11) Mainland Fjords",1,2,0,0,0
+"639",25956,"stylaster",1.96132711042416e-05,0,7214,44.42660480875,94,"(11) Mainland Fjords",5,2,0,3,0
+"640",25962,"stylaster",2.48444959665629e-05,0,7215,27.5,30,"(11) Mainland Fjords",2,4,0,0,0
+"641",25967,"stylaster",4.01540793037253e-05,0,7217,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"642",26164,"stylaster",9.29462251567836e-07,0,7216,54.7,54.7,"(11) Mainland Fjords",3,0,0,3,0
+"643",26359,"stylaster",4.34267178039809e-05,0,7214,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"644",26374,"stylaster",4.34267178039809e-05,0,7218,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"645",26549,"stylaster",3.83340121052058e-05,0,7208,26,26,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"646",26563,"stylaster",3.08858831040911e-05,0,7214,25,30,"(11) Mainland Fjords",2,2,0,0,0
+"647",26574,"stylaster",5.20063828559566e-07,0,7217,185.7,185.7,"(11) Mainland Fjords",2,0,0,2,0
+"648",26575,"stylaster",8.89369067253901e-07,0,7217,97.1889533354545,132.2,"(11) Mainland Fjords",11,0,0,11,0
+"649",26769,"stylaster",9.57302936984205e-07,0,7372,114.93055555,123.0333333,"(11) Mainland Fjords",6,0,0,6,0
+"650",26774,"stylaster",3.17041427671099e-05,0,7374,27,33,"(11) Mainland Fjords",2,2,0,0,0
+"651",26776,"stylaster",4.01540793037253e-05,0,7374,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"652",26780,"stylaster",8.65606398120331e-07,0,7375,63.4720261572727,117.75,"(11) Mainland Fjords",11,0,0,11,0
+"653",26977,"stylaster",1.04737710713349e-06,0,7372,113.05,114.375,"(11) Mainland Fjords",2,0,0,2,0
+"654",26978,"stylaster",1.09084547870549e-06,0,7373,101.2666667,101.2666667,"(11) Mainland Fjords",1,0,0,1,0
+"655",26981,"stylaster",4.19384268100329e-05,0,7373,24,24,"(11) Mainland Fjords",1,1,0,0,0
+"656",27174,"stylaster",4.01540793037253e-05,0,7370,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"657",27192,"stylaster",2.21777974251611e-05,0,7376,29.35,31,"(11) Mainland Fjords",3,1,0,2,0
+"658",27385,"stylaster",6.96481334337422e-07,0,7372,23.46666667,23.46666667,"(11) Mainland Fjords",1,0,0,1,0
+"659",27586,"stylaster",7.64326330302963e-07,0,7530,32.0340277775,37.4,"(11) Mainland Fjords",4,0,0,4,0
+"660",27593,"stylaster",9.91882311393772e-07,0,7534,61.45071429,61.45071429,"(11) Mainland Fjords",1,0,0,1,0
+"661",27594,"stylaster",4.01540793037253e-05,0,7534,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"662",27778,"stylaster",3.92479571969446e-05,0,7528,28,28,"(11) Mainland Fjords",1,2,0,0,0
+"663",27786,"stylaster",6.71745261978809e-07,0,7530,20.9,20.9,"(11) Mainland Fjords",1,0,0,1,0
+"664",27787,"stylaster",6.83128525848742e-07,0,7530,22.8902777766667,25.6375,"(11) Mainland Fjords",3,0,0,3,0
+"665",27980,"stylaster",4.01540793037253e-05,0,7528,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"666",27986,"stylaster",9.2105321663346e-07,0,7529,90.291666675,137.9666667,"(11) Mainland Fjords",4,0,0,4,0
+"667",27987,"stylaster",9.73907503438754e-07,0,7530,60.675,63.4,"(11) Mainland Fjords",2,0,0,2,0
+"668",27991,"stylaster",1.03597623643093e-06,0,7533,70,70,"(11) Mainland Fjords",1,0,0,1,0
+"669",27992,"stylaster",7.66754759424439e-07,0,7534,31,41.66666667,"(11) Mainland Fjords",3,0,0,1,0
+"670",28184,"stylaster",1.02357765078863e-06,0,7529,125.0694915,125.0694915,"(11) Mainland Fjords",1,0,0,1,0
+"671",28186,"stylaster",2.24192175016653e-05,0,7529,34.5491071425,55.25,"(11) Mainland Fjords",5,1,0,2,0
+"672",28187,"stylaster",8.96926409107817e-07,0,7530,57.62638888875,66,"(11) Mainland Fjords",8,0,0,8,0
+"673",28190,"stylaster",1.90062858585328e-05,0,7534,30.1438690475,49,"(11) Mainland Fjords",7,2,0,2,0
+"674",28377,"stylaster",4.63435606163678e-05,0,7686,33,33,"(11) Mainland Fjords",1,1,0,0,0
+"675",28381,"stylaster",8.97388896766038e-07,0,7687,111.784242475556,154.5222222,"(11) Mainland Fjords",9,0,0,9,0
+"676",28382,"stylaster",8.26800404092289e-07,0,7687,42.73167023,72.2860241,"(11) Mainland Fjords",4,0,0,2,0
+"677",28383,"stylaster",7.23839240759433e-07,0,7687,26.32,26.32,"(11) Mainland Fjords",1,0,0,1,0
+"678",28384,"stylaster",9.73364912288912e-05,0,7688,81.1859205086207,167.327653,"(11) Mainland Fjords",30,1,0,0,29
+"679",28577,"stylaster",3.87999275281588e-05,0,7687,27,27,"(11) Mainland Fjords",1,2,0,0,0
+"680",28578,"stylaster",9.89870823587738e-07,0,7687,74.5399906633333,100.46,"(11) Mainland Fjords",3,0,0,3,0
+"681",28579,"stylaster",2.1215611758265e-05,0,7687,32.4438712516667,54.62433862,"(11) Mainland Fjords",4,1,0,2,0
+"682",28581,"stylaster",9.79523845265572e-06,0,7688,37.53425938,50,"(11) Mainland Fjords",7,4,0,4,0
+"683",28778,"stylaster",3.10894696910357e-05,0,7686,25.5,31,"(11) Mainland Fjords",2,2,0,0,0
+"684",28784,"stylaster",4.44083794548526e-05,0,7688,29,29,"(11) Mainland Fjords",1,1,0,0,0
+"685",28785,"stylaster",4.34267178039809e-05,0,7688,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"686",28786,"stylaster",4.19384268100329e-05,0,7688,24,24,"(11) Mainland Fjords",1,1,0,0,0
+"687",28787,"stylaster",4.01540793037253e-05,0,7689,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"688",28790,"stylaster",3.92479571969446e-05,0,7689,28,28,"(11) Mainland Fjords",1,2,0,0,0
+"689",28983,"stylaster",9.35381097020107e-07,0,7686,100.643314414,154.1585526,"(11) Mainland Fjords",5,0,0,5,0
+"690",28984,"stylaster",2.13994389450426e-05,0,7687,45.9399356116667,118.7,"(11) Mainland Fjords",10,1,0,5,0
+"691",28985,"stylaster",9.19676272909396e-07,0,7687,65.940605135,91.38333333,"(11) Mainland Fjords",6,0,0,5,0
+"692",28986,"stylaster",6.72271366893028e-07,0,7687,104.61370797,192.8684211,"(11) Mainland Fjords",6,0,0,4,0
+"693",28987,"stylaster",3.5811582042899e-05,0,7687,30,30,"(11) Mainland Fjords",1,3,0,0,0
+"694",28989,"stylaster",9.39471464040376e-07,0,7688,101.11833333,102.5,"(11) Mainland Fjords",10,0,0,10,0
+"695",28990,"stylaster",2.23672773883079e-05,0,7688,31.35275,45.875,"(11) Mainland Fjords",3,1,0,1,0
+"696",29183,"stylaster",4.24365184478638e-05,0,7843,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"697",29189,"stylaster",1.55848324748002e-05,0,7845,31.732386597,58.70322581,"(11) Mainland Fjords",7,2,0,2,0
+"698",29193,"stylaster",1.99246413434098e-05,0,7846,65.370833325,100.8333333,"(11) Mainland Fjords",3,2,0,2,0
+"699",29194,"stylaster",1.8665719009262e-05,0,7846,61.21791666625,100.45,"(11) Mainland Fjords",9,2,0,8,0
+"700",29196,"stylaster",1.89210089008438e-05,0,7847,49.63,87.6,"(11) Mainland Fjords",6,2,0,5,0
+"701",29197,"stylaster",8.12478309949454e-07,0,7847,43.5060493822222,67.13333333,"(11) Mainland Fjords",9,0,0,4,0
+"702",29205,"stylaster",4.44083794548526e-05,0,7851,29,29,"(11) Mainland Fjords",1,1,0,0,0
+"703",29391,"stylaster",4.48958068518022e-05,0,7843,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"704",29398,"stylaster",2.01898856682033e-05,0,7845,78.278210115,171.3774319,"(11) Mainland Fjords",3,1,0,2,0
+"705",29401,"stylaster",3.19129414096284e-05,0,7846,27.5,33,"(11) Mainland Fjords",2,2,0,0,0
+"706",29417,"stylaster",4.01540793037253e-05,0,7852,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"707",29606,"stylaster",4.10518315556319e-05,0,7843,32,32,"(11) Mainland Fjords",1,2,0,0,0
+"708",29612,"stylaster",7.68384618976295e-07,0,7845,35.2953315416667,41.8,"(11) Mainland Fjords",6,0,0,3,0
+"709",29613,"stylaster",6.8567707048848e-07,0,7845,33.19468491,36.92370717,"(11) Mainland Fjords",2,1,0,2,0
+"710",29614,"stylaster",4.01540793037253e-05,0,7845,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"711",29623,"stylaster",1.03647274271065e-06,0,7850,71,71,"(11) Mainland Fjords",1,0,0,1,0
+"712",29625,"stylaster",4.09366960678024e-05,0,7851,22,22,"(11) Mainland Fjords",1,1,0,0,0
+"713",29830,"stylaster",2.8995855256885e-05,0,7843,29.5,30,"(11) Mainland Fjords",2,3,0,0,0
+"714",29831,"stylaster",4.01540793037253e-05,0,7843,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"715",29853,"stylaster",4.48958068518022e-05,0,7852,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"716",29854,"stylaster",4.01540793037253e-05,0,7852,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"717",29859,"stylaster",0.000151859514352242,0,7853,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"718",30049,"stylaster",1.89033315659339e-05,0,7999,25.3333333333333,30,"(11) Mainland Fjords",3,4,0,0,0
+"719",30053,"stylaster",2.89928956815199e-05,0,8000,29.5,32,"(11) Mainland Fjords",2,3,0,0,0
+"720",30058,"stylaster",1.50126496926696e-05,0,8001,52.5558333335714,134.06,"(11) Mainland Fjords",9,2,0,5,0
+"721",30065,"stylaster",4.44083794548526e-05,0,8003,29,29,"(11) Mainland Fjords",1,1,0,0,0
+"722",30075,"stylaster",3.08858831040911e-05,0,8010,25,30,"(11) Mainland Fjords",2,2,0,0,0
+"723",30285,"stylaster",3.78742856887752e-05,0,8002,25,25,"(11) Mainland Fjords",1,2,0,0,0
+"724",30499,"stylaster",4.14974071904945e-05,0,8001,33,33,"(11) Mainland Fjords",1,2,0,0,0
+"725",30715,"stylaster",3.08858831040911e-05,0,7997,25,30,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"726",30716,"stylaster",8.07212535048017e-07,0,7997,35.53333333,35.53333333,"(13) Eastern Queen Charlotte Sound",1,0,0,1,0
+"727",30743,"stylaster",4.34267178039809e-05,0,8009,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"728",30748,"stylaster",3.92479571969446e-05,0,8011,28,28,"(11) Mainland Fjords",1,2,0,0,0
+"729",30749,"stylaster",4.01540793037253e-05,0,8012,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"730",30941,"stylaster",0.000110340085212699,0,8156,28,34,"(11) Mainland Fjords",3,4,0,0,0
+"731",30943,"stylaster",4.48958068518022e-05,0,8156,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"732",30944,"stylaster",3.17041427671099e-05,0,8157,27,33,"(11) Mainland Fjords",2,2,0,0,0
+"733",30945,"stylaster",3.15181151715956e-05,0,8157,26.5,27,"(11) Mainland Fjords",2,2,0,0,0
+"734",30947,"stylaster",3.33648016276241e-05,0,8159,31,32,"(11) Mainland Fjords",2,2,0,0,0
+"735",30970,"stylaster",3.78742856887752e-05,0,8168,25,25,"(11) Mainland Fjords",1,2,0,0,0
+"736",31161,"stylaster",0.00025645070330245,0,8155,93.43229166625,119.1,"(11) Mainland Fjords",8,0,0,8,0
+"737",31162,"stylaster",0.00025497122036791,0,8155,91.020555555,117.6,"(11) Mainland Fjords",6,0,0,6,0
+"738",31165,"stylaster",0.00018146054298817,0,8156,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"739",31166,"stylaster",0,0,8156,25.1428571428571,32,"(11) Mainland Fjords",7,7,0,0,0
+"740",31167,"stylaster",3.97020310751002e-05,0,8157,29,29,"(11) Mainland Fjords",1,2,0,0,0
+"741",31169,"stylaster",4.09366960678024e-05,0,8157,22,22,"(11) Mainland Fjords",1,1,0,0,0
+"742",31178,"stylaster",2.91869821526598e-05,0,8160,30,30,"(11) Mainland Fjords",2,3,0,0,0
+"743",31185,"stylaster",4.39186567437227e-05,0,8165,28,28,"(11) Mainland Fjords",1,1,0,0,0
+"744",31391,"stylaster",1.95551385698149e-05,0,8157,27.3333333333333,32,"(11) Mainland Fjords",3,4,0,0,0
+"745",31593,"stylaster",0.0647556014160037,0.0362676048009239,8155,94.2490530425,124.5545455,"(13) Eastern Queen Charlotte Sound",4,0,0,4,0
+"746",31597,"stylaster",0.000277503709660013,0,8156,92.3495370266667,124.3333333,"(11) Mainland Fjords",3,0,0,3,0
+"747",31603,"stylaster",3.97020310751002e-05,0,8157,29,29,"(11) Mainland Fjords",1,2,0,0,0
+"748",31613,"stylaster",1.48259552023833e-05,0,8160,28.6666666666667,30,"(11) Mainland Fjords",3,6,0,0,0
+"749",31802,"stylaster",1.09312546168282e-06,0,8312,105.6,105.6,"(13) Eastern Queen Charlotte Sound",1,0,0,1,0
+"750",31807,"stylaster",0.000156951706629713,0,8313,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"751",31808,"stylaster",3.00663169065556e-05,0,8314,23,26,"(11) Mainland Fjords",2,2,0,0,0
+"752",31809,"stylaster",1.993071680372e-05,0,8314,32.5496156525,46.81698113,"(11) Mainland Fjords",3,2,0,1,0
+"753",31812,"stylaster",0.0071174657055323,0,8315,40.7959967316667,63,"(11) Mainland Fjords",4,1,0,3,0
+"754",31813,"stylaster",6.25827251198949e-05,0,8315,91.7009990947059,140.5865177,"(11) Mainland Fjords",17,0,0,17,0
+"755",31817,"stylaster",4.34267178039809e-05,0,8316,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"756",31828,"stylaster",4.14974071904945e-05,0,8326,33,33,"(11) Mainland Fjords",1,2,0,0,0
+"757",32018,"stylaster",0.000175060048073659,0,8313,44.33333333,44.33333333,"(11) Mainland Fjords",1,0,0,1,0
+"758",32020,"stylaster",7.1002212665614e-07,0,8313,26.07122383,31.57606838,"(11) Mainland Fjords",4,0,0,4,0
+"759",32031,"stylaster",4.34267178039809e-05,0,8316,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"760",32040,"stylaster",2.3194709839765e-05,0,8318,33.904347825,35.80869565,"(11) Mainland Fjords",2,1,0,1,0
+"761",32234,"stylaster",3.10947806072125e-05,0,8314,25.5,30,"(11) Mainland Fjords",2,2,0,0,0
+"762",32237,"stylaster",3.10894696910357e-05,0,8314,25.5,31,"(11) Mainland Fjords",2,2,0,0,0
+"763",32240,"stylaster",4.01540793037253e-05,0,8315,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"764",32241,"stylaster",1.97943887175026e-05,0,8315,46.4123346575,85.7462963,"(11) Mainland Fjords",5,2,0,3,0
+"765",32243,"stylaster",9.87381091714716e-07,0,8316,75.1247619025,98.0047619,"(11) Mainland Fjords",4,0,0,4,0
+"766",32253,"stylaster",7.81387575173158e-07,0,8318,34.33090804,40.46857143,"(11) Mainland Fjords",4,0,0,2,0
+"767",32254,"stylaster",9.31886074380567e-07,0,8326,54.30871111,58.2168,"(11) Mainland Fjords",3,0,0,3,0
+"768",32444,"stylaster",7.57253912973758e-07,0,8312,30.3,30.3,"(13) Eastern Queen Charlotte Sound",2,0,0,2,0
+"769",32460,"stylaster",4.34267178039809e-05,0,8316,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"770",32469,"stylaster",4.01540793037253e-05,0,8318,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"771",32472,"stylaster",2.12761067019791e-05,0,8326,30.1875,41,"(11) Mainland Fjords",5,1,0,2,0
+"772",32676,"stylaster",4.53808621127818e-05,0,8473,31,31,"(11) Mainland Fjords",1,1,0,0,0
+"773",32688,"stylaster",4.34267178039809e-05,0,8476,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"774",32691,"stylaster",2.26302335634279e-05,0,8484,58.85,87.7,"(11) Mainland Fjords",2,1,0,1,0
+"775",32908,"stylaster",3.53685016812306e-06,0,8476,41.4624398227778,75.7,"(11) Mainland Fjords",14,6,0,7,0
+"776",33104,"stylaster",7.36427909445696e-07,0,8470,28.19229876,29.60147059,"(13) Eastern Queen Charlotte Sound",2,0,0,2,0
+"777",33114,"stylaster",4.48958068518022e-05,0,8473,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"778",33117,"stylaster",0.000107935422516236,0,8473,29,29,"(11) Mainland Fjords",1,2,0,0,0
+"779",33128,"stylaster",4.19384268100329e-05,0,8476,24,24,"(11) Mainland Fjords",1,1,0,0,0
+"780",33320,"stylaster",3.10894696910357e-05,0,8470,25.5,31,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"781",33323,"stylaster",1.1432611065599e-05,0,8470,34.3885383958333,45.58367347,"(13) Eastern Queen Charlotte Sound",7,3,0,3,0
+"782",33332,"stylaster",0.000433743689733484,0,8473,28,28,"(11) Mainland Fjords",1,2,0,0,0
+"783",33335,"stylaster",0.000285902411116305,0,8473,29,29,"(11) Mainland Fjords",1,1,0,0,0
+"784",33537,"stylaster",3.25316768203208e-05,0,8628,29,34,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"785",33541,"stylaster",4.48958068518022e-05,0,8629,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"786",33553,"stylaster",4.24365184478638e-05,0,8632,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"787",33562,"stylaster",4.48958068518022e-05,0,8634,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"788",33752,"stylaster",0.000142201283145422,0,8628,27,27,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"789",33758,"stylaster",4.14384563093895e-05,0,8629,23,23,"(11) Mainland Fjords",1,1,0,0,0
+"790",33760,"stylaster",1.00261534075836e-06,0,8630,93.7896418775,115.9285714,"(11) Mainland Fjords",4,0,0,4,0
+"791",33767,"stylaster",4.10518315556319e-05,0,8632,32,32,"(11) Mainland Fjords",1,2,0,0,0
+"792",33991,"stylaster",4.06040345459264e-05,0,8634,31,31,"(11) Mainland Fjords",1,2,0,0,0
+"793",33994,"stylaster",3.92479571969446e-05,0,8643,28,28,"(11) Mainland Fjords",1,2,0,0,0
+"794",34169,"stylaster",9.99139550281025e-07,0,8625,123.9268094,130.4032787,"(13) Eastern Queen Charlotte Sound",2,0,0,2,0
+"795",34181,"stylaster",9.17129007500948e-07,0,8628,53.8183226733333,59.22,"(13) Eastern Queen Charlotte Sound",3,0,0,3,0
+"796",34187,"stylaster",4.01540793037253e-05,0,8629,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"797",34382,"stylaster",1.02840311664862e-06,0,8783,117.8802841,119.7484663,"(13) Eastern Queen Charlotte Sound",2,0,0,2,0
+"798",34401,"stylaster",3.14949913289774e-05,0,8787,26.5,33,"(11) Mainland Fjords",2,2,0,0,0
+"799",34404,"stylaster",4.01540793037253e-05,0,8788,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"800",34411,"stylaster",4.39186567437227e-05,0,8790,28,28,"(11) Mainland Fjords",1,1,0,0,0
+"801",34418,"stylaster",0.000145276966111093,0,8792,266.741054505,303.7648017,"(11) Mainland Fjords",80,0,0,0,1
+"802",34614,"stylaster",0.00015187159585534,0,8786,29,29,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"803",34620,"stylaster",4.48958068518022e-05,0,8787,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"804",34640,"stylaster",4.06040345459264e-05,0,8792,31,31,"(11) Mainland Fjords",1,2,0,0,0
+"805",34843,"stylaster",3.87919270679244e-05,0,8788,27,27,"(11) Mainland Fjords",1,2,0,0,0
+"806",34856,"stylaster",4.14974071904945e-05,0,8792,33,33,"(11) Mainland Fjords",1,2,0,0,0
+"807",35042,"stylaster",1.93376375739597e-05,0,8783,26.6666666666667,30,"(13) Eastern Queen Charlotte Sound",3,4,0,0,0
+"808",35260,"stylaster",3.97020310751002e-05,0,8941,29,29,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"809",35293,"stylaster",3.17041427671099e-05,0,8950,27,33,"(11) Mainland Fjords",2,2,0,0,0
+"810",35477,"stylaster",0.000107417495558291,0,8941,26,26,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"811",35508,"stylaster",4.24365184478638e-05,0,8950,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"812",35692,"stylaster",4.24365184478638e-05,0,8940,25,25,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"813",35706,"stylaster",4.01540793037253e-05,0,8944,30,30,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"814",35724,"stylaster",0.000257571822360026,0.00530785562632696,8950,32,32,"(11) Mainland Fjords",1,1,0,0,0
+"815",35922,"stylaster",8.32338277001012e-07,0,8944,46.06700357,62.65454545,"(13) Eastern Queen Charlotte Sound",6,0,0,5,0
+"816",35923,"stylaster",4.34267178039809e-05,0,8944,27,27,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"817",35943,"stylaster",4.53808621127818e-05,0,8950,31,31,"(11) Mainland Fjords",1,1,0,0,0
+"818",36129,"stylaster",3.74128230950357e-05,0,9099,24,24,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"819",36143,"stylaster",3.08858831040911e-05,0,9102,25,30,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"820",36162,"stylaster",4.14974071904945e-05,0,9109,33,33,"(11) Mainland Fjords",1,2,0,0,0
+"821",36345,"stylaster",3.99281712413433e-05,0,9098,20,20,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"822",36360,"stylaster",8.39538575177156e-07,0,9102,48.4074204685714,78.14791667,"(13) Eastern Queen Charlotte Sound",7,0,0,4,0
+"823",36361,"stylaster",4.03197308087695e-06,0,9102,26.3333333333333,33,"(13) Eastern Queen Charlotte Sound",6,6,0,0,0
+"824",36375,"stylaster",0.000924193788345746,0,9108,164.44451578,185.787099,"(11) Mainland Fjords",15,0,0,0,15
+"825",36381,"stylaster",4.24365184478638e-05,0,9109,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"826",36562,"stylaster",4.01540793037253e-05,0,9097,30,30,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"827",36563,"stylaster",3.87919270679244e-05,0,9098,27,27,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"828",36579,"stylaster",7.23888868758479e-07,0,9102,26.49803922,26.49803922,"(13) Eastern Queen Charlotte Sound",1,0,0,1,0
+"829",36598,"stylaster",0.000487818245454002,0,9108,192.04422695,206.7811421,"(11) Mainland Fjords",6,0,0,0,6
+"830",36599,"stylaster",3.23293922089737e-05,0,9108,28.5,33,"(11) Mainland Fjords",2,2,0,0,0
+"831",36600,"stylaster",4.19384268100329e-05,0,9108,24,24,"(11) Mainland Fjords",1,1,0,0,0
+"832",36601,"stylaster",2.16779672387014e-05,0,9108,24.73468286,26,"(11) Mainland Fjords",2,1,0,1,0
+"833",36794,"stylaster",4.14384563093895e-05,0,9099,23,23,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"834",36804,"stylaster",3.14949913289774e-05,0,9102,26.5,33,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"835",36829,"stylaster",4.24365184478638e-05,0,9109,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"836",36834,"stylaster",4.44083794548526e-05,0,9110,29,29,"(11) Mainland Fjords",1,1,0,0,0
+"837",37031,"stylaster",3.99281712413433e-05,0,9257,20,20,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"838",37039,"stylaster",1.42355853172144e-05,0,9259,24.75,30,"(13) Eastern Queen Charlotte Sound",4,4,0,0,0
+"839",37069,"stylaster",3.06817609715408e-05,0,9267,24.5,29,"(11) Mainland Fjords",2,2,0,0,0
+"840",37075,"stylaster",4.34267178039809e-05,0,9269,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"841",37285,"stylaster",3.10947806072125e-05,0,9259,25.5,30,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"842",37287,"stylaster",4.44083794548526e-05,0,9260,29,29,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"843",37288,"stylaster",2.14422920063062e-05,0,9260,24.3333333333333,29,"(13) Eastern Queen Charlotte Sound",3,3,0,0,0
+"844",37289,"stylaster",3.19129414096284e-05,0,9260,27.5,33,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"845",37302,"stylaster",0.0380470960036481,0.0311121626410133,9265,387.495859740426,420.6160761,"(11) Mainland Fjords",47,0,0,0,4
+"846",37313,"stylaster",4.29326439113191e-05,0,9269,26,26,"(11) Mainland Fjords",1,1,0,0,0
+"847",37519,"stylaster",4.14974071904945e-05,0,9257,33,33,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"848",37539,"stylaster",0.0674000318642989,0.0642645744574259,9265,410.265008867568,448.3930164,"(11) Mainland Fjords",37,0,0,0,11
+"849",37546,"stylaster",4.39186567437227e-05,0,9268,28,28,"(11) Mainland Fjords",1,1,0,0,0
+"850",37550,"stylaster",4.10601200011875e-05,0,9269,32,32,"(11) Mainland Fjords",1,2,0,0,0
+"851",37763,"stylaster",4.39186567437227e-05,0,9260,28,28,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"852",37772,"stylaster",0.914490073213233,1,9266,28.15,34.08,"(11) Mainland Fjords",4,2,0,1,0
+"853",37773,"stylaster",0.663455189535574,0.33748043296024,9266,48.36097501,162.9,"(11) Mainland Fjords",10,3,0,7,0
+"854",37777,"stylaster",0.000128768620887635,0.00530785562632696,9269,27,27,"(11) Mainland Fjords",1,2,0,0,0
+"855",38217,"stylaster",4.48958068518022e-05,0,9418,30,30,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"856",38218,"stylaster",4.01540793037253e-05,0,9418,30,30,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"857",38434,"stylaster",4.44083794548526e-05,0,9415,29,29,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"858",38443,"stylaster",4.39186567437227e-05,0,9418,28,28,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"859",38457,"stylaster",4.39186567437227e-05,0,9428,28,28,"(11) Mainland Fjords",1,1,0,0,0
+"860",38676,"stylaster",4.01540793037253e-05,0,9419,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"861",38689,"stylaster",4.39186567437227e-05,0,9445,28,28,"(11) Mainland Fjords",1,1,0,0,0
+"862",38897,"stylaster",4.19384268100329e-05,0,9575,24,24,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"863",38917,"stylaster",8.99687564888448e-07,0,9586,58.2111772466667,88.4,"(11) Mainland Fjords",6,0,0,6,0
+"864",39125,"stylaster",3.04846533319347e-05,0,9574,24,25,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"865",39131,"stylaster",3.92479571969446e-05,0,9575,28,28,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"866",39150,"stylaster",0.000137488643249768,0.00530785562632696,9586,31,31,"(11) Mainland Fjords",1,1,0,0,0
+"867",39389,"stylaster",4.24365184478638e-05,0,9586,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"868",39604,"stylaster",2.86124380047336e-05,0,9573,28.5,30,"(13) Eastern Queen Charlotte Sound",2,3,0,0,0
+"869",39609,"stylaster",7.39651217264972e-07,0,9575,28.13222222,28.13222222,"(13) Eastern Queen Charlotte Sound",1,0,0,1,0
+"870",39611,"stylaster",4.34267178039809e-05,0,9575,27,27,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"871",39843,"stylaster",3.78742856887752e-05,0,9730,25,25,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"872",39845,"stylaster",4.39186567437227e-05,0,9731,28,28,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"873",39850,"stylaster",3.92479571969446e-05,0,9732,28,28,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"874",39878,"stylaster",7.48443468980087e-05,0,9741,42.08748052,85.2,"(11) Mainland Fjords",7,2,0,3,0
+"875",40105,"stylaster",1.46052914616197e-05,0,9733,26,30,"(13) Eastern Queen Charlotte Sound",4,4,0,0,0
+"876",40106,"stylaster",1.00383329647202e-06,0,9733,113.24722225,116.8555556,"(13) Eastern Queen Charlotte Sound",4,0,0,4,0
+"877",40108,"stylaster",9.7198788821293e-07,0,9734,65.2196428575,70.4,"(13) Eastern Queen Charlotte Sound",4,0,0,4,0
+"878",40117,"stylaster",7.66007853237842e-07,0,9736,31,31,"(11) Mainland Fjords",1,0,0,1,0
+"879",40129,"stylaster",3.02719629595229e-05,0,9740,23.5,27,"(11) Mainland Fjords",2,2,0,0,0
+"880",40134,"stylaster",8.8520701112411e-07,0,9741,48.7,58.2,"(11) Mainland Fjords",3,0,0,2,0
+"881",40135,"stylaster",9.57775947951544e-07,0,9741,56.1,56.1,"(11) Mainland Fjords",1,0,0,1,0
+"882",40140,"stylaster",3.92479571969446e-05,0,9745,28,28,"(11) Mainland Fjords",1,2,0,0,0
+"883",40352,"stylaster",3.92479571969446e-05,0,9730,28,28,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"884",40364,"stylaster",8.34451382476783e-07,0,9733,107.948941176,138.4,"(13) Eastern Queen Charlotte Sound",10,0,0,10,0
+"885",40365,"stylaster",9.43898449141662e-07,0,9734,69.281410255,102.3,"(13) Eastern Queen Charlotte Sound",4,0,0,3,0
+"886",40366,"stylaster",1.00932917624953e-06,0,9734,78.40375,91.7,"(13) Eastern Queen Charlotte Sound",4,0,0,4,0
+"887",40376,"stylaster",1.87791228583036e-05,0,9736,53.794299524375,149.1285714,"(11) Mainland Fjords",9,2,0,7,0
+"888",40387,"stylaster",8.44329636647117e-07,0,9739,94.7440830114286,169.8521167,"(11) Mainland Fjords",7,0,0,6,0
+"889",40617,"stylaster",2.06078946347332e-06,0,9732,29.0109526508333,41.0537037,"(13) Eastern Queen Charlotte Sound",11,8,0,1,0
+"890",40635,"stylaster",9.0823491061333e-07,0,9737,62.0597969716667,91.80689655,"(11) Mainland Fjords",6,0,0,4,0
+"891",40884,"stylaster",2.80368802957558e-05,0,9889,27,29,"(13) Eastern Queen Charlotte Sound",2,3,0,0,0
+"892",40888,"stylaster",8.78571355803103e-07,0,9890,44.60789474,44.60789474,"(13) Eastern Queen Charlotte Sound",1,0,0,1,0
+"893",40893,"stylaster",1.46818768143883e-05,0,9891,26.25,32,"(13) Eastern Queen Charlotte Sound",4,4,0,0,0
+"894",40927,"stylaster",3.21150391417622e-05,0,9904,28,34,"(11) Mainland Fjords",2,2,0,0,0
+"895",40931,"stylaster",8.83212731484432e-07,0,9905,82.6691558454545,132.25,"(11) Mainland Fjords",11,0,0,10,0
+"896",41165,"stylaster",4.01622546741657e-05,0,9890,30,30,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"897",41180,"stylaster",3.08942393607544e-05,0,9895,25,28,"(11) Mainland Fjords",2,2,0,0,0
+"898",41206,"stylaster",9.46692951719977e-07,0,9905,86.487222228,129.8666667,"(11) Mainland Fjords",5,0,0,4,0
+"899",41209,"stylaster",9.41045922100666e-07,0,9906,119.785000006,142.775,"(11) Mainland Fjords",5,0,0,5,0
+"900",41220,"stylaster",4.63435606163678e-05,0,9918,33,33,"(11) Mainland Fjords",1,1,0,0,0
+"901",41463,"stylaster",7.63482453413509e-07,0,9895,32.66571084,43.05202958,"(11) Mainland Fjords",4,0,0,1,0
+"902",41481,"stylaster",1.07278611590245e-06,0,9906,92.16,92.52,"(11) Mainland Fjords",2,0,0,2,0
+"903",41482,"stylaster",9.57626693522016e-07,0,9906,63.6712962966667,85.98888889,"(11) Mainland Fjords",3,0,0,3,0
+"904",41722,"stylaster",3.87919270679244e-05,0,9889,27,27,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"905",41724,"stylaster",8.28090145850243e-07,0,9890,47.18746496625,75.89571429,"(13) Eastern Queen Charlotte Sound",8,0,0,6,0
+"906",41759,"stylaster",4.29326439113191e-05,0,9917,26,26,"(11) Mainland Fjords",1,1,0,0,0
+"907",41987,"stylaster",4.48958068518022e-05,0,10046,30,30,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"908",42028,"stylaster",3.74128230950357e-05,0,10075,24,24,"(11) Mainland Fjords",1,2,0,0,0
+"909",42255,"stylaster",3.02719629595229e-05,0,10046,23.5,27,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"910",42294,"stylaster",4.19384268100329e-05,0,10074,24,24,"(11) Mainland Fjords",1,1,0,0,0
+"911",42295,"stylaster",4.01540793037253e-05,0,10075,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"912",42795,"stylaster",4.24365184478638e-05,0,10046,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"913",42823,"stylaster",3.13033215021476e-05,0,10062,26,30,"(11) Mainland Fjords",2,2,0,0,0
+"914",42826,"stylaster",3.08858831040911e-05,0,10063,25,30,"(11) Mainland Fjords",2,2,0,0,0
+"915",43060,"stylaster",3.10990393302279e-05,0,10203,25.5,29,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"916",43100,"stylaster",3.08858831040911e-05,0,10221,25,30,"(11) Mainland Fjords",2,2,0,0,0
+"917",43600,"stylaster",3.13033215021476e-05,0,10203,26,30,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"918",43617,"stylaster",4.01540793037253e-05,0,10210,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"919",43620,"stylaster",0.000185584098176538,0.00530785562632696,10211,22,28,"(11) Mainland Fjords",2,1,0,0,0
+"920",43643,"stylaster",4.48958068518022e-05,0,10222,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"921",44186,"stylaster",4.19384268100329e-05,0,10389,24,24,"(11) Mainland Fjords",1,1,0,0,0
+"922",44428,"stylaster",0.00144629644776522,0,10367,241.776643016667,244.5752333,"(11) Mainland Fjords",12,0,0,0,12
+"923",44699,"stylaster",0.000822856833941811,0,10367,137.727651905414,238.7825291,"(11) Mainland Fjords",26,0,0,6,19
+"924",44702,"stylaster",7.30358306714244e-07,0,10368,27.729412645,33.6056338,"(11) Mainland Fjords",2,0,0,2,0
+"925",44703,"stylaster",7.93098452504353e-07,0,10368,37.597800358,52.23947368,"(11) Mainland Fjords",5,0,0,2,0
+"926",44704,"stylaster",3.14949913289774e-05,0,10368,26.5,33,"(11) Mainland Fjords",2,2,0,0,0
+"927",44974,"stylaster",3.13071189655225e-05,0,10368,26,29,"(11) Mainland Fjords",2,2,0,0,0
+"928",44978,"stylaster",0.174396100342657,0.172698033558015,10369,137.53991134,182.335316,"(11) Mainland Fjords",35,0,0,0,35
+"929",44980,"stylaster",7.23863801994605e-05,0,10369,42.4997985468333,127.5608696,"(11) Mainland Fjords",15,1,0,2,4
+"930",44981,"stylaster",0.000556644503765302,0,10369,55.2180683141667,96.5361609,"(11) Mainland Fjords",15,2,0,1,12
+"931",45001,"stylaster",1.95549684378787e-05,0,10382,27.3333333333333,30,"(11) Mainland Fjords",3,4,0,0,0
+"932",45244,"stylaster",0.000514133931682758,0,10525,263.966474077778,319.4306807,"(11) Mainland Fjords",36,0,0,0,36
+"933",45253,"stylaster",9.08356962329936e-07,0,10527,92.99651572,131.4230769,"(11) Mainland Fjords",7,0,0,6,0
+"934",45258,"stylaster",4.34267178039809e-05,0,10528,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"935",45511,"stylaster",9.93530659263947e-07,0,10520,63,63.2,"(13) Eastern Queen Charlotte Sound",2,0,0,2,0
+"936",45526,"stylaster",8.18443162940762e-07,0,10524,36.85,36.85,"(11) Mainland Fjords",1,0,0,1,0
+"937",45528,"stylaster",9.77637573159998e-07,0,10524,108.692597406,134.75,"(11) Mainland Fjords",5,0,0,5,0
+"938",45530,"stylaster",0.000550105480143787,0,10525,237.554027448148,309.4448509,"(11) Mainland Fjords",27,0,0,0,27
+"939",45539,"stylaster",1.06373649684022e-06,0,10528,77.325,77.325,"(11) Mainland Fjords",1,0,0,1,0
+"940",45542,"stylaster",4.29326439113191e-05,0,10528,26,26,"(11) Mainland Fjords",1,1,0,0,0
+"941",45799,"stylaster",8.29588485370552e-07,0,10520,44.667380952,65.7,"(13) Eastern Queen Charlotte Sound",5,0,0,3,0
+"942",45803,"stylaster",1.05094296169402e-06,0,10521,82.214285715,91.6,"(13) Eastern Queen Charlotte Sound",2,0,0,2,0
+"943",45814,"stylaster",1.02977684267599e-06,0,10524,72.7,77.4,"(11) Mainland Fjords",2,0,0,2,0
+"944",45815,"stylaster",1.09658889319086e-06,0,10524,94.3,94.3,"(11) Mainland Fjords",1,0,0,1,0
+"945",45818,"stylaster",7.9875126654284e-07,0,10525,51.295450732,75,"(11) Mainland Fjords",15,0,0,11,0
+"946",46092,"stylaster",1.55876482535289e-06,0,10523,399.393788566667,407.6385613,"(11) Mainland Fjords",6,0,0,0,6
+"947",46093,"stylaster",2.79256519551757e-05,0,10523,349.484447338462,388.7904551,"(11) Mainland Fjords",39,0,0,0,39
+"948",46099,"stylaster",9.34980796689827e-07,0,10524,438.004144138806,515.7025758,"(11) Mainland Fjords",67,0,0,0,40
+"949",46387,"stylaster",8.86585184436788e-07,0,10683,57.675,101.4,"(11) Mainland Fjords",4,0,0,2,0
+"950",46391,"stylaster",8.08463624666822e-07,0,10684,41.9158081766667,76.40389805,"(11) Mainland Fjords",6,0,0,3,0
+"951",46392,"stylaster",6.66075973531011e-07,0,10684,20.26666667,20.26666667,"(11) Mainland Fjords",1,0,0,1,0
+"952",46642,"stylaster",4.68210620213689e-05,0,10674,34,34,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"953",46644,"stylaster",4.44083794548526e-05,0,10675,29,29,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"954",46664,"stylaster",3.99281712413433e-05,0,10680,20,20,"(11) Mainland Fjords",1,1,0,0,0
+"955",46672,"stylaster",3.02749113020291e-05,0,10682,23.5,26,"(11) Mainland Fjords",2,2,0,0,0
+"956",46673,"stylaster",8.74501973291382e-07,0,10682,116.90000791,141.9163934,"(11) Mainland Fjords",10,0,0,10,0
+"957",46674,"stylaster",8.77927244321165e-07,0,10683,89.9182138053846,120.8548387,"(11) Mainland Fjords",13,0,0,13,0
+"958",46679,"stylaster",1.0876504814935e-06,0,10684,85.6,85.6,"(11) Mainland Fjords",1,0,0,1,0
+"959",46929,"stylaster",3.87999275281588e-05,0,10675,27,27,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"960",46930,"stylaster",1.4609460872162e-05,0,10675,26,35,"(13) Eastern Queen Charlotte Sound",4,4,0,0,0
+"961",46958,"stylaster",9.03097007667776e-07,0,10682,117.7162655125,152.2994565,"(11) Mainland Fjords",8,0,0,8,0
+"962",47215,"stylaster",1.86865877004368e-05,0,10676,24.6666666666667,27,"(13) Eastern Queen Charlotte Sound",3,4,0,0,0
+"963",47245,"stylaster",3.92479571969446e-05,0,10685,28,28,"(11) Mainland Fjords",1,2,0,0,0
+"964",47566,"stylaster",4.63435606163678e-05,0,10863,33,33,"(11) Mainland Fjords",1,1,0,0,0
+"965",47817,"stylaster",4.48958068518022e-05,0,10845,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"966",47820,"stylaster",8.54709790799433e-07,0,10846,51.8684049785714,86.4,"(11) Mainland Fjords",7,0,0,6,0
+"967",48414,"stylaster",4.29326439113191e-05,0,10863,26,26,"(11) Mainland Fjords",1,1,0,0,0
+"968",48626,"stylaster",4.14384563093895e-05,0,10990,23,23,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"969",48671,"stylaster",3.08858831040911e-05,0,11016,25,30,"(11) Mainland Fjords",2,2,0,0,0
+"970",48885,"stylaster",4.14384563093895e-05,0,10990,23,23,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"971",49148,"stylaster",3.15147966743595e-05,0,10990,26.5,29,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"972",49431,"stylaster",4.39186567437227e-05,0,10994,28,28,"(11) Mainland Fjords",1,1,0,0,0
+"973",49701,"stylaster",9.1043605238293e-07,0,11152,55.164927972,62.70918367,"(11) Mainland Fjords",5,0,0,5,0
+"974",49702,"stylaster",8.1111641151023e-07,0,11152,38.835324795,49.78820533,"(11) Mainland Fjords",4,0,0,2,0
+"975",49743,"stylaster",3.16969071443329e-05,0,11174,27,34,"(11) Mainland Fjords",2,2,0,0,0
+"976",50271,"stylaster",7.51352784255272e-07,0,11171,29.4,29.4,"(11) Mainland Fjords",1,0,0,1,0
+"977",50532,"stylaster",1.04355577401728e-06,0,11171,92.4222222233333,112.5,"(11) Mainland Fjords",3,0,0,3,0
+"978",51022,"stylaster",3.1298449105409e-05,0,11304,26,31,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"979",51044,"stylaster",4.34267178039809e-05,0,11311,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"980",51072,"stylaster",2.94465977834755e-05,0,11330,21.5,23,"(11) Mainland Fjords",2,2,0,0,0
+"981",51077,"stylaster",9.06752178298891e-07,0,11331,136.379798,151.1727273,"(11) Mainland Fjords",3,0,0,3,0
+"982",51284,"stylaster",9.04558473037737e-07,0,11302,51.6456714866667,62.71969697,"(13) Eastern Queen Charlotte Sound",3,0,0,2,0
+"983",51285,"stylaster",9.1550292715845e-07,0,11302,49.7,49.7,"(13) Eastern Queen Charlotte Sound",1,0,0,1,0
+"984",51336,"stylaster",4.39186567437227e-05,0,11330,28,28,"(11) Mainland Fjords",1,1,0,0,0
+"985",51339,"stylaster",3.13114673694006e-05,0,11331,26,27,"(11) Mainland Fjords",2,2,0,0,0
+"986",51343,"stylaster",1.0590814494007e-06,0,11332,103.9,114.7,"(11) Mainland Fjords",2,0,0,2,0
+"987",51549,"stylaster",3.78742856887752e-05,0,11302,25,25,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"988",51573,"stylaster",1.44419695683109e-05,0,11310,27.3333333333333,28,"(11) Mainland Fjords",3,6,0,0,0
+"989",51581,"stylaster",3.13033215021476e-05,0,11314,26,30,"(11) Mainland Fjords",2,2,0,0,0
+"990",51600,"stylaster",4.34267178039809e-05,0,11330,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"991",51809,"stylaster",7.84533521077565e-07,0,11460,34.2166666666667,45.3,"(13) Eastern Queen Charlotte Sound",3,0,0,1,0
+"992",51810,"stylaster",3.64849995022727e-05,0,11460,22,22,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"993",52085,"stylaster",1.87571219026019e-05,0,11460,24.4774601925,27.14242424,"(13) Eastern Queen Charlotte Sound",5,2,0,4,0
+"994",52086,"stylaster",8.099394619556e-07,0,11461,41.8559544157143,63.76385542,"(13) Eastern Queen Charlotte Sound",7,0,0,3,0
+"995",52353,"stylaster",3.78742856887752e-05,0,11460,25,25,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"996",52636,"stylaster",4.29326439113191e-05,0,11463,26,26,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"997",52650,"stylaster",0.000106533767765669,0,11470,26,30,"(11) Mainland Fjords",2,2,0,0,0
+"998",52655,"stylaster",4.39186567437227e-05,0,11471,28,28,"(11) Mainland Fjords",1,1,0,0,0
+"999",52889,"stylaster",3.00663169065556e-05,0,11617,23,26,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"1000",53140,"stylaster",4.04332369081089e-05,0,11612,21,21,"(10 Aristazabal Banks Upwelling",1,1,0,0,0
+"1001",53195,"stylaster",3.08858831040911e-05,0,11630,25,30,"(11) Mainland Fjords",2,2,0,0,0
+"1002",53222,"stylaster",3.15114832598669e-05,0,11648,26.5,30,"(11) Mainland Fjords",2,2,0,0,0
+"1003",53433,"stylaster",4.19384268100329e-05,0,11619,24,24,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"1004",53689,"stylaster",8.50454600414543e-07,0,11616,53.554142697,62.35284553,"(13) Eastern Queen Charlotte Sound",10,0,0,9,0
+"1005",53727,"stylaster",7.68618965670165e-07,0,11629,31.26666667,31.26666667,"(11) Mainland Fjords",1,0,0,1,0
+"1006",53954,"stylaster",1.96712198861723e-05,0,11774,27.6666666666667,30,"(13) Eastern Queen Charlotte Sound",3,4,0,0,0
+"1007",54229,"stylaster",3.99281712413433e-05,0,11779,20,20,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"1008",54264,"stylaster",4.24365184478638e-05,0,11806,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"1009",54511,"stylaster",3.87919270679244e-05,0,11788,27,27,"(11) Mainland Fjords",1,2,0,0,0
+"1010",54513,"stylaster",2.87288970650109e-06,0,11789,385.70673525,437.8952156,"(11) Mainland Fjords",24,0,0,0,10
+"1011",54718,"stylaster",4.29326439113191e-05,0,11771,26,26,"(10 Aristazabal Banks Upwelling",1,1,0,0,0
+"1012",54720,"stylaster",8.62433844447707e-07,0,11771,50.1415109485714,67.31666667,"(10 Aristazabal Banks Upwelling",7,0,0,6,0
+"1013",54767,"stylaster",2.40868039732054e-05,0,11789,124.095888308333,280.411712,"(11) Mainland Fjords",13,2,0,0,12
+"1014",54964,"stylaster",3.17220523687208e-05,0,11926,27,29,"(10 Aristazabal Banks Upwelling",2,2,0,0,0
+"1015",54975,"stylaster",7.37430007460253e-07,0,11929,50.79848731625,71.448,"(10 Aristazabal Banks Upwelling",24,0,0,17,0
+"1016",55000,"stylaster",3.15114832598669e-05,0,11937,26.5,30,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"1017",55003,"stylaster",4.48958068518022e-05,0,11938,30,30,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"1018",55005,"stylaster",3.10894696910357e-05,0,11938,25.5,31,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"1019",55006,"stylaster",4.48958068518022e-05,0,11939,30,30,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"1020",55241,"stylaster",3.10894696910357e-05,0,11932,25.5,31,"(10 Aristazabal Banks Upwelling",2,2,0,0,0
+"1021",55261,"stylaster",3.78742856887752e-05,0,11939,25,25,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"1022",55266,"stylaster",4.24365184478638e-05,0,11943,25,25,"(11) Mainland Fjords",1,1,0,0,0
+"1023",55512,"stylaster",9.5908445333409e-07,0,11938,126.5410528,147.6271605,"(13) Eastern Queen Charlotte Sound",2,0,0,2,0
+"1024",55513,"stylaster",9.15410389516254e-07,0,11938,106.98758703,124.6409836,"(13) Eastern Queen Charlotte Sound",10,0,0,10,0
+"1025",55514,"stylaster",2.0081473332273e-05,0,11938,28.1991813,44.52325581,"(13) Eastern Queen Charlotte Sound",3,1,0,1,0
+"1026",55733,"stylaster",4.14384563093895e-05,0,11926,23,23,"(10 Aristazabal Banks Upwelling",1,1,0,0,0
+"1027",55766,"stylaster",7.72735331952337e-07,0,11937,33.6682469866667,48.53655914,"(13) Eastern Queen Charlotte Sound",3,0,0,1,0
+"1028",55767,"stylaster",6.54694152600304e-07,0,11937,173.954386,173.954386,"(13) Eastern Queen Charlotte Sound",1,0,0,1,0
+"1029",55768,"stylaster",6.63498451251359e-07,0,11938,155.0923012,172.6322368,"(13) Eastern Queen Charlotte Sound",8,0,0,8,0
+"1030",55783,"stylaster",4.01540793037253e-05,0,11947,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"1031",56001,"stylaster",3.23235554401748e-05,0,12088,28.5,34,"(10 Aristazabal Banks Upwelling",2,2,0,0,0
+"1032",56017,"stylaster",4.93072223578763e-07,0,12095,183.790539125,191.115625,"(13) Eastern Queen Charlotte Sound",4,0,0,4,0
+"1033",56251,"stylaster",3.04831434309779e-05,0,12088,24,26,"(10 Aristazabal Banks Upwelling",2,2,0,0,0
+"1034",56292,"stylaster",4.19384268100329e-05,0,12124,24,24,"(11) Mainland Fjords",1,1,0,0,0
+"1035",56494,"stylaster",2.8995855256885e-05,0,12088,29.5,30,"(10 Aristazabal Banks Upwelling",2,3,0,0,0
+"1036",56503,"stylaster",3.83419529597272e-05,0,12093,26,26,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"1037",56514,"stylaster",3.24160015918135e-05,0,12096,22,22,"(13) Eastern Queen Charlotte Sound",1,3,0,0,0
+"1038",56757,"stylaster",3.87919270679244e-05,0,12093,27,27,"(13) Eastern Queen Charlotte Sound",1,2,0,0,0
+"1039",57023,"stylaster",4.24365184478638e-05,0,12251,25,25,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"1040",57033,"stylaster",3.10894696910357e-05,0,12254,25.5,31,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"1041",57290,"stylaster",3.15114832598669e-05,0,12253,26.5,30,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"1042",57507,"stylaster",1.02586194611371e-06,0,12242,72.154941935,75.59298246,"(10 Aristazabal Banks Upwelling",2,0,0,2,0
+"1043",57551,"stylaster",3.06858574497212e-05,0,12258,24.5,28,"(11) Mainland Fjords",2,2,0,0,0
+"1044",57766,"stylaster",1.43255983302604e-05,0,12242,29.4135441483333,61.32972973,"(10 Aristazabal Banks Upwelling",20,2,0,7,0
+"1045",57813,"stylaster",1.03389589074365e-06,0,12258,69.57073171,69.57073171,"(11) Mainland Fjords",1,0,0,1,0
+"1046",57832,"stylaster",4.29326439113191e-05,0,12284,26,26,"(11) Mainland Fjords",1,1,0,0,0
+"1047",58030,"stylaster",7.70132247250383e-07,0,12400,31.48769231,31.48769231,"(10 Aristazabal Banks Upwelling",1,0,0,1,0
+"1048",58031,"stylaster",3.74206429493603e-05,0,12400,24,24,"(10 Aristazabal Banks Upwelling",1,2,0,0,0
+"1049",58058,"stylaster",4.39186567437227e-05,0,12410,28,28,"(13) Eastern Queen Charlotte Sound",1,1,0,0,0
+"1050",58060,"stylaster",1.43427863499542e-05,0,12411,34.2333333333333,45.1,"(13) Eastern Queen Charlotte Sound",5,3,0,2,0
+"1051",58071,"stylaster",3.83340121052058e-05,0,12415,26,26,"(11) Mainland Fjords",1,2,0,0,0
+"1052",58319,"stylaster",7.79221636686115e-07,0,12411,38.42122436625,55.66969697,"(13) Eastern Queen Charlotte Sound",8,0,0,4,0
+"1053",58320,"stylaster",3.02749113020291e-05,0,12411,23.5,26,"(13) Eastern Queen Charlotte Sound",2,2,0,0,0
+"1054",58338,"stylaster",2.27839771361193e-05,0,12417,401.5779182,426.604487,"(11) Mainland Fjords",15,0,0,0,4
+"1055",58339,"stylaster",9.22574901977491e-05,0,12417,331.174105366667,345.8324091,"(11) Mainland Fjords",6,0,0,0,2
+"1056",58574,"stylaster",3.78821663322385e-05,0,12409,25,25,"(11) Mainland Fjords",1,2,0,0,0
+"1057",58580,"stylaster",4.11563650661967e-06,0,12411,28.3593656816667,39.75882353,"(13) Eastern Queen Charlotte Sound",8,5,0,1,0
+"1058",58596,"stylaster",0,0,12417,441.62411156,457.5016208,"(11) Mainland Fjords",15,0,0,0,15
+"1059",58601,"stylaster",8.56470970388572e-07,0,12419,53.1136525742857,90.49691964,"(11) Mainland Fjords",7,0,0,4,0
+"1060",58602,"stylaster",1.01798466828907e-06,0,12419,91.317460312,93.24716513,"(11) Mainland Fjords",5,0,0,5,0
+"1061",58833,"stylaster",4.09366960678024e-05,0,12409,22,22,"(11) Mainland Fjords",1,1,0,0,0
+"1062",58838,"stylaster",6.68354054892756e-07,0,12411,23.2122778966667,25.04565217,"(13) Eastern Queen Charlotte Sound",9,0,0,9,0
+"1063",58839,"stylaster",7.30995949926013e-07,0,12411,31.67862751,51.18579545,"(13) Eastern Queen Charlotte Sound",10,0,0,2,0
+"1064",58842,"stylaster",3.694970142125e-05,0,12412,23,23,"(11) Mainland Fjords",1,2,0,0,0
+"1065",58851,"stylaster",3.08858831040911e-05,0,12416,25,30,"(11) Mainland Fjords",2,2,0,0,0
+"1066",58856,"stylaster",6.59877473463318e-05,0,12417,426.629447451351,439.4631494,"(11) Mainland Fjords",74,0,0,0,73
+"1067",58861,"stylaster",9.50423433402303e-07,0,12419,61.8907283525,69.60176934,"(11) Mainland Fjords",4,0,0,4,0
+"1068",58862,"stylaster",7.7497212503457e-07,0,12419,64.150061759,100.3556757,"(11) Mainland Fjords",10,1,0,8,0
+"1069",58863,"stylaster",9.79278276773492e-07,0,12419,64.74186442,83.49006401,"(11) Mainland Fjords",3,0,0,3,0
+"1070",59102,"stylaster",3.97020310751002e-05,0,12566,29,29,"(11) Mainland Fjords",1,2,0,0,0
+"1071",59121,"stylaster",3.10894696910357e-05,0,12574,25.5,31,"(11) Mainland Fjords",2,2,0,0,0
+"1072",59626,"stylaster",3.19129414096284e-05,0,12570,27.5,33,"(11) Mainland Fjords",2,2,0,0,0
+"1073",59871,"stylaster",4.39186567437227e-05,0,12565,28,28,"(11) Mainland Fjords",1,1,0,0,0
+"1074",60138,"stylaster",8.24789877021881e-07,0,12734,46.954526489,72.62124126,"(11) Mainland Fjords",10,0,0,8,0
+"1075",60411,"stylaster",3.08858831040911e-05,0,12742,25,30,"(11) Mainland Fjords",2,2,0,0,0
+"1076",60415,"stylaster",3.92479571969446e-05,0,12743,28,28,"(11) Mainland Fjords",1,2,0,0,0
+"1077",60668,"stylaster",1.67017939720378e-05,0,12741,145.509827203571,374.4818179,"(11) Mainland Fjords",15,2,0,0,14
+"1078",60673,"stylaster",4.53808621127818e-05,0,12743,31,31,"(11) Mainland Fjords",1,1,0,0,0
+"1079",60678,"stylaster",4.48958068518022e-05,0,12759,30,30,"(11) Mainland Fjords",1,1,0,0,0
+"1080",60914,"stylaster",4.55109964420439e-05,0,12739,342.328614512,426.1415882,"(11) Mainland Fjords",25,0,0,0,3
+"1081",60915,"stylaster",0.000855068107315291,0,12739,240.711499654545,417.1987297,"(11) Mainland Fjords",22,0,0,0,2
+"1082",60923,"stylaster",3.13033215021476e-05,0,12741,26,30,"(11) Mainland Fjords",2,2,0,0,0
+"1083",61161,"stylaster",0.000262125031251462,0,12897,62.6649630139153,207.8217523,"(11) Mainland Fjords",32,2,0,8,9
+"1084",61912,"stylaster",3.12837792774579e-05,0,12895,257.2440827,269.7604305,"(11) Mainland Fjords",11,0,0,0,11
+"1085",62120,"stylaster",4.44083794548526e-05,0,13034,29,29,"(10 Aristazabal Banks Upwelling",1,1,0,0,0
+"1086",62144,"stylaster",1.74174171783163e-07,0,13050,527.160056215385,551.5662586,"(11) Mainland Fjords",13,0,0,0,12
+"1087",62395,"stylaster",1,1,13050,94.4918865134783,121.7032687,"(11) Mainland Fjords",23,0,0,0,23
+"1088",62641,"stylaster",4.01540793037253e-05,0,13050,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"1089",62898,"stylaster",0.000718192549554009,0,13054,171.529543183333,207.1087045,"(11) Mainland Fjords",30,0,0,0,30
+"1090",62901,"stylaster",5.91843932311433e-07,0,13055,177.65597825,186.8369565,"(11) Mainland Fjords",2,0,0,2,0
+"1091",63146,"stylaster",0.000218436766082025,0,13212,75.52718806375,82.86022165,"(11) Mainland Fjords",8,0,0,0,8
+"1092",63148,"stylaster",0.00350313946133932,0,13212,155.088595683333,157.8731092,"(11) Mainland Fjords",6,0,0,0,6
+"1093",63150,"stylaster",8.38106082251909e-07,0,13213,83.6211494135,95.5,"(11) Mainland Fjords",20,0,0,20,0
+"1094",63151,"stylaster",1.5175397795753e-05,0,13213,41.08477347,61.06521739,"(11) Mainland Fjords",5,2,0,3,0
+"1095",63374,"stylaster",4.34267178039809e-05,0,13193,27,27,"(11) Mainland Fjords",1,1,0,0,0
+"1096",63401,"stylaster",1.57349870470222e-05,0,13213,70.47061335,120.3085366,"(11) Mainland Fjords",5,2,0,3,0
+"1097",63629,"stylaster",3.97020310751002e-05,0,13194,29,29,"(11) Mainland Fjords",1,2,0,0,0
+"1098",63652,"stylaster",8.46424485553333e-05,0,13207,71.0964911072727,114.6,"(11) Mainland Fjords",11,0,0,7,0
+"1099",63901,"stylaster",4.01540793037253e-05,0,13206,30,30,"(11) Mainland Fjords",1,2,0,0,0
+"1100",64416,"stylaster",3.87919270679244e-05,0,13361,27,27,"(11) Mainland Fjords",1,2,0,0,0
+"1101",64935,"stylaster",3.87919270679244e-05,0,13361,27,27,"(11) Mainland Fjords",1,2,0,0,0
+"1102",70113,"stylaster",3.39474559277317e-05,0,14312,29.5,36,"(11) Mainland Fjords",2,2,0,0,0
+"1103",70363,"stylaster",3.21150391417622e-05,0,14314,28,34,"(11) Mainland Fjords",2,2,0,0,0
+"1104",34418,"swiftia",0.00018313017315094,0,8792,266.741054505,303.7648017,"(11) Mainland Fjords",80,0,0,0,1
+"1105",36375,"swiftia",0.0828068304151967,0.184173473028838,9108,154.6502876,154.6502876,"(11) Mainland Fjords",1,0,0,0,15
+"1106",37302,"swiftia",0.0022506374436623,0.00197153990123366,9265,387.495859740426,420.6160761,"(11) Mainland Fjords",47,0,0,0,4
+"1107",37539,"swiftia",0.000255032209793329,0,9265,410.265008867568,448.3930164,"(11) Mainland Fjords",37,0,0,0,11
+"1108",44428,"swiftia",0.0156908747554341,0.0154557756648746,10367,241.776643016667,244.5752333,"(11) Mainland Fjords",12,0,0,0,12
+"1109",44699,"swiftia",0.12852278281056,0.14579969774173,10367,226.904532607143,238.7825291,"(11) Mainland Fjords",14,0,0,6,19
+"1110",44978,"swiftia",1,1,10369,132.230718942105,155.1439474,"(11) Mainland Fjords",19,0,0,0,35
+"1111",45244,"swiftia",0.00302363621343485,0.00280807923797429,10525,269.264727569697,319.4306807,"(11) Mainland Fjords",33,0,0,0,36
+"1112",45530,"swiftia",0.00380532320221616,0.00359590039939628,10525,238.628694734615,309.4448509,"(11) Mainland Fjords",26,0,0,0,27
+"1113",46092,"swiftia",1.66721547980612e-05,0,10523,399.393788566667,407.6385613,"(11) Mainland Fjords",6,0,0,0,6
+"1114",46093,"swiftia",0.000106128478280626,0,10523,349.484447338462,388.7904551,"(11) Mainland Fjords",39,0,0,0,39
+"1115",46099,"swiftia",4.92523472891035e-06,0,10524,438.004144138806,515.7025758,"(11) Mainland Fjords",67,0,0,0,40
+"1116",54513,"swiftia",1.69164259477813e-05,0,11789,385.70673525,437.8952156,"(11) Mainland Fjords",24,0,0,0,10
+"1117",54767,"swiftia",9.48099505591504e-05,0,11789,252.845196583333,280.411712,"(11) Mainland Fjords",6,2,0,0,12
+"1118",58338,"swiftia",0.00907936968650538,0.0123979349564489,12417,401.5779182,426.604487,"(11) Mainland Fjords",15,0,0,0,4
+"1119",58339,"swiftia",0.000455007346673723,0,12417,331.174105366667,345.8324091,"(11) Mainland Fjords",6,0,0,0,2
+"1120",58596,"swiftia",7.91990315971536e-07,0,12417,441.62411156,457.5016208,"(11) Mainland Fjords",15,0,0,0,15
+"1121",58856,"swiftia",0.0065322193576566,0.00627775044893224,12417,426.629447451351,439.4631494,"(11) Mainland Fjords",74,0,0,0,73
+"1122",60668,"swiftia",6.37186060925925e-05,0,12741,291.1992289,374.4818179,"(11) Mainland Fjords",10,2,0,0,14
+"1123",60914,"swiftia",0.000155051362867418,0,12739,342.328614512,426.1415882,"(11) Mainland Fjords",25,0,0,0,3
+"1124",60915,"swiftia",0.000321944354953687,0,12739,391.952169122222,417.1987297,"(11) Mainland Fjords",9,0,0,0,2
+"1125",61912,"swiftia",9.36100640879573e-05,0,12895,263.15008819,269.7604305,"(11) Mainland Fjords",10,0,0,0,11
+"1126",62144,"swiftia",0,0,13050,527.160056215385,551.5662586,"(11) Mainland Fjords",13,0,0,0,12
+"1127",62395,"swiftia",0.0965783990898333,0.0924696547640895,13050,119.2158084,119.2158084,"(11) Mainland Fjords",1,0,0,0,23
+"1128",62898,"swiftia",0.269060680238233,0.299466530410015,13054,148.324701811111,174.620875,"(11) Mainland Fjords",9,0,0,0,30
+"1129",63148,"swiftia",0.232749439566772,0.324700777491298,13212,150.92623185,154.210958,"(11) Mainland Fjords",2,0,0,0,6

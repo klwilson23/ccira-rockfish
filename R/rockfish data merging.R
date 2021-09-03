@@ -151,7 +151,7 @@ for(i in 1:length(unique(new_df$PU_4Km_ID)))
       }else{
         sub_sel <- selectivity[selectivity$species=="REBS",]
         zeros <- sub_sel[,c(1:3,which(colnames(sub_sel)==unique(new_df$gear)[j]))]
-        omit <- ifelse((zeros[,4]==0 | ( sub_dat3$depth <= zeros$min_depth & sub_dat3$depth >= zeros$max_depth)) & sub_dat3$counts==0,1,0)
+        omit <- ifelse((zeros[,4]==0 | !( sub_dat3$depth >= zeros$min_depth & sub_dat3$depth <= zeros$max_depth)) & sub_dat3$counts==0,1,0)
         if(omit==1)
         {
           tru_dat <- sub_dat3

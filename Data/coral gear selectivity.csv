@@ -1,7 +1,7 @@
 Species,min_depth,max_depth,hook_line,dive,mid_video,deep_video
-primnoa,6,1280,0,1,1,1
+primnoa,183,755,0,0,0,1
 chrysopathes,417,914,0,0,0,1
 calcigorgia,18,512,0,1,1,1
-paragorgia,21,2022,0,1,1,1
+paragorgia,38,2022,0,0,1,1
 swiftia,210,2779,0,0,0,1
-stylaster,10,2124,0,1,1,1
+stylaster,20,2124,0,1,1,1

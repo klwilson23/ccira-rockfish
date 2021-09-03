@@ -24,6 +24,7 @@ hotspots_df <- hotspots_df %>%
   ungroup(species,gear)
 hotspots_df <- hotspots_df[complete.cases(hotspots_df),]
 hotspots_agg <- aggregate(cbind(normalized_lambda,normalized_cpue)~PU_1Km_ID+species,data=hotspots_df,FUN=mean)
+hotspots_agg$PU_4Km_ID <- hotspots_df$PU_4Km_ID[match(hotspots_agg$PU_1Km_ID,hotspots_df$PU_1Km_ID)]
 hotspots_agg$depth <- aggregate(depth~PU_1Km_ID+species,data=hotspots_df,FUN=mean)$depth
 hotspots_agg$max_depth <- aggregate(max_depth~PU_1Km_ID+species,data=hotspots_df,FUN=max)$max_depth
 hotspots_agg$UpperOceanSR <- hotspots_df$UpperOceanSR[match(hotspots_agg$PU_1Km_ID,hotspots_df$PU_1Km_ID)]
