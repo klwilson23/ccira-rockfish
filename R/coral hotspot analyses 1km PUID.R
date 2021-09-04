@@ -17,8 +17,10 @@ coral_ncc <- read.csv("Data/coral normalized cpue by 1km puid and species.csv",h
 
 coral_ncc$score <- coral_scores$score[match(coral_ncc$species,coral_scores$name)]
 coral_ncc$raw_score <- coral_ncc$normalized_lambda*coral_ncc$score
+coral_ncc$obs_score <- coral_ncc$normalized_cpue*coral_ncc$score
 
 hotspots_coast <- aggregate(raw_score~PU_1Km_ID,data=coral_ncc,function(x){sum(x)})
+hotspots_coast$obs_score <- aggregate(obs_score~PU_1Km_ID,data=coral_ncc,function(x){sum(x)})$obs_score
 hotspots_coast$UpperOceanSR <- coral_ncc$UpperOceanSR[match(hotspots_coast$PU_1Km_ID,coral_ncc$PU_1Km_ID)]
 hotspots_coast$PU_4Km_ID <- coral_ncc$PU_4Km_ID[match(hotspots_coast$PU_1Km_ID,coral_ncc$PU_1Km_ID)]
 hotspots_coast$depth <- aggregate(depth~PU_1Km_ID,data=coral_ncc,function(x){mean(x)})$depth
@@ -27,12 +29,13 @@ hotspots_coast$dive_samps <- aggregate(dive_samps~PU_1Km_ID,data=coral_ncc,funct
 hotspots_coast$hook_samps <- aggregate(hook_samps~PU_1Km_ID,data=coral_ncc,function(x){mean(x)})$hook_samps
 hotspots_coast$mid_samps <- aggregate(mid_samps~PU_1Km_ID,data=coral_ncc,function(x){mean(x)})$mid_samps
 hotspots_coast$deep_samps <- aggregate(deep_samps~PU_1Km_ID,data=coral_ncc,function(x){mean(x)})$deep_samps
-
+hotspots_coast$normalized_obs_score <- max_only(hotspots_coast$obs_score)
 hotspots_coast$normalized_score <- max_only(hotspots_coast$raw_score)
 hotspots_coast <- hotspots_coast %>%
   mutate(coral_rank = ntile(normalized_score, 10))
-hotspots_coast$coral_hotspot <- ifelse(hotspots_coast$coral_rank>=9,1,0)
-
+hotspots_coast$coral_hotspot <- ifelse(hotspots_coast$coral_rank>=10,1,0)
+hotspots_coast$coral_hotspot2 <- ifelse(hotspots_coast$normalized_score>=0.01,1,0)
+sum(hotspots_coast$coral_hotspot2)
 table(hotspots_coast$coral_rank)
 hotspots_coast[hotspots_coast$PU_1Km_ID=="6267",]
 

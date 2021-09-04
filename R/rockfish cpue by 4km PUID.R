@@ -13,7 +13,7 @@ hotspots_df$effort <- aggregate(effort~PU_4Km_ID+gear+species,data=new_df,FUN=su
 hotspots_df$counts <- aggregate(counts~PU_4Km_ID+gear+species,data=new_df,FUN=sum)$counts
 hotspots_df$sample_sizes <- aggregate(sample_size~PU_4Km_ID+gear+species,data=new_df,FUN=sum)$sample_size
 #hotspots_df$p_counts <- predict(m3fTMB,newdata = hotspots_df,type="r")
-hotspots_df$p_counts <- aggregate(predicted_counts_TMB2~PU_4Km_ID+gear+species,data=new_df,FUN=sum)$predicted_counts_TMB2
+hotspots_df$p_counts <- aggregate(predicted_counts~PU_4Km_ID+gear+species,data=new_df,FUN=sum)$predicted_counts
 hotspots_df$lambda <- hotspots_df$p_counts/hotspots_df$effort
 hotspots_df$cpue <- hotspots_df$counts/hotspots_df$effort
 
@@ -38,7 +38,7 @@ hotspots_agg$deep_samps <- pmax(0,deep_samps$sample_sizes[match(hotspots_agg$PU_
 plot(normalized_lambda~depth,hotspots_df[hotspots_df$species=="quillback",])
 plot(normalized_cpue~depth,hotspots_df[hotspots_df$species=="quillback",])
 
-write.csv(hotspots_agg,"Data/rockfish normalized cpue by site and species.csv")
+write.csv(hotspots_agg,"Data/rockfish normalized cpue by 4km puid and species.csv")
 
 plot(normalized_lambda~normalized_cpue,data=hotspots_df)
 summary(lm(normalized_lambda~normalized_cpue,data=hotspots_df))

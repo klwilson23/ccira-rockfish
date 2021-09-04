@@ -95,21 +95,12 @@ m1b <- glmer(counts~depth+I(depth^2)+gear+PU_4Km_ID+offset(log(effort))+(1|speci
 AIC(m1,m1a,m1b,m2,m1TMB,m2TMB,m2aTMB,m2bTMB,m2cTMB,m3aTMB,m3bTMB,m3cTMB,m3dTMB,m3eTMB,m3fTMB,m3fTMB2,m3fTMB3,m3fTMB4,m3fTMBrand,m3fTMBrand2,m3fTMBrand3,m3fTMBrand4,m3fTMBrand5,m3fTMBrand6,m3fTMBrand7,m3fTMBrand8,m3gTMB,m3hTMB,m3hTMB2,m3iTMB,m3jTMB,m3jTMB2,m3kTMB,m3lTMB,m3cTMBzi,m3cTMBzi2,m3cTMBzi3,m3cTMBzi4,m3cTMBzi5,m3cTMBzi6,m3cTMBzi7,m3cTMBzi8,m3cTMBzi9,m3cTMBzi10,m3cTMBzi11,m3cTMBzi12,m3cTMBzi13,m3cTMBzi14,m3cTMBzi15,m3cTMBzi16,m3cTMBzi17,m3cTMBzi18,m3cTMBzi19)
 
 new_df$predicted_counts <- predict(m3fTMBrand7,type='r')
-new_df$predicted_counts_TMB_space <- predict(m3fTMBrand,type='r')
-new_df$predicted_counts_TMB2 <- predict(m3cTMBzi18,type='r')
-new_df$predicted_counts_TMB <- predict(m3cTMBzi6 ,type='r')
+new_df$lambda <- new_df$predicted_counts/new_df$effort
+new_df$cpue <- new_df$counts/new_df$effort
 #zero_df2 <- data.frame(zero_df,"predicted_counts"=0,"predicted_counts_TMB_space"=0,"predicted_counts_TMB2"=0,"predicted_counts_TMB"=0)
 #new_df2 <- rbind(pres_df,zero_df2)
 write.csv(new_df,"Data/coral counts by sample id.csv")
 
-plot(predicted_counts_TMB_space~predicted_counts,data=new_df)
-abline(b=1,a=0)
-plot(predicted_counts_TMB~predicted_counts_TMB_space,data=new_df)
-abline(b=1,a=0)
-plot(predicted_counts_TMB~predicted_counts_TMB2,data=new_df)
-abline(b=1,a=0)
-new_df$lambda <- new_df$predicted_counts/new_df$effort
-new_df$cpue <- new_df$counts/new_df$effort
 plot(predicted_counts~counts,data=new_df)
 abline(b=1,a=0)
 plot(lambda~cpue,data=new_df)
@@ -166,7 +157,7 @@ sum((hotspots_coast$hotspot-hotspots_coast$hotspot_old)==-1)
 sum((hotspots_coast$hotspot-hotspots_coast$hotspot_old)==0)
 sum((hotspots_coast$hotspot+hotspots_coast$hotspot_old)==2)
 
-simulationOutput <- DHARMa::simulateResiduals(fittedModel = m3fTMBrand8,plot = F,n=1000)
+simulationOutput <- DHARMa::simulateResiduals(fittedModel = m3fTMBrand7,plot = F,n=1000)
 plot(simulationOutput)
 DHARMa::testZeroInflation(simulationOutput)
 DHARMa::testDispersion(simulationOutput)

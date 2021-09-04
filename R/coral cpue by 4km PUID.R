@@ -38,7 +38,7 @@ hotspots_agg$deep_samps <- pmax(0,deep_samps$sample_sizes[match(hotspots_agg$PU_
 plot(normalized_lambda~depth,hotspots_df[hotspots_df$species=="paragorgia",])
 plot(normalized_cpue~depth,hotspots_df[hotspots_df$species=="paragorgia",])
 
-write.csv(hotspots_agg,"Data/coral normalized cpue by site and species.csv")
+write.csv(hotspots_agg,"Data/coral normalized cpue by 4km puid and species.csv")
 
 plot(normalized_lambda~normalized_cpue,data=hotspots_df)
 summary(lm(normalized_lambda~normalized_cpue,data=hotspots_df))
