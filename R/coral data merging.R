@@ -12,6 +12,10 @@ rockfish_spp <- c("black","blackspotted","bocaccio","brown","canary","china","co
 deep_vid <- read.csv("Data/DeepVideo v3.csv")
 dive <- read.csv("Data/DiveData v5.csv")
 mid_vid <- read.csv("Data/MidDepthVideo v3.csv")
+mid_vid2 <- read.csv("Data/MidDepthVideo v4.csv")
+mid_vid$Calcigorgia <- NA
+mid_vid[mid_vid2$coralFix,c("Paragorgia.Pac_count","Stylaster_count","Calcigorgia")] <- mid_vid2[mid_vid2$coralFix,c("ParagorgiaNew","StylasterNew","CalcigorgiaNew")]
+rm(mid_vid2)
 dive_coral <- read.csv("Data/StructuralInverts.csv")
 selectivity <- read.csv("Data/coral gear selectivity.csv")
 

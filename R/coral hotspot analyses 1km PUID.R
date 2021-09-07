@@ -1,3 +1,4 @@
+library(dplyr)
 max_only <- function(x, na.rm = TRUE) {
   return((x- 0) /(max(x, na.rm = TRUE)-0))
 }

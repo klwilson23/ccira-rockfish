@@ -9,6 +9,10 @@ hook_line <- read.csv("Data/All_HLData v3.csv")
 deep_vid <- read.csv("Data/DeepVideo v3.csv")
 dive <- read.csv("Data/DiveData v5.csv")
 mid_vid <- read.csv("Data/MidDepthVideo v3.csv")
+mid_vid2 <- read.csv("Data/MidDepthVideo v4.csv")
+mid_vid$Calcigorgia <- NA
+mid_vid[mid_vid2$coralFix,c("Paragorgia.Pac_count","Stylaster_count","Calcigorgia")] <- mid_vid2[mid_vid2$coralFix,c("ParagorgiaNew","StylasterNew","CalcigorgiaNew")]
+rm(mid_vid2)
 selectivity <- read.csv("Data/rockfish gear selectivity v2.csv")
 
 Npuid <- length(unique(c(hook_line$PU_1Km_ID,
@@ -139,7 +143,7 @@ dive$Species[which(dive$Species%in%c("rougheye"))]="blackspotted"
 
 dive <- dive[!dive$Species=="black & yellowtail",]
 dive$species <- dive$Species
-dive$counts[dive$TL>=10] <- 0 # set the small fish counts to 0 for the purposes of summing at the transect level
+dive$counts[dive$TL<10] <- 0 # set the small fish counts to 0 for the purposes of summing at the transect level
 dive$sample_size <- 1
 dive_agg <- aggregate(cbind(counts,Depth)~transects+species,data=dive,function(x){c(sum(x,na.rm=TRUE),mean(x,na.rm=TRUE))})
 effort <- aggregate(sample_size~transects,data=dive,function(x){length(unique(x))})
@@ -216,7 +220,7 @@ for(i in 1:length(unique(new_df$survey_id)))
     {
       sub_sel <- selectivity[selectivity$Common.name==rockfish_spp[k],]
       zeros <- sub_sel[,c(2:4,which(colnames(sub_sel)==sub_dat2$gear))]
-      omit <- ifelse((zeros[,4]==0) & sub_dat2$counts==0,1,0)
+      omit <- ifelse((zeros[,4]==0 | !(zeros$min_depth<=tru_dat$depth & zeros$max_depth>=tru_dat$depth)) & sub_dat2$counts==0,1,0)
       if(omit==1)
       {
         tru_dat <- sub_dat2
@@ -227,7 +231,7 @@ for(i in 1:length(unique(new_df$survey_id)))
     }else{
       sub_sel <- selectivity[selectivity$Common.name=="REBS",]
       zeros <- sub_sel[,c(2:4,which(colnames(sub_sel)==sub_dat2$gear))]
-      omit <- ifelse((zeros[,4]==0) & sub_dat2$counts==0,1,0)
+      omit <- ifelse((zeros[,4]==0 | !(zeros$min_depth<=tru_dat$depth & zeros$max_depth>=tru_dat$depth)) & sub_dat2$counts==0,1,0)
       if(omit==1)
       {
         tru_dat <- sub_dat2

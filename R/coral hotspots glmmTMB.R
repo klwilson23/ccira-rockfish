@@ -13,12 +13,6 @@ library(lme4)
 library(brms)
 
 new_df <- read.csv("Data/coral counts PU4km.csv")
-#new_df <- new_df[!complete.cases(new_df),]
-minimum_samples <- 5
-zero_sites <- unique(new_df$PU_1Km_ID)[sapply(unique(new_df$PU_1Km_ID),function(x){all(new_df$counts[new_df$PU_1Km_ID==x]==0) & sum(new_df$sample_size[new_df$PU_1Km_ID==x])/length(coral_spp)>=minimum_samples})]
-zero_df <- new_df[new_df$PU_1Km_ID%in%zero_sites,]
-pres_df <- new_df[!new_df$PU_1Km_ID%in%zero_sites,]
-#new_df <- new_df[!complete.cases(new_df),]
 m1TMB <- glmmTMB(counts~depth+species+offset(log(effort)),data=new_df,family=poisson)
 m2TMB <- glmmTMB(counts~depth+species+offset(log(effort)),data=new_df,family=nbinom2)
 m2aTMB <- glmmTMB(counts~depth+species+offset(log(effort)),dispformula = ~gear,data=new_df,family=nbinom2)
@@ -76,7 +70,7 @@ m3fTMBrand5 <- glmmTMB(counts~depth+depth:species+I(depth^2)+offset(log(effort))
 m3fTMBrand6 <- glmmTMB(counts~depth+depth:species+I(depth^2)+gear+offset(log(effort))+(1|PU_1Km_ID/species),dispformula = ~gear,data=new_df,family=nbinom2,control=glmmTMBControl(optCtrl=list(iter.max=5e6,eval.max=5e6)))
 m3fTMBrand7 <- glmmTMB(counts~depth+depth:species+I(depth^2)+offset(log(effort))+(1|PU_1Km_ID/gear:species),dispformula = ~gear,data=new_df,family=nbinom2,control=glmmTMBControl(optCtrl=list(iter.max=5e6,eval.max=5e6)))
 m3fTMBrand8 <- glmmTMB(counts~depth+depth:species+I(depth^2)+gear+offset(log(effort))+(1|PU_1Km_ID/gear:species),dispformula = ~gear,data=new_df,family=nbinom2,control=glmmTMBControl(optCtrl=list(iter.max=5e6,eval.max=5e6)))
-
+#m3fTMBrand7zi <- glmmTMB(counts~depth+depth:species+I(depth^2)+offset(log(effort))+(1|PU_1Km_ID/gear:species),dispformula = ~gear,ziformula=~species+(1|PU_1Km_ID),data=new_df,family=nbinom2,control=glmmTMBControl(optCtrl=list(iter.max=5e6,eval.max=5e6)))
 #m3f_rand_brms <- brm(bf(counts~depth+depth:species+I(depth^2)+species+gear+offset(log(effort))+(1|PU_1Km_ID),shape~gear,zi~species),data=new_df,family=zero_inflated_negbinomial(),iter=2000,chains=4,cores=4)
 
 m1 <- glm(counts~depth+depth:species+I(depth^2)+I(depth^2):species+species*gear+as.factor(PU_4Km_ID)+offset(log(effort)),data=new_df,family=poisson(link="log"),weights=sqrt(new_df$sample_size))
@@ -92,7 +86,7 @@ m2 <- glm(counts~depth+I(depth^2)+species*gear+PU_4Km_ID,data=new_df,family=pois
 m1a <- glmer(counts~depth+species+gear+offset(log(effort))+(1|PU_4Km_ID),data=new_df,family=poisson(link="log"),lme4::glmerControl(optCtrl=list(method='nlminb')),weights=sqrt(new_df$sample_size))
 m1b <- glmer(counts~depth+I(depth^2)+gear+PU_4Km_ID+offset(log(effort))+(1|species),data=new_df,family=poisson(link="log"),lme4::glmerControl(optCtrl=list(method='nlminb')),weights=sqrt(new_df$sample_size))
 
-AIC(m1,m1a,m1b,m2,m1TMB,m2TMB,m2aTMB,m2bTMB,m2cTMB,m3aTMB,m3bTMB,m3cTMB,m3dTMB,m3eTMB,m3fTMB,m3fTMB2,m3fTMB3,m3fTMB4,m3fTMBrand,m3fTMBrand2,m3fTMBrand3,m3fTMBrand4,m3fTMBrand5,m3fTMBrand6,m3fTMBrand7,m3fTMBrand8,m3gTMB,m3hTMB,m3hTMB2,m3iTMB,m3jTMB,m3jTMB2,m3kTMB,m3lTMB,m3cTMBzi,m3cTMBzi2,m3cTMBzi3,m3cTMBzi4,m3cTMBzi5,m3cTMBzi6,m3cTMBzi7,m3cTMBzi8,m3cTMBzi9,m3cTMBzi10,m3cTMBzi11,m3cTMBzi12,m3cTMBzi13,m3cTMBzi14,m3cTMBzi15,m3cTMBzi16,m3cTMBzi17,m3cTMBzi18,m3cTMBzi19)
+AIC(m1,m1a,m1b,m2,m1TMB,m2TMB,m2aTMB,m2bTMB,m2cTMB,m3aTMB,m3bTMB,m3cTMB,m3dTMB,m3eTMB,m3fTMB,m3fTMB2,m3fTMB3,m3fTMB4,m3fTMBrand,m3fTMBrand2,m3fTMBrand3,m3fTMBrand4,m3fTMBrand5,m3fTMBrand6,m3fTMBrand7,m3fTMBrand7zi,m3fTMBrand8,m3gTMB,m3hTMB,m3hTMB2,m3iTMB,m3jTMB,m3jTMB2,m3kTMB,m3lTMB,m3cTMBzi,m3cTMBzi2,m3cTMBzi3,m3cTMBzi4,m3cTMBzi5,m3cTMBzi6,m3cTMBzi7,m3cTMBzi9,m3cTMBzi10,m3cTMBzi11,m3cTMBzi12,m3cTMBzi13,m3cTMBzi14,m3cTMBzi15,m3cTMBzi16,m3cTMBzi17,m3cTMBzi18,m3cTMBzi19)
 
 new_df$predicted_counts <- predict(m3fTMBrand7,type='r')
 new_df$lambda <- new_df$predicted_counts/new_df$effort
