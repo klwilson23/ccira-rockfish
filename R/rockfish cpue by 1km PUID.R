@@ -29,8 +29,6 @@ hotspots_agg$depth <- aggregate(depth~PU_1Km_ID+species,data=hotspots_df,FUN=mea
 hotspots_agg$max_depth <- aggregate(max_depth~PU_1Km_ID+species,data=hotspots_df,FUN=max)$max_depth
 hotspots_agg$UpperOceanSR <- hotspots_df$UpperOceanSR[match(hotspots_agg$PU_1Km_ID,hotspots_df$PU_1Km_ID)]
 hotspots_agg$sample_sizes <- aggregate(sample_sizes~PU_1Km_ID+species,data=hotspots_df,FUN=sum)$sample_sizes
-hotspots_agg$sample_sizes <- aggregate(sample_sizes~PU_1Km_ID+species,data=hotspots_df,FUN=sum)$sample_sizes
-hotspots_agg$sample_sizes <- aggregate(sample_sizes~PU_1Km_ID+species,data=hotspots_df,FUN=sum)$sample_sizes
 dive_samps <- aggregate(sample_sizes~PU_1Km_ID+species,data=hotspots_df[hotspots_df$gear=="dive",],FUN=sum)
 hotspots_agg$dive_samps <- pmax(0,dive_samps$sample_sizes[match(hotspots_agg$PU_1Km_ID,dive_samps$PU_1Km_ID)],na.rm=TRUE)
 hook_samps <- aggregate(sample_sizes~PU_1Km_ID+species,data=hotspots_df[hotspots_df$gear=="hook_line",],FUN=sum)

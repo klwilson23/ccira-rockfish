@@ -36,6 +36,17 @@ hotspots_coast <- hotspots_coast %>%
   mutate(coral_rank = ntile(normalized_score, 10))
 hotspots_coast$coral_hotspot <- ifelse(hotspots_coast$coral_rank>=10,1,0)
 hotspots_coast$coral_hotspot2 <- ifelse(hotspots_coast$normalized_score>=0.01,1,0)
+write.csv(hotspots_coast,"Data/coral hotspots 1km PUID.csv")
+write.csv(coral_scores,"Data/coral species scores.csv")
+
+puid_4km <- aggregate(normalized_score~PU_4Km_ID,data=hotspots_coast,function(x){mean(max(x),ifelse(length(x)>1,mean(x[-which.max(x)[1]]),mean(x)))})
+puid_4km <- puid_4km %>%
+  mutate(coral_hotspot = ntile(normalized_score, 10))
+puid_4km$samps <- as.vector(table(hotspots_coast$PU_4Km_ID))
+plot(puid_4km$samps,puid_4km$coral_hotspot,xlab="Number of 1km planning units sampled",ylab="Rank at 4km PUID scale")
+sum(puid_4km$coral_hotspot==10 & puid_4km$samps==1)
+puid_4km[puid_4km$coral_hotspot==10,]
+
 sum(hotspots_coast$coral_hotspot2)
 table(hotspots_coast$coral_rank)
 hotspots_coast[hotspots_coast$PU_1Km_ID=="6267",]
@@ -54,5 +65,3 @@ AIC(mDepth,mDepth2,mDepth_poly)
 depth_seq <- data.frame("depth"=seq(0,400,by=25))
 pNew <- predict(mDepth_poly,newdata = depth_seq,type="response")
 lines(depth_seq$depth,pNew,lwd=2,col="black")
-write.csv(hotspots_coast,"Data/coral hotspots 1km PUID.csv")
-write.csv(coral_scores,"Data/coral species scores.csv")

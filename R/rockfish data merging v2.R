@@ -220,7 +220,7 @@ for(i in 1:length(unique(new_df$survey_id)))
     {
       sub_sel <- selectivity[selectivity$Common.name==rockfish_spp[k],]
       zeros <- sub_sel[,c(2:4,which(colnames(sub_sel)==sub_dat2$gear))]
-      omit <- ifelse((zeros[,4]==0 | !(zeros$min_depth<=tru_dat$depth & zeros$max_depth>=tru_dat$depth)) & sub_dat2$counts==0,1,0)
+      omit <- ifelse((zeros[,4]==0 | !(zeros$min_depth<=sub_dat2$depth & zeros$max_depth>=sub_dat2$depth)) & sub_dat2$counts==0,1,0)
       if(omit==1)
       {
         tru_dat <- sub_dat2
@@ -231,7 +231,7 @@ for(i in 1:length(unique(new_df$survey_id)))
     }else{
       sub_sel <- selectivity[selectivity$Common.name=="REBS",]
       zeros <- sub_sel[,c(2:4,which(colnames(sub_sel)==sub_dat2$gear))]
-      omit <- ifelse((zeros[,4]==0 | !(zeros$min_depth<=tru_dat$depth & zeros$max_depth>=tru_dat$depth)) & sub_dat2$counts==0,1,0)
+      omit <- ifelse((zeros[,4]==0 | !(zeros$min_depth<=sub_dat2$depth & zeros$max_depth>=sub_dat2$depth)) & sub_dat2$counts==0,1,0)
       if(omit==1)
       {
         tru_dat <- sub_dat2

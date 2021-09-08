@@ -29,6 +29,22 @@ hotspots_coast <- hotspots_coast %>%
   mutate(sponge_rank = ntile(normalized_score, 10))
 hotspots_coast$sponge_hotspot <- ifelse(hotspots_coast$sponge_rank>=10,1,0)
 hotspots_coast$sponge_hotspot2 <- ifelse(hotspots_coast$normalized_score>=0.01,1,0)
+write.csv(hotspots_coast,"Data/sponge hotspots 1km PUID.csv")
+
+head(sponge_ncc,15)
+puid_4km <- aggregate(normalized_score~PU_4Km_ID,data=hotspots_coast,function(x){(max(x))})
+puid_4km <- puid_4km %>%
+  mutate(sponge_hotspot = ntile(normalized_score, 10))
+puid_4km[puid_4km$sponge_hotspot==10,]
+
+puid_4km <- aggregate(normalized_score~PU_4Km_ID,data=hotspots_coast,function(x){mean(max(x),ifelse(length(x)>1,mean(x[-which(x==max(x))]),mean(x)))})
+puid_4km <- puid_4km %>%
+  mutate(sponge_hotspot = ntile(normalized_score, 10))
+puid_4km$samps <- as.vector(table(hotspots_coast$PU_4Km_ID))
+plot(puid_4km$samps,puid_4km$sponge_hotspot,xlab="Number of 1km planning units sampled",ylab="Rank at 4km PUID scale")
+sum(puid_4km$sponge_hotspot==10 & puid_4km$samps==1)
+puid_4km[puid_4km$sponge_hotspot==10,]
+hist(table(hotspots_coast$PU_4Km_ID))
 sum(hotspots_coast$sponge_hotspot2)
 table(hotspots_coast$sponge_rank)
 hotspots_coast[hotspots_coast$PU_1Km_ID=="6267",]
@@ -47,8 +63,6 @@ depth_seq <- data.frame("depth"=seq(0,400,by=25))
 pNew <- predict(mDepth_poly,newdata = depth_seq,type="response")
 plot(sponge_hotspot~depth,data=hotspots_coast)
 lines(depth_seq$depth,pNew,lwd=2,col="black")
-
-write.csv(hotspots_coast,"Data/sponge hotspots 1km PUID.csv")
 plot(raw_score~obs_score,hotspots_coast)
 
 hotspots_coast <- aggregate(cbind(normalized_lambda,normalized_cpue)~PU_1Km_ID,data=sponge_ncc,FUN=function(x){sum(x)})

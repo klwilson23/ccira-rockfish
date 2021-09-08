@@ -8,12 +8,18 @@ normalize <- function(x, na.rm = TRUE) {
 }
 
 sponge_ncc <- read.csv("Data/sponge normalized cpue by 4km puid and species.csv",header=TRUE)
+sponge_ncc2 <- read.csv("Data/sponge normalized cpue by 1km puid and species.csv",header=TRUE)
 
 sponge_ncc$score <- 1
 sponge_ncc$raw_score <- sponge_ncc$normalized_lambda*sponge_ncc$score
 sponge_ncc$obs_score <- sponge_ncc$normalized_cpue*sponge_ncc$score
 
-hotspots_coast <- aggregate(raw_score~PU_4Km_ID,data=sponge_ncc,function(x){sum(x)})
+sponge_ncc2$score <- 1
+sponge_ncc2$raw_score <- sponge_ncc2$normalized_lambda*sponge_ncc2$score
+sponge_ncc2$obs_score <- sponge_ncc2$normalized_cpue*sponge_ncc2$score
+
+hotspots_coast <- aggregate(raw_score~PU_4Km_ID+PU_1Km_ID,data=sponge_ncc2,function(x){sum(x)})
+hotspots_coast <- aggregate(raw_score~PU_4Km_ID,data=hotspots_coast,function(x){mean(max(x),ifelse(sum(x[-which.max(x)])>length(which.max(x)),mean(x[-which.max(x)]),mean(x)))})
 hotspots_coast$obs_score <- aggregate(obs_score~PU_4Km_ID,data=sponge_ncc,function(x){sum(x)})$obs_score
 hotspots_coast$UpperOceanSR <- sponge_ncc$UpperOceanSR[match(hotspots_coast$PU_4Km_ID,sponge_ncc$PU_4Km_ID)]
 hotspots_coast$depth <- aggregate(depth~PU_4Km_ID,data=sponge_ncc,function(x){mean(x)})$depth
@@ -29,6 +35,7 @@ hotspots_coast <- hotspots_coast %>%
   mutate(sponge_rank = ntile(normalized_score, 10))
 hotspots_coast$sponge_hotspot <- ifelse(hotspots_coast$sponge_rank>=10,1,0)
 hotspots_coast$sponge_hotspot2 <- ifelse(hotspots_coast$normalized_score>=0.01,1,0)
+write.csv(hotspots_coast,"Data/sponge hotspots 4km PUID.csv")
 table(hotspots_coast$sponge_rank)
 hotspots_coast[hotspots_coast$PU_4Km_ID=="6267",]
 
@@ -43,10 +50,9 @@ mDepth_poly <- glm(sponge_hotspot~poly(max_depth,3),data=hotspots_coast,family=b
 
 AIC(mDepth,mDepth2,mDepth_poly)
 depth_seq <- data.frame("max_depth"=seq(0,500,by=25))
-pNew <- predict(mDepth2,newdata = depth_seq,type="response")
+pNew <- predict(mDepth,newdata = depth_seq,type="response")
 plot(sponge_hotspot~max_depth,data=hotspots_coast)
 lines(depth_seq$max_depth,pNew,lwd=2,col="black")
-write.csv(hotspots_coast,"Data/sponge hotspots 4km PUID.csv")
 plot(raw_score~obs_score,hotspots_coast)
 plot(normalized_lambda~normalized_cpue,sponge_ncc)
 

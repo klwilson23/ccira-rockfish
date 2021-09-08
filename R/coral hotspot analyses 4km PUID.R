@@ -15,12 +15,18 @@ coral_spp <- sort(coral_spp)
 coral_scores <- read.csv("Data/coral species weights v2.csv")
 coral_scores$score <- coral_scores$height/max(coral_scores$height)
 coral_ncc <- read.csv("Data/coral normalized cpue by 4km puid and species.csv",header=TRUE)
+coral_ncc2 <- read.csv("Data/coral normalized cpue by 1km puid and species.csv",header=TRUE)
 
 coral_ncc$score <- coral_scores$score[match(coral_ncc$species,coral_scores$name)]
 coral_ncc$raw_score <- coral_ncc$normalized_lambda*coral_ncc$score
 coral_ncc$obs_score <- coral_ncc$normalized_cpue*coral_ncc$score
 
-hotspots_coast <- aggregate(raw_score~PU_4Km_ID,data=coral_ncc,function(x){sum(x)})
+coral_ncc2$score <- coral_scores$score[match(coral_ncc2$species,coral_scores$name)]
+coral_ncc2$raw_score <- coral_ncc2$normalized_lambda*coral_ncc2$score
+coral_ncc2$obs_score <- coral_ncc2$normalized_cpue*coral_ncc2$score
+
+hotspots_coast <- aggregate(raw_score~PU_4Km_ID+PU_1Km_ID,data=coral_ncc2,function(x){sum(x)})
+hotspots_coast <- aggregate(raw_score~PU_4Km_ID,data=hotspots_coast,function(x){mean(max(x),ifelse(sum(x[-which.max(x)])>length(which.max(x)),mean(x[-which.max(x)]),mean(x)))})
 hotspots_coast$obs_score <- aggregate(obs_score~PU_4Km_ID,data=coral_ncc,function(x){sum(x)})$obs_score
 hotspots_coast$UpperOceanSR <- coral_ncc$UpperOceanSR[match(hotspots_coast$PU_4Km_ID,coral_ncc$PU_4Km_ID)]
 hotspots_coast$depth <- aggregate(depth~PU_4Km_ID,data=coral_ncc,function(x){mean(x)})$depth
@@ -44,13 +50,14 @@ oldhotties <- c(6267, 6425, 6582, 6736, 7054, 7524, 7529, 7530, 7847, 7997, 8003
 sum(hotspots_coast[hotspots_coast$PU_4Km_ID%in%oldhotties,"coral_rank"]>=9)/sum(hotspots_coast$coral_rank>=9)
 sum(hotspots_coast[hotspots_coast$PU_4Km_ID%in%oldhotties,"coral_rank"]>=7)/length(oldhotties)
 plot(coral_rank~depth,data=hotspots_coast)
-plot(coral_hotspot~depth,data=hotspots_coast)
-mDepth <- glm(coral_hotspot~depth,data=hotspots_coast,family=binomial)
-mDepth2 <- glm(coral_hotspot~poly(depth,2),data=hotspots_coast,family=binomial)
-mDepth_poly <- glm(coral_hotspot~poly(depth,3),data=hotspots_coast,family=binomial)
+plot(coral_hotspot~max_depth,data=hotspots_coast)
+mDepth <- glm(coral_hotspot~max_depth,data=hotspots_coast,family=binomial)
+mDepth2 <- glm(coral_hotspot~poly(max_depth,2),data=hotspots_coast,family=binomial)
+mDepth_poly <- glm(coral_hotspot~poly(max_depth,3),data=hotspots_coast,family=binomial)
 
 AIC(mDepth,mDepth2,mDepth_poly)
-depth_seq <- data.frame("depth"=seq(0,400,by=25))
-pNew <- predict(mDepth,newdata = depth_seq,type="response")
-lines(depth_seq$depth,pNew,lwd=2,col="black")
+depth_seq <- data.frame("max_depth"=seq(0,500,by=25))
+pNew <- predict(mDepth2,newdata = depth_seq,type="response")
+plot(coral_hotspot~max_depth,data=hotspots_coast)
+lines(depth_seq$max_depth,pNew,lwd=2,col="black")
 write.csv(hotspots_coast,"Data/coral hotspots 4km PUID.csv")
