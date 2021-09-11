@@ -48,7 +48,7 @@ summary(lm(normalized_lambda~normalized_cpue,data=hotspots_agg))
 hotspots_coast <- aggregate(cbind(normalized_lambda,normalized_cpue)~PU_4Km_ID,data=hotspots_agg,FUN=function(x){sum(x)/length(rockfish_spp)})
 hotspots_coast$sample_sizes <- aggregate(sample_sizes~PU_4Km_ID,data=hotspots_agg,FUN=sum)$sample_sizes
 hotspots_coast$spp_richness <- aggregate(normalized_cpue~PU_4Km_ID,data=hotspots_agg,FUN=function(x){sum(x>0)})$normalized_cpue
-
+plot(normalized_lambda~normalized_cpue,data=hotspots_coast)
 hotspots_coast <- hotspots_coast %>%
   mutate(quantilelambda = ntile(normalized_lambda, 10),quantileCPUE = ntile(normalized_cpue, 10))
 
