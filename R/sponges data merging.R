@@ -118,5 +118,7 @@ surv_ids <- sort(unique(merged_data$survey_id))
 merged_data$PU_4Km_ID <- factor(merged_data$PU_4Km_ID,levels=site_ids)
 merged_data$survey_id <- factor(merged_data$survey_id,levels=surv_ids)
 
-full_dat <- merged_data[!is.na(merged_data$counts),]
+merged_data$counts[merged_data$counts==0 & merged_data$depth<15] <- NA
+
+merged_data <- merged_data[!is.na(merged_data$counts),]
 write.csv(merged_data,"Data/sponge counts PU4km.csv")

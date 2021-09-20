@@ -20,8 +20,16 @@ rockfish$taxa <- "rockfish"
 corals$taxa <- "corals"
 sponges$taxa <- "sponges"
 ncc <- rbind(sponges,rbind(rockfish,corals))
-ncc_wide <- pivot_wider(ncc,names_from=taxa,id_cols=c(PU_4Km_ID),values_from=normalized_score)
-ncc_agg <- data.frame("PUID"=ncc_wide$PU_4Km_ID,"group_score"=rowSums(ncc_wide[,-1],na.rm=FALSE))
+ncc <- ncc %>%
+  group_by(taxa) %>% 
+  mutate(rank = ntile(normalized_score,10)) %>%
+  ungroup(taxa)
+ncc_wide <- pivot_wider(ncc,names_from=taxa,id_cols=c(PU_4Km_ID),values_from=c(normalized_score))
+ncc_agg <- data.frame("PUID"=ncc_wide$PU_4Km_ID,ncc_wide[,-1])
+ncc_agg$group_score <- rowSums(ncc_agg[,2:4])
+ncc_agg <- data.frame(ncc_agg,ncc_agg[,2:4]/ncc_agg$group_score)
+ncc_agg$even_score <- apply(ncc_agg[,5:8],1,function(x){x[1]+-sum(x[2:4]*log(x[2:4]))}) # evenness
+
 ncc_agg$UpperOceanSR <- rockfish$UpperOceanSR[match(ncc_agg$PUID,rockfish$PU_4Km_ID)]
 ncc_agg$max_depth <- rockfish$max_depth[match(ncc_agg$PUID,rockfish$PU_4Km_ID)]
 ncc_agg$mean_depth <- rockfish$mean_depth[match(ncc_agg$PUID,rockfish$PU_4Km_ID)]
@@ -33,7 +41,7 @@ ncc_agg$rf_sp <- ifelse(ncc_agg$rf_hotspot==1 & ncc_agg$sponge_hotspot==1, 1, 0)
 ncc_agg$cor_sp <- ifelse(ncc_agg$cor_hotspot==1 & ncc_agg$sponge_hotspot==1, 1, 0)
 ncc_agg$rf_cor_sp <- ifelse(ncc_agg$rf_hotspot==1 & ncc_agg$cor_hotspot==1 & ncc_agg$sponge_hotspot==1, 1, 0)
 ncc_agg <- ncc_agg %>%
-  mutate(puid_rank = ntile(group_score, 10))
+  mutate(puid_rank = ntile(even_score, 10))
 ncc_agg$all_hotspots <- ifelse(ncc_agg$puid_rank==10,1,0)
 write.csv(ncc_agg,"Data/NCC hotspots 4km puid.csv")
 plot(ncc_agg$max_depth,ncc_agg$puid_rank)
@@ -64,8 +72,16 @@ rockfish$taxa <- "rockfish"
 corals$taxa <- "corals"
 sponges$taxa <- "sponges"
 ncc <- rbind(sponges,rbind(rockfish,corals))
-ncc_wide <- pivot_wider(ncc,names_from=taxa,id_cols=c(PU_1Km_ID),values_from=normalized_score)
-ncc_agg <- data.frame("PUID"=ncc_wide$PU_1Km_ID,"group_score"=rowSums(ncc_wide[,-1],na.rm=FALSE))
+ncc <- ncc %>%
+  group_by(taxa) %>% 
+  mutate(rank = ntile(normalized_score,10)) %>%
+  ungroup(taxa)
+ncc_wide <- pivot_wider(ncc,names_from=taxa,id_cols=c(PU_1Km_ID),values_from=c(normalized_score))
+ncc_agg <- data.frame("PUID"=ncc_wide$PU_1Km_ID,ncc_wide[,-1])
+ncc_agg$group_score <- rowSums(ncc_agg[,2:4])
+ncc_agg <- data.frame(ncc_agg,ncc_agg[,2:4]/ncc_agg$group_score)
+ncc_agg$even_score <- apply(ncc_agg[,5:8],1,function(x){x[1]+-sum(x[2:4]*log(x[2:4]))}) # evenness
+ncc_agg$PUID_4km <- rockfish$PU_4Km_ID[match(ncc_agg$PUID,rockfish$PU_1Km_ID)]
 ncc_agg$UpperOceanSR <- rockfish$UpperOceanSR[match(ncc_agg$PUID,rockfish$PU_1Km_ID)]
 ncc_agg$max_depth <- rockfish$max_depth[match(ncc_agg$PUID,rockfish$PU_1Km_ID)]
 ncc_agg$mean_depth <- rockfish$mean_depth[match(ncc_agg$PUID,rockfish$PU_1Km_ID)]
@@ -77,7 +93,7 @@ ncc_agg$rf_sp <- ifelse(ncc_agg$rf_hotspot==1 & ncc_agg$sponge_hotspot==1, 1, 0)
 ncc_agg$cor_sp <- ifelse(ncc_agg$cor_hotspot==1 & ncc_agg$sponge_hotspot==1, 1, 0)
 ncc_agg$rf_cor_sp <- ifelse(ncc_agg$rf_hotspot==1 & ncc_agg$cor_hotspot==1 & ncc_agg$sponge_hotspot==1, 1, 0)
 ncc_agg <- ncc_agg %>%
-  mutate(puid_rank = ntile(group_score, 10))
+  mutate(puid_rank = ntile(even_score, 10))
 ncc_agg$all_hotspots <- ifelse(ncc_agg$puid_rank==10,1,0)
 write.csv(ncc_agg,"Data/NCC hotspots 1km puid.csv")
 
