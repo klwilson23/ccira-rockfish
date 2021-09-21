@@ -248,13 +248,3 @@ full_dat <- new_dat[!is.na(new_dat$counts),]
 
 write.csv(full_dat,"Data/Rockfish counts PU4km v2.csv")
 write.csv(new_df,"Data/Rockfish counts PU4km no gear validity.csv")
-
-merged_data[merged_data$PU_4Km_ID=="6265",]
-full_dat[full_dat$PU_4Km_ID=="6265",]
-unique(merged_data$PU_4Km_ID)
-merged_data[merged_data$PU_4Km_ID=="8944",]
-full_dat[full_dat$PU_4Km_ID=="8944",]
-mid_vid[mid_vid$PU_4Km_ID=="8944",]
-sum(mid_vid[mid_vid$PU_4Km_ID=="8944","area.m2"])
-full_dat[full_dat$PU_4Km_ID=="8473",]
-full_dat[full_dat$PU_4Km_ID=="11310",]

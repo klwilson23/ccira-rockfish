@@ -3,9 +3,6 @@ normalize <- function(x, na.rm = TRUE) {
 }
 
 CategoryToPercent = function(x){
-  ifelse(is.na(x),NA,((x*25)-12.5)*ceiling(x/10))
-}
-CategoryToPercent = function(x){
   ifelse(is.na(x),NA,((x*25)-ifelse(x<1,x*12.5,12.5))*ceiling(x/10))
 }
 spongeCountToArea <- 0.04

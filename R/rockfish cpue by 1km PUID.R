@@ -37,7 +37,5 @@ mid_samps <- aggregate(sample_sizes~PU_1Km_ID+species,data=hotspots_df[hotspots_
 hotspots_agg$mid_samps <- pmax(0,mid_samps$sample_sizes[match(hotspots_agg$PU_1Km_ID,mid_samps$PU_1Km_ID)],na.rm=TRUE)
 deep_samps <- aggregate(sample_sizes~PU_1Km_ID+species,data=hotspots_df[hotspots_df$gear=="deep_video",],FUN=sum)
 hotspots_agg$deep_samps <- pmax(0,deep_samps$sample_sizes[match(hotspots_agg$PU_1Km_ID,deep_samps$PU_1Km_ID)],na.rm=TRUE)
-plot(normalized_lambda~depth,hotspots_df[hotspots_df$species=="quillback",])
-plot(normalized_cpue~depth,hotspots_df[hotspots_df$species=="quillback",])
 
 write.csv(hotspots_agg,"Data/rockfish normalized cpue by 1km puid and species.csv")

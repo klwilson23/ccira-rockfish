@@ -35,8 +35,6 @@ mid_samps <- aggregate(sample_sizes~PU_4Km_ID+species,data=hotspots_df[hotspots_
 hotspots_agg$mid_samps <- pmax(0,mid_samps$sample_sizes[match(hotspots_agg$PU_4Km_ID,mid_samps$PU_4Km_ID)],na.rm=TRUE)
 deep_samps <- aggregate(sample_sizes~PU_4Km_ID+species,data=hotspots_df[hotspots_df$gear=="deep_video",],FUN=sum)
 hotspots_agg$deep_samps <- pmax(0,deep_samps$sample_sizes[match(hotspots_agg$PU_4Km_ID,deep_samps$PU_4Km_ID)],na.rm=TRUE)
-plot(normalized_lambda~depth,hotspots_df[hotspots_df$species=="paragorgia",])
-plot(normalized_cpue~depth,hotspots_df[hotspots_df$species=="paragorgia",])
 
 write.csv(hotspots_agg,"Data/coral normalized cpue by 4km puid and species.csv")
 
@@ -54,9 +52,4 @@ hotspots_coast <- hotspots_coast %>%
 
 plot(quantilelambda~quantileCPUE,data=hotspots_coast)
 summary(lm(quantilelambda~quantileCPUE,data=hotspots_coast))
-hotspots_coast$hotspot <- ifelse(hotspots_coast$quantilelambda>=9,1,0)
-hotspots_coast$hotspot_old <- ifelse(hotspots_coast$quantileCPUE>=9,1,0)
-sum((hotspots_coast$hotspot-hotspots_coast$hotspot_old)==1)
-sum((hotspots_coast$hotspot-hotspots_coast$hotspot_old)==-1)
-sum((hotspots_coast$hotspot-hotspots_coast$hotspot_old)==0)
-sum((hotspots_coast$hotspot+hotspots_coast$hotspot_old)==2)
+

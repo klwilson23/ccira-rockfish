@@ -96,14 +96,8 @@ hotspots_coast <- hotspots_coast %>%
 
 plot(quantilelambda~quantileCPUE,data=hotspots_coast)
 summary(lm(quantilelambda~quantileCPUE,data=hotspots_coast))
-hotspots_coast$hotspot <- ifelse(hotspots_coast$quantilelambda>=9,1,0)
-hotspots_coast$hotspot_old <- ifelse(hotspots_coast$quantileCPUE>=9,1,0)
-sum((hotspots_coast$hotspot-hotspots_coast$hotspot_old)==1)
-sum((hotspots_coast$hotspot-hotspots_coast$hotspot_old)==-1)
-sum((hotspots_coast$hotspot-hotspots_coast$hotspot_old)==0)
-sum((hotspots_coast$hotspot+hotspots_coast$hotspot_old)==2)
 
-simulationOutput <- DHARMa::simulateResiduals(fittedModel = m3fTMBrand7,plot = F,n=1000)
+simulationOutput <- DHARMa::simulateResiduals(fittedModel = mDpTMBrand,plot = F,n=1000)
 plot(simulationOutput)
 DHARMa::testZeroInflation(simulationOutput)
 DHARMa::testDispersion(simulationOutput)
