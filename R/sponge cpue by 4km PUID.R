@@ -17,8 +17,8 @@ hotspots_df$sample_sizes <- aggregate(sample_size~PU_4Km_ID+gear+species,data=ne
 hotspots_df$p_counts <- ifelse(hotspots_df$gear=="deep_video",
                                aggregate(predicted_counts~PU_4Km_ID+gear+species,data=new_df,FUN=sum)$predicted_counts,
                                aggregate(predicted_counts~PU_4Km_ID+gear+species,data=new_df,FUN=sum)$predicted_counts)
-hotspots_df$lambda <- ifelse(hotspots_df$gear=="deep_video",hotspots_df$p_counts/hotspots_df$effort,hotspots_df$p_counts)
-hotspots_df$cpue <- ifelse(hotspots_df$gear=="deep_video",hotspots_df$counts/hotspots_df$effort,hotspots_df$counts)
+hotspots_df$lambda <- ifelse(hotspots_df$gear=="deep_video",hotspots_df$p_counts/hotspots_df$effort,hotspots_df$p_counts/hotspots_df$effort)
+hotspots_df$cpue <- ifelse(hotspots_df$gear=="deep_video",hotspots_df$counts/hotspots_df$effort,hotspots_df$counts/hotspots_df$effort)
 hotspots_df <- hotspots_df %>%
   group_by(species,gear) %>% 
   mutate(normalized_lambda = normalize(lambda),normalized_cpue = normalize(cpue)) %>%

@@ -40,7 +40,7 @@ AIC(m4,m4poly)
 
 summary(m1poly)
 summary(m2poly)
-summary(m3)
+summary(m3poly)
 summary(m4poly)
 
 # plots
@@ -64,7 +64,7 @@ newdat$Corprediction[which(newdat$OceanSR!="(10 Aristazabal Banks Upwelling")] =
 newdat$Corupr[which(newdat$OceanSR!="(10 Aristazabal Banks Upwelling")] = pmin(1,test$fit+test$se.fit)
 newdat$Corlwr[which(newdat$OceanSR!="(10 Aristazabal Banks Upwelling")] = pmax(0,test$fit-test$se.fit)
 
-test= predict(m3, subset(newdat,newdat$OceanSR!="(10 Aristazabal Banks Upwelling"),type = "response",se.fit = TRUE)
+test= predict(m3poly, subset(newdat,newdat$OceanSR!="(10 Aristazabal Banks Upwelling"),type = "response",se.fit = TRUE)
 newdat$Spprediction[which(newdat$OceanSR!="(10 Aristazabal Banks Upwelling")] = test$fit
 newdat$Spupr[which(newdat$OceanSR!="(10 Aristazabal Banks Upwelling")] = pmin(1,test$fit+test$se.fit)
 newdat$Splwr[which(newdat$OceanSR!="(10 Aristazabal Banks Upwelling")] = pmax(0,test$fit-test$se.fit)
