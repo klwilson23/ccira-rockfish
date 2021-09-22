@@ -23,20 +23,25 @@ data2$OceanSR = factor(data2$OceanSR,levels = c("(11) Mainland Fjords","(13) Eas
 
 #binomial regression, but more complicated ####
 m1 = glm(SebHotspot~maxDepth+OceanSR,data=data,family=binomial)
-m1poly = glm(SebHotspot~poly(maxDepth,2)+OceanSR,data=data,family=binomial)
-m1polint = glm(SebHotspot~poly(maxDepth,2)*OceanSR,data=data,family=binomial)
+m1poly = glm(SebHotspot~poly(maxDepth,2,raw=TRUE)+OceanSR,data=data,family=binomial)
+m1polint = glm(SebHotspot~poly(maxDepth,2,raw=TRUE)*OceanSR,data=data,family=binomial)
 
 AIC(m1,m1poly,m1polint)
 m2 = glm(CorHotspot~maxDepth+OceanSR,data=data2,family=binomial,na.action = na.omit)
-m2poly = glm(CorHotspot~poly(maxDepth,2)+OceanSR,data=data2,family=binomial,na.action = na.omit)
+m2poly = glm(CorHotspot~poly(maxDepth,2,raw=TRUE)+OceanSR,data=data2,family=binomial,na.action = na.omit)
 AIC(m2,m2poly)
 m3 = glm(SpHotspot~maxDepth+OceanSR,data=data2,family=binomial,na.action = na.omit)
-m3poly = glm(SpHotspot~poly(maxDepth,2)+OceanSR,data=data2,family=binomial,na.action = na.omit)
+m3poly = glm(SpHotspot~poly(maxDepth,2,raw=TRUE)+OceanSR,data=data2,family=binomial,na.action = na.omit)
 AIC(m3,m3poly)
 
 m4 = glm(OvHotspot~maxDepth+OceanSR,data=data2,family=binomial,na.action = na.omit)
-m4poly = glm(OvHotspot~poly(maxDepth,2)+OceanSR,data=data2,family=binomial,na.action = na.omit)
+m4poly = glm(OvHotspot~poly(maxDepth,2,raw=TRUE)+OceanSR,data=data2,family=binomial,na.action = na.omit)
 AIC(m4,m4poly)
+
+rockfish_peak <- -coef(m1poly)[2]/(2*coef(m1poly)[3])
+coral_peak <- -coef(m2poly)[2]/(2*coef(m2poly)[3])
+sponge_peak <- -coef(m3poly)[2]/(2*coef(m3poly)[3])
+overall_peak <- -coef(m4poly)[2]/(2*coef(m4poly)[3])
 
 summary(m1poly)
 summary(m2poly)
