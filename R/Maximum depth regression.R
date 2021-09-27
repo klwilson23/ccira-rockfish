@@ -50,6 +50,45 @@ summary(m1poly)
 summary(m2poly)
 summary(m3poly)
 summary(m4poly)
+depth_SR <- aggregate(max_depth~OceanSR,data=data,quantile,probs=(0.9))
+depth_SR2 <- aggregate(max_depth~OceanSR,data=data2,quantile,probs=(0.9))
+
+rf <- predict(m1poly,type="r",newdata=data.frame("maxDepth"=depth_SR$max_depth[2],"OceanSR"=c("(11) Mainland Fjords","(10 Aristazabal Banks Upwelling","(13) Eastern Queen Charlotte Sound")))
+cor <- predict(m2poly,type="r",newdata=data.frame("maxDepth"=depth_SR$max_depth[2],"OceanSR"=c("(11) Mainland Fjords","(13) Eastern Queen Charlotte Sound")))
+sp <- predict(m3poly,type="r",newdata=data.frame("maxDepth"=depth_SR$max_depth[2],"OceanSR"=c("(11) Mainland Fjords","(13) Eastern Queen Charlotte Sound")))
+ov <- predict(m4poly,type="r",newdata=data.frame("maxDepth"=depth_SR$max_depth[2],"OceanSR"=c("(11) Mainland Fjords","(13) Eastern Queen Charlotte Sound")))
+((1-rf)/rf)/((1-rf)/rf)[1]
+((1-cor)/cor)/((1-cor)/cor)[1]
+((1-sp)/sp)/((1-sp)/sp)[1]
+((1-ov)/ov)/((1-ov)/ov)[1]
+
+
+rf <- predict(m1poly,type="r",newdata=data.frame("maxDepth"=rockfish_peak,"OceanSR"=c("(11) Mainland Fjords","(10 Aristazabal Banks Upwelling","(13) Eastern Queen Charlotte Sound")))
+cor <- predict(m2poly,type="r",newdata=data.frame("maxDepth"=coral_peak,"OceanSR"=c("(11) Mainland Fjords","(13) Eastern Queen Charlotte Sound")))
+sp <- predict(m3poly,type="r",newdata=data.frame("maxDepth"=sponge_peak,"OceanSR"=c("(11) Mainland Fjords","(13) Eastern Queen Charlotte Sound")))
+ov <- predict(m4poly,type="r",newdata=data.frame("maxDepth"=overall_peak,"OceanSR"=c("(11) Mainland Fjords","(13) Eastern Queen Charlotte Sound")))
+((rf-1)/rf)/((rf-1)/rf)[1]
+((cor-1)/cor)/((cor-1)/cor)[1]
+((sp-1)/sp)/((sp-1)/sp)[1]
+((ov-1)/ov)/((ov-1)/ov)[1]
+
+cor <- predict(m2poly,type="r",newdata=data.frame("maxDepth"=depth_SR$max_depth[3],"OceanSR"=c("(11) Mainland Fjords","(13) Eastern Queen Charlotte Sound")))
+sp <- predict(m3poly,type="r",newdata=data.frame("maxDepth"=depth_SR$max_depth[3],"OceanSR"=c("(11) Mainland Fjords","(13) Eastern Queen Charlotte Sound")))
+ov <- predict(m4poly,type="r",newdata=data.frame("maxDepth"=depth_SR$max_depth[3],"OceanSR"=c("(11) Mainland Fjords","(13) Eastern Queen Charlotte Sound")))
+((cor-1)/cor)/((cor-1)/cor)[1]
+((sp-1)/sp)/((sp-1)/sp)[1]
+((ov-1)/ov)/((ov-1)/ov)[1]
+
+
+depth_seq <- seq(0,400,by=25)
+rf <- predict(m1poly,type="r",newdata=data.frame("maxDepth"=c(0.5*rockfish_peak,rockfish_peak,1.5*rockfish_peak),"OceanSR"=c("(11) Mainland Fjords")))
+cor <- predict(m2poly,type="r",newdata=data.frame("maxDepth"=c(0.5*coral_peak,coral_peak,1.5*coral_peak),"OceanSR"=c("(11) Mainland Fjords")))
+sp <- predict(m3poly,type="r",newdata=data.frame("maxDepth"=c(0.5*sponge_peak,sponge_peak,1.5*sponge_peak),"OceanSR"=c("(11) Mainland Fjords")))
+ov <- predict(m4poly,type="r",newdata=data.frame("maxDepth"=c(0.5*overall_peak,overall_peak,1.5*overall_peak),"OceanSR"=c("(11) Mainland Fjords")))
+((rf-1)/rf)/((rf-1)/rf)[1]
+((cor-1)/cor)/((cor-1)/cor)[1]
+((sp-1)/sp)/((sp-1)/sp)[1]
+((ov-1)/ov)/((ov-1)/ov)[1]
 
 # plots
 newdat = data.frame(

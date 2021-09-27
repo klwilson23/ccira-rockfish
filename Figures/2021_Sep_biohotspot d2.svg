@@ -3543,10 +3543,10 @@
            transform="matrix(1,0,0,-1,9.76,776.92)"
            style="font-variant:normal;font-weight:bold;font-size:14px;font-family:Helvetica;-inkscape-font-specification:Helvetica-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
            id="text6766"><tspan
-             x="0 9.408"
-             y="0"
+             x="0"
              sodipodi:role="line"
-             id="tspan6764">AU</tspan></text></g><g
+             id="tspan6764"
+             y="0">ABU</tspan></text></g><g
          id="g6768"><g
            id="g6770"
            clip-path="url(#clipPath6774)" /></g><g
