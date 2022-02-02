@@ -3,11 +3,11 @@ normalize <- function(x, na.rm = TRUE) {
 }
 
 library(glmmTMB)
-rockfish_spp <- c("black","blackspotted","bocaccio","brown","canary","china","copper","deacon","dusky-dark","greenstripe","puget sound","pygmy","quillback","redbanded","redstripe","rosethorn","sebastolobus","sharpchin","shortbelly","shortraker","silvergray","splitnose","stripetail","tiger","vermillion","widow","yelloweye","yellowtail")
+rockfish_spp <- c("black","blackspotted","bocaccio","brown","canary","china","copper","deacon","dusky-dark","greenstripe","puget sound","pygmy","quillback","redbanded","redstripe","rosethorn","sebastolobus","sharpchin","shortbelly","shortraker","silvergray","splitnose","stripetail","tiger","vermillion","widow","yelloweye","yellowtail","lingcod")
 
 hook_line <- read.csv("Data/All_HLData v3.csv")
 deep_vid <- read.csv("Data/DeepVideo v3.csv")
-dive <- read.csv("Data/DiveData v5.csv")
+dive <- read.csv("Data/Dive data 31Jan2022.csv")
 mid_vid <- read.csv("Data/MidDepthVideo v3.csv")
 mid_vid2 <- read.csv("Data/MidDepthVideo v4.csv")
 mid_vid$Calcigorgia <- NA
@@ -132,9 +132,10 @@ Npuid4 <- length(unique(c(hook_counts$PU_1Km_ID,
 
 dive_old <- dive
 dive <- dive[!is.na(dive$PU_4Km_ID),]
-dive <- dive[!is.na(dive$Transect.Transect.Number),]
+#dive <- dive[!is.na(dive$Transect.Transect.Number),]
+dive <- dive[!is.na(dive$Transect.Number),]
 dive$counts <- dive$Multiplier
-dive$transects <- paste(dive$Descriptive.ID,dive$Transect.Transect.Number,sep="_")
+dive$transects <- paste(dive$Descriptive.ID,dive$Transect.Number,sep="_")
 effort <- rep(0,length(dive$transects))
 effort[match(unique(dive$transects),dive$transects)] <- 1
 dive$effort <- effort

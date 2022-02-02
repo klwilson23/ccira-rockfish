@@ -2,7 +2,7 @@ library(dplyr)
 normalize <- function(x, na.rm = TRUE) {
   return((x- min(x, na.rm = TRUE)) /(max(x, na.rm = TRUE)-min(x, na.rm = TRUE)))
 }
-rockfish_spp <- c("black","blackspotted","bocaccio","brown","canary","china","copper","deacon","dusky-dark","greenstripe","puget sound","pygmy","quillback","redbanded","redstripe","rosethorn","sebastolobus","sharpchin","shortbelly","shortraker","silvergray","splitnose","stripetail","tiger","vermillion","widow","yelloweye","yellowtail")
+rockfish_spp <- c("black","blackspotted","bocaccio","brown","canary","china","copper","deacon","dusky-dark","greenstripe","puget sound","pygmy","quillback","redbanded","redstripe","rosethorn","sebastolobus","sharpchin","shortbelly","shortraker","silvergray","splitnose","stripetail","tiger","vermillion","widow","yelloweye","yellowtail","lingcod")
 
 new_df <- read.csv("Data/Rockfish counts by sample id.csv")
 hotspots_df <- aggregate(depth~PU_4Km_ID+gear+species,data=new_df,FUN=mean)
@@ -36,7 +36,13 @@ hotspots_agg$mid_samps <- pmax(0,mid_samps$sample_sizes[match(hotspots_agg$PU_4K
 deep_samps <- aggregate(sample_sizes~PU_4Km_ID+species,data=hotspots_df[hotspots_df$gear=="deep_video",],FUN=sum)
 hotspots_agg$deep_samps <- pmax(0,deep_samps$sample_sizes[match(hotspots_agg$PU_4Km_ID,deep_samps$PU_4Km_ID)],na.rm=TRUE)
 
+hotspots_coast <- hotspots_agg %>%
+  group_by(species) %>%
+  mutate(quantilelambda = ntile(normalized_lambda, 10),quantileCPUE = ntile(normalized_cpue, 10)) %>%
+  ungroup()
+
 write.csv(hotspots_agg,"Data/rockfish normalized cpue by 4km puid and species.csv")
+write.csv(hotspots_coast,"Data/rockfish normalized cpue by 4km puid and species with ranks.csv")
 
 plot(normalized_lambda~normalized_cpue,data=hotspots_df)
 summary(lm(normalized_lambda~normalized_cpue,data=hotspots_df))
