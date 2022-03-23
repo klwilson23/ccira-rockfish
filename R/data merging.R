@@ -1,20 +1,25 @@
 library(openxlsx)
+library(lubridate)
+
 setwd("~/Dropbox (CCIRA)/Ecological Research - test CCIRA business acct/Master Data/Groundfish, sponge, coral/CCIRA Tow Video/Full Transcription/2020 Tow Video Transcription")
 ndir <- length(grep('Drop',dir()))
-file_path <- paste("/",dir()[grep('Drop',dir())[1]],sep="")
-merge_data <- read.xlsx(paste(dir()[grep('Drop',dir())[1]],"/",dir(paste(getwd(),file_path,sep=""))[grep('xlsx',dir(paste(getwd(),file_path,sep="")))],sep=""))
+file_name <- dir()[grep('Drop',dir())[1]]
+file_path <- paste("/",file_name,sep="")
+merge_data <- read.xlsx(paste(dir()[grep('Drop',dir())[1]],"/",dir(paste(getwd(),file_path,sep=""))[match(paste(file_name,'.xlsx',sep=""),dir(paste(getwd(),file_path,sep="")))],sep=""))
 if(is.na(match('Time',colnames(merge_data))))
 {
   colnames(merge_data)[grep("\\X",colnames(merge_data))[1]] <- "Time" 
 }
-merge_data$Time <- convertToDateTime(merge_data$Time)
-merge_data$Date <- convertToDateTime(merge_data$Date)
+merge_data$Date <- strftime(convertToDateTime(merge_data$Date),format="%Y-%m-%d")
+merge_data$Time <- convertToDateTime(merge_data$Time,origin=merge_data$Date)
+
 merge_data$duration <- max(merge_data$Time)-merge_data$Time[1]
 
 for(i in 2:ndir)
 {
-  file_path <- paste("/",dir()[grep('Drop',dir())[i]],sep="")
-  temp_data <- read.xlsx(paste(dir()[grep('Drop',dir())[i]],"/",dir(paste(getwd(),file_path,sep=""))[grep('xlsx',dir(paste(getwd(),file_path,sep="")))],sep=""))
+  file_name <- dir()[grep('Drop',dir())[i]]
+  file_path <- paste("/",file_name,sep="")
+  temp_data <- read.xlsx(paste(dir()[grep('Drop',dir())[i]],"/",dir(paste(getwd(),file_path,sep=""))[match(paste(file_name,'.xlsx',sep=""),dir(paste(getwd(),file_path,sep="")))],sep=""))  
   if(is.na(match('Time',colnames(temp_data))))
   {
     colnames(temp_data)[grep("\\X",colnames(temp_data))[1]] <- "Time" 
@@ -26,8 +31,8 @@ for(i in 2:ndir)
   colnames(temp_data)[colnames(temp_data)=='Long'] <- "Longitude"
   colnames(temp_data)[colnames(temp_data)=='drop.ID'] <- "Drop.ID"
   temp_data <- temp_data[,match(colnames(merge_data),colnames(temp_data),nomatch=0)]
-  temp_data$Time <- convertToDateTime(temp_data$Time)
-  temp_data$Date <- convertToDateTime(temp_data$Date)
+  temp_data$Date <- strftime(convertToDateTime(temp_data$Date),format="%Y-%m-%d")
+  temp_data$Time <- convertToDateTime(temp_data$Time,origin=temp_data$Date)
   temp_data$duration <- max(temp_data$Time)-temp_data$Time[1]
   merge_data <- merge(merge_data,temp_data,by = intersect(names(merge_data), names(temp_data)),all=TRUE)
 }
